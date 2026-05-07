@@ -1,0 +1,416 @@
+# Lista de Ícones Disponíveis
+
+Total: **300+ ícones** organizados alfabeticamente.
+
+## Ícones por Categoria
+
+### A
+- abc
+- actionscript
+- ada
+- adonis
+- advplformatter
+- advplinclude
+- advplprw
+- android
+- angular
+- angularcomponent
+- angulardirective
+- angularguard
+- angularpipe
+- angularresolver
+- angularservice
+- apiblueprint
+- apollo
+- applescript
+- appveyor
+- architecture
+- arduino
+- asciidoc
+- assembly
+- astro
+- astyle
+- audio
+- aurelia
+- authors
+- autohotkey
+- autoit
+- aws
+- azure
+- azurepipelines
+
+### B
+- babel
+- ballerina
+- bazel
+- bicep
+- bitbucket
+- blink
+- blitz
+- bootstrap
+- bower
+- brainfuck
+- browserslist
+- buck
+- bucklescript
+- buildkite
+
+### C
+- c
+- c++
+- cabal
+- cake
+- capacitor
+- carbon
+- certificate
+- changelog
+- chess
+- circleci
+- clojure
+- cloudfoundry
+- cmake
+- coala
+- cobol
+- coconut
+- codeclimate
+- codecov
+- codeowners
+- coffee
+- coldfusion
+- command
+- commitment
+- conduct
+- console
+- contributing
+- credits
+- crystal
+- csharp
+- css
+- cssmap
+- cuda
+- cypress
+
+### D
+- d
+- dart
+- dartgenerated
+- database
+- delphidevelopers
+- denizenscripts
+- dependabot
+- dhall
+- diff
+- dinophp
+- disc
+- django
+- docker
+- document
+- dotjs
+- drawio
+- drone
+- dronemonitor
+- dronestatus
+- dune
+- dvplptm
+
+### E
+- edge
+- editorconfig
+- ejs
+- elixir
+- elm
+- email
+- ember
+- erlang
+- eslint
+- exe
+
+### F
+- fastlane
+- favicon
+- figma
+- firebase
+- flash
+- flow
+- font
+- forth
+- fortran
+- foundation
+- foxpro
+- fsharp
+- fusebox
+
+### G
+- gatsby
+- gcp
+- gemfile
+- gemini
+- git
+- github
+- gitlab
+- gitpod
+- gleam
+- go
+- gobotassets
+- godot
+- gogopher
+- gomod
+- gradle
+- grain
+- graphcool
+- graphql
+- gridsome
+- groovy
+- grunt
+- guj
+- gulp
+
+### H
+- h
+- h++
+- hack
+- handlebars
+- hardhat
+- haskell
+- haxe
+- hcl
+- helm
+- heroku
+- hex
+- horusec
+- html
+- html6
+- husky
+
+### I
+- idris
+- imba
+- ionic
+- istanbul
+
+### J
+- jar
+- java
+- javaclass
+- javascript
+- javascriptmap
+- jenkins
+- jest
+- jinja
+- jython
+- jsconfig
+- json
+- julia
+- jupyter
+
+### K
+- karma
+- key
+- kotlin
+- kuito
+
+### L
+- lerna
+- less
+- lib
+- lighthouse
+- lilypond
+- liquid
+- lisp
+- livescript
+- lock
+- lolcode
+- lowcode
+- lua
+
+### M
+- makefile
+- markdown
+- marko
+- mathematica
+- matlab
+- maven
+- mdx
+- merlin
+- meson
+- mocha
+- modernizr
+- moonscript
+- mustache
+
+### N
+- nest
+- nestcontroller
+- nestdecorator
+- nestfilter
+- nestgateway
+- nestguard
+- nestmiddleware
+- nestmodule
+- nestpipe
+- nestresolver
+- nestservice
+- netlify
+- next
+- nginx
+- ngrxactions
+- ngrxeffects
+- ngrxentity
+- ngrxreducer
+- ngrxselectors
+- ngrxstate
+- nim
+- nix
+- nodejs
+- nodemon
+
+### P
+- python
+- pythonmisc
+
+### Q
+- qsharp
+- quasar
+
+### R
+- r
+- racket
+- raml
+- razor
+- react
+- reactnative
+- reactts
+- readme
+- reason
+- red
+- redux
+- reduxaction
+- reduxreducer
+- reduxselector
+- reduxstore
+- remix
+- renovate
+- replit
+- rescript
+- restql
+- riotgames
+- roadmap
+- robot
+- robots
+- rollup
+- rome
+- routergenerator
+- rubocop
+- ruby
+- rust
+
+### S
+- salesforce
+- san
+- sas
+- sass
+- sbt
+- scala
+- scheme
+- search
+- semanticrelease
+- sentry
+- sequelize
+- serverless
+- shader
+- shaderlab
+- silverstripe
+- siyuan
+- sketch
+- slim
+- slug
+- smarty
+- sml
+- snowpack
+- snyk
+- solidity
+- steadybit
+- stencil
+- stitches
+- storybook
+- stryker
+- stylus
+- sublimetext
+- svelte
+- svgo
+- svgr
+- swift
+
+### T
+- tableformatter
+- tailwindcss
+- tauri
+- tcl
+- teal
+- template
+- terraform
+- testjs
+- testjsx
+- testts
+- tex
+- textlint
+- tilt
+- tlpp advpl
+- tor
+- travis
+- tsconfig
+- tune
+- typescript
+- typescript_importer
+
+### U
+- uml
+
+### V
+- vagrant
+- vala
+- velocidade
+- velocity
+- vercel
+- verdaccio
+- verilog
+- vfl
+- vim
+- visualstudiocode
+- vite
+- vlang
+- vue
+- vuex_store
+
+### W
+- waforth
+- wakatime
+- wallaby
+- watchman
+- webassembly
+- webhint
+- webpack
+- wepy
+- windicss
+- wolframlanguage
+
+### X
+- xampp
+- xaml
+
+### Y
+- yarn
+- yaml
+
+### Z
+- zig
+
+---
+
+## Estatísticas
+
+- **Total de ícones**: 300+
+- **Formato**: PNG
+- **Resolução**: 128x128px a 512x512px
+
+Para ver todos os ícones, abra `index.html` no navegador.
