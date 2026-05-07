@@ -180,7 +180,7 @@ const coreIconsData = [
   { name: "livescript", file: "liveScript.png" },
   { name: "lock", file: "lock.png" },
   { name: "lowcode", file: "lowcode.png" },
-  { name: "lua", file: "Lua.png" },
+  { name: "lua", file: "lua.png" },
   { name: "makefile", file: "makefile.png" },
   { name: "markdown", file: "markdown.png" },
   { name: "matlab", file: "matlab.png" },
