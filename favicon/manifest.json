@@ -1,0 +1,13 @@
+{
+  "name": "Core Icons Library",
+  "short_name": "Core Icons",
+  "description": "Biblioteca de ícones para desenvolvedores — stacks, ferramentas e URLs públicas.",
+  "icons": [
+    {
+      "src": "coreicons.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ]
+}
