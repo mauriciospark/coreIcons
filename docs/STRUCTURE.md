@@ -21,7 +21,7 @@ coreIcons/
 ├── data.js                 # Fonte de dados dos ícones
 ├── core-icons.js           # API JavaScript pública
 ├── docs/                   # Documentação
-├── fotos/                  # Assets de ícones (370+ PNGs)
+├── Documentos/                  # Assets de ícones (370+ PNGs)
 ├── favicon/                # Favicons e manifest PWA
 ├── css/                    # Estilos adicionais (vazio)
 ├── javascript/             # Scripts adicionais (vazio)

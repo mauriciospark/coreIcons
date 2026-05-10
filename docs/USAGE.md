@@ -16,7 +16,7 @@ Como usar os ícones em diferentes cenários e plataformas.
 A maneira mais simples de usar é acessando o catálogo online:
 
 ```
-https://mauriciospark.github.io/coreicons
+https://mauriciospark.github.io/coreIcons
 ```
 
 ### Como Obter URLs
@@ -33,7 +33,7 @@ https://mauriciospark.github.io/coreicons
 ### URL Pública (GitHub Pages)
 
 ```html
-<img src="https://mauriciospark.github.io/coreicons/fotos/react.png" 
+<img src="https://mauriciospark.github.io/coreIcons/Documentos/react.png" 
      alt="React" 
      width="48" 
      height="48">
@@ -42,7 +42,7 @@ https://mauriciospark.github.io/coreicons
 ### URL Relativa (Mesmo Servidor)
 
 ```html
-<img src="fotos/react.png" alt="React" width="48" height="48">
+<img src="Documentos/react.png" alt="React" width="48" height="48">
 ```
 
 ### Usando a API
@@ -62,9 +62,9 @@ https://mauriciospark.github.io/coreicons
 
 ```html
 <div class="tech-stack">
-  <img src="fotos/react.png" alt="React" width="32" height="32">
-  <img src="fotos/typescript.png" alt="TypeScript" width="32" height="32">
-  <img src="fotos/nodejs.png" alt="Node.js" width="32" height="32">
+  <img src="Documentos/react.png" alt="React" width="32" height="32">
+  <img src="Documentos/typescript.png" alt="TypeScript" width="32" height="32">
+  <img src="Documentos/nodejs.png" alt="Node.js" width="32" height="32">
 </div>
 ```
 
@@ -75,15 +75,15 @@ https://mauriciospark.github.io/coreicons
 ```markdown
 ## Tecnologias
 
-![React](https://mauriciospark.github.io/coreicons/fotos/react.png)
-![TypeScript](https://mauriciospark.github.io/coreicons/fotos/typescript.png)
-![Node.js](https://mauriciospark.github.io/coreicons/fotos/nodejs.png)
+![React](https://mauriciospark.github.io/coreIcons/Documentos/react.png)
+![TypeScript](https://mauriciospark.github.io/coreIcons/Documentos/typescript.png)
+![Node.js](https://mauriciospark.github.io/coreIcons/Documentos/nodejs.png)
 ```
 
 ### Com Tamanho Específico (HTML)
 
 ```markdown
-<img src="https://mauriciospark.github.io/coreicons/fotos/react.png" width="48">
+<img src="https://mauriciospark.github.io/coreIcons/Documentos/react.png" width="48">
 ```
 
 ### Tabela de Tecnologias
@@ -91,9 +91,9 @@ https://mauriciospark.github.io/coreicons
 ```markdown
 | Tecnologia | Ícone |
 |------------|-------|
-| React | ![React](https://mauriciospark.github.io/coreicons/fotos/react.png) |
-| Angular | ![Angular](https://mauriciospark.github.io/coreicons/fotos/angular.png) |
-| Vue | ![Vue](https://mauriciospark.github.io/coreicons/fotos/vue.png) |
+| React | ![React](https://mauriciospark.github.io/coreIcons/Documentos/react.png) |
+| Angular | ![Angular](https://mauriciospark.github.io/coreIcons/Documentos/angular.png) |
+| Vue | ![Vue](https://mauriciospark.github.io/coreIcons/Documentos/vue.png) |
 ```
 
 ## Uso em CSS
@@ -102,7 +102,7 @@ https://mauriciospark.github.io/coreicons
 
 ```css
 .tech-badge {
-  background-image: url('https://mauriciospark.github.io/coreicons/fotos/react.png');
+  background-image: url('https://mauriciospark.github.io/coreIcons/Documentos/react.png');
   background-size: contain;
   background-repeat: no-repeat;
   width: 32px;
@@ -118,7 +118,7 @@ https://mauriciospark.github.io/coreicons
   display: inline-block;
   width: 16px;
   height: 16px;
-  background: url('fotos/javascript.png') no-repeat center;
+  background: url('Documentos/javascript.png') no-repeat center;
   background-size: contain;
   margin-right: 4px;
 }
@@ -132,8 +132,8 @@ https://mauriciospark.github.io/coreicons
 <!DOCTYPE html>
 <html>
 <head>
-  <script src="https://mauriciospark.github.io/coreicons/data.js"></script>
-  <script src="https://mauriciospark.github.io/coreicons/core-icons.js"></script>
+  <script src="https://mauriciospark.github.io/coreIcons/data.js"></script>
+  <script src="https://mauriciospark.github.io/coreIcons/core-icons.js"></script>
 </head>
 <body>
   <div id="app"></div>
@@ -245,7 +245,7 @@ Após hospedar, configure o caminho base:
 
 ```javascript
 // Antes de usar a API
-window.CORE_ICONS_PUBLIC_BASE = 'https://seu-dominio.com/coreicons';
+window.CORE_ICONS_PUBLIC_BASE = 'https://seu-dominio.com/coreIcons';
 ```
 
 ### Estrutura de Arquivos Necessária
@@ -257,12 +257,12 @@ public_html/
 ├── script.js
 ├── data.js
 ├── core-icons.js
-├── fotos/
+├── Documentos/
 │   ├── react.png
 │   ├── angular.png
 │   └── ... (370+ ícones)
 └── favicon/
-    └── coreicons.png
+    └── coreIcons.png
 ```
 
 ## Integrações
@@ -284,8 +284,8 @@ function TechIcon({ slug, size = 32 }) {
       });
     };
     
-    loadScript('https://mauriciospark.github.io/coreicons/data.js')
-      .then(() => loadScript('https://mauriciospark.github.io/coreicons/core-icons.js'));
+    loadScript('https://mauriciospark.github.io/coreIcons/data.js')
+      .then(() => loadScript('https://mauriciospark.github.io/coreIcons/core-icons.js'));
   }, []);
   
   const getIconHtml = () => {
@@ -328,8 +328,8 @@ onMounted(async () => {
 });
 
 async function loadCoreIcons() {
-  await loadScript('https://mauriciospark.github.io/coreicons/data.js');
-  await loadScript('https://mauriciospark.github.io/coreicons/core-icons.js');
+  await loadScript('https://mauriciospark.github.io/coreIcons/data.js');
+  await loadScript('https://mauriciospark.github.io/coreIcons/core-icons.js');
 }
 
 function loadScript(src) {
@@ -353,8 +353,8 @@ export default function Page() {
   return (
     <>
       <Head>
-        <script src="https://mauriciospark.github.io/coreicons/data.js" async />
-        <script src="https://mauriciospark.github.io/coreicons/core-icons.js" async />
+        <script src="https://mauriciospark.github.io/coreIcons/data.js" async />
+        <script src="https://mauriciospark.github.io/coreIcons/core-icons.js" async />
       </Head>
       <div id="icons-container" />
     </>

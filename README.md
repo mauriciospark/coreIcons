@@ -12,7 +12,7 @@ Uma biblioteca profissional de ícones para linguagens, frameworks e ferramentas
 
 Core Icons Library é um catálogo público de ícones técnicos com **370+ ícones** para stacks dev. Inclui interface 3D, pesquisa em tempo real, visualização em grade/lista e uma API JavaScript para integração em projetos.
 
-**Acesse:** `https://mauriciospark.github.io/coreicons`
+**Acesse:** `https://mauriciospark.github.io/coreIcons`
 
 ---
 
@@ -27,7 +27,7 @@ coreIcons/
 │   ├── data.js         # Dados dos 370+ ícones
 │   ├── core-icons.js   # API JavaScript
 │   └── script.js       # Lógica da interface
-├── fotos/              # Ícones PNG (370+ arquivos)
+├── Documentos/         # Ícones PNG (370+ arquivos)
 ├── favicon/            # Favicons e manifest
 └── docs/               # Documentação detalhada
     ├── README.md
@@ -43,7 +43,7 @@ coreIcons/
 | `javascript/data.js` | Lista de todos os ícones disponíveis |
 | `javascript/core-icons.js` | API para usar os ícones programaticamente |
 | `javascript/script.js` | Busca, filtros, modal, efeitos 3D |
-| `fotos/` | Pasta com todos os arquivos PNG |
+| `Documentos/` | Pasta com todos os arquivos PNG |
 | `docs/` | Documentação completa |
 
 ---
@@ -70,7 +70,7 @@ Acesse o catálogo e clique em qualquer ícone para copiar sua URL.
 ### 2. Em HTML
 
 ```html
-<img src="https://mauriciospark.github.io/coreicons/fotos/react.png" 
+<img src="https://mauriciospark.github.io/coreIcons/Documentos/react.png" 
      alt="React" width="48" height="48">
 ```
 
@@ -91,7 +91,7 @@ Acesse o catálogo e clique em qualquer ícone para copiar sua URL.
   
   // Gera HTML de imagem
   const html = CoreIcons.imgHtml('react', { width: 48, height: 48 });
-  // Resultado: <img src="fotos/react.png" alt="React" width="48" height="48">
+  // Resultado: <img src="Documentos/react.png" alt="React" width="48" height="48">
 </script>
 ```
 
@@ -151,7 +151,7 @@ Configure o caminho base no seu site:
 
 ```javascript
 // Antes de carregar os scripts
-window.CORE_ICONS_PUBLIC_BASE = 'https://seu-dominio.com/coreicons';
+window.CORE_ICONS_PUBLIC_BASE = 'https://seu-dominio.com/coreIcons';
 ```
 
 ---
@@ -173,7 +173,7 @@ Ansible, AWS, Azure, CircleCI, Docker, Firebase, GitHub Actions, GCP, Heroku, Je
 ### Ferramentas
 Babel, ESLint, Git, Gulp, Jest, MongoDB, npm, PostgreSQL, Prettier, Redis, Vite, Webpack, Yarn...
 
-**Total:** 370+ ícones. Veja a lista completa em `docs/fotos-list.txt`.
+**Total:** 370+ ícones. Veja a lista completa em `docs/fotos-list.txt` (atualizar para `Documentos-list.txt` se renomear).
 
 ---
 

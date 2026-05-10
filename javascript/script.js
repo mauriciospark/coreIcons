@@ -15,7 +15,7 @@
 (function () {
   'use strict';
 
-  /** Base do site publicado (GitHub Pages etc.). Sobrescreva antes dos scripts: window.CORE_ICONS_PUBLIC_BASE = 'https://usuario.github.io/coreicons'; */
+  /** Base do site publicado (GitHub Pages etc.). Sobrescreva antes dos scripts: window.CORE_ICONS_PUBLIC_BASE = 'https://usuario.github.io/coreIcons'; */
   function getPublicSiteBase() {
     if (
       typeof window.CORE_ICONS_PUBLIC_BASE === 'string' &&
@@ -23,13 +23,13 @@
     ) {
       return window.CORE_ICONS_PUBLIC_BASE.replace(/\/+$/, '');
     }
-    return 'https://mauriciospark.github.io/coreicons';
+    return 'https://mauriciospark.github.io/coreIcons';
   }
 
   function publicImageUrl(icon) {
     var base = getPublicSiteBase();
     var path =
-      'fotos/' + icon.file.split('/').map(encodeURIComponent).join('/');
+      'Documentos/' + icon.file.split('/').map(encodeURIComponent).join('/');
     return base + '/' + path;
   }
 
@@ -157,7 +157,7 @@
     var localSrc =
       typeof CoreIcons !== 'undefined'
         ? CoreIcons.urlFor(icon)
-        : 'fotos/' +
+        : 'Documentos/' +
           icon.file.split('/').map(encodeURIComponent).join('/');
 
     modalIconImg.src = localSrc;
@@ -172,7 +172,7 @@
 
     if (modalHintSample) {
       modalHintSample.textContent =
-        getPublicSiteBase() + '/fotos/' + icon.file;
+        getPublicSiteBase() + '/Documentos/' + icon.file;
     }
 
     iconModal.classList.add('modal--open');
@@ -309,7 +309,7 @@
     img.src =
       typeof CoreIcons !== 'undefined'
         ? CoreIcons.urlFor(icon)
-        : 'fotos/' +
+        : 'Documentos/' +
           icon.file.split('/').map(encodeURIComponent).join('/');
     img.alt = icon.name;
     img.loading = 'lazy';
@@ -353,7 +353,7 @@
             height: 48,
             alt: icon.name,
           })
-        : '<img src="fotos/' +
+        : '<img src="Documentos/' +
           icon.file.split('/').map(encodeURIComponent).join('/') +
           '" alt="' +
           icon.name.replace(/"/g, '&quot;') +
