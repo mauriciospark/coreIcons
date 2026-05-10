@@ -121,12 +121,12 @@ Gera a URL para um ícone.
 ```javascript
 // Por slug
 const url1 = CoreIcons.urlFor('react');
-// 'Documentos/react.png'
+// 'fotos/react.png'
 
 // Por objeto
 const icon = CoreIcons.getBySlug('vue');
 const url2 = CoreIcons.urlFor(icon);
-// 'Documentos/vue.png'
+// 'fotos/vue.png'
 ```
 
 ---
@@ -148,7 +148,7 @@ Gera uma tag HTML `<img>` para o ícone.
 ```javascript
 // Básico
 const img1 = CoreIcons.imgHtml('react');
-// '<img src="Documentos/react.png" alt="React">'
+// '<img src="fotos/react.png" alt="React">'
 
 // Com atributos
 const img2 = CoreIcons.imgHtml('angular', {
@@ -157,7 +157,7 @@ const img2 = CoreIcons.imgHtml('angular', {
   class: 'icon',
   alt: 'Angular Framework'
 });
-// '<img src="Documentos/angular.png" alt="Angular Framework" class="icon" width="48" height="48">'
+// '<img src="fotos/angular.png" alt="Angular Framework" class="icon" width="48" height="48">'
 ```
 
 ---
@@ -184,7 +184,7 @@ Retorna o caminho base atual.
 
 ```javascript
 const path = CoreIcons.getBasePath();
-// 'Documentos/'
+// 'fotos/'
 ```
 
 ---

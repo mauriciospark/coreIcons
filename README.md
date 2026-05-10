@@ -27,7 +27,7 @@ coreIcons/
 │   ├── data.js         # Dados dos 370+ ícones
 │   ├── core-icons.js   # API JavaScript
 │   └── script.js       # Lógica da interface
-├── Documentos/         # Ícones PNG (370+ arquivos)
+├── fotos/         # Ícones PNG (370+ arquivos)
 ├── favicon/            # Favicons e manifest
 └── docs/               # Documentação detalhada
     ├── README.md
@@ -43,7 +43,7 @@ coreIcons/
 | `javascript/data.js` | Lista de todos os ícones disponíveis |
 | `javascript/core-icons.js` | API para usar os ícones programaticamente |
 | `javascript/script.js` | Busca, filtros, modal, efeitos 3D |
-| `Documentos/` | Pasta com todos os arquivos PNG |
+| `fotos/` | Pasta com todos os arquivos PNG |
 | `docs/` | Documentação completa |
 
 ---
@@ -70,7 +70,7 @@ Acesse o catálogo e clique em qualquer ícone para copiar sua URL.
 ### 2. Em HTML
 
 ```html
-<img src="https://mauriciospark.github.io/coreIcons/Documentos/react.png" 
+<img src="https://mauriciospark.github.io/coreIcons/fotos/react.png" 
      alt="React" width="48" height="48">
 ```
 
@@ -91,7 +91,7 @@ Acesse o catálogo e clique em qualquer ícone para copiar sua URL.
   
   // Gera HTML de imagem
   const html = CoreIcons.imgHtml('react', { width: 48, height: 48 });
-  // Resultado: <img src="Documentos/react.png" alt="React" width="48" height="48">
+  // Resultado: <img src="fotos/react.png" alt="React" width="48" height="48">
 </script>
 ```
 

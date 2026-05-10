@@ -33,7 +33,7 @@ https://mauriciospark.github.io/coreIcons
 ### URL Pública (GitHub Pages)
 
 ```html
-<img src="https://mauriciospark.github.io/coreIcons/Documentos/react.png" 
+<img src="https://mauriciospark.github.io/coreIcons/fotos/react.png" 
      alt="React" 
      width="48" 
      height="48">
@@ -42,7 +42,7 @@ https://mauriciospark.github.io/coreIcons
 ### URL Relativa (Mesmo Servidor)
 
 ```html
-<img src="Documentos/react.png" alt="React" width="48" height="48">
+<img src="fotos/react.png" alt="React" width="48" height="48">
 ```
 
 ### Usando a API
@@ -62,9 +62,9 @@ https://mauriciospark.github.io/coreIcons
 
 ```html
 <div class="tech-stack">
-  <img src="Documentos/react.png" alt="React" width="32" height="32">
-  <img src="Documentos/typescript.png" alt="TypeScript" width="32" height="32">
-  <img src="Documentos/nodejs.png" alt="Node.js" width="32" height="32">
+  <img src="fotos/react.png" alt="React" width="32" height="32">
+  <img src="fotos/typescript.png" alt="TypeScript" width="32" height="32">
+  <img src="fotos/nodejs.png" alt="Node.js" width="32" height="32">
 </div>
 ```
 
@@ -75,15 +75,15 @@ https://mauriciospark.github.io/coreIcons
 ```markdown
 ## Tecnologias
 
-![React](https://mauriciospark.github.io/coreIcons/Documentos/react.png)
-![TypeScript](https://mauriciospark.github.io/coreIcons/Documentos/typescript.png)
-![Node.js](https://mauriciospark.github.io/coreIcons/Documentos/nodejs.png)
+![React](https://mauriciospark.github.io/coreIcons/fotos/react.png)
+![TypeScript](https://mauriciospark.github.io/coreIcons/fotos/typescript.png)
+![Node.js](https://mauriciospark.github.io/coreIcons/fotos/nodejs.png)
 ```
 
 ### Com Tamanho Específico (HTML)
 
 ```markdown
-<img src="https://mauriciospark.github.io/coreIcons/Documentos/react.png" width="48">
+<img src="https://mauriciospark.github.io/coreIcons/fotos/react.png" width="48">
 ```
 
 ### Tabela de Tecnologias
@@ -91,9 +91,9 @@ https://mauriciospark.github.io/coreIcons
 ```markdown
 | Tecnologia | Ícone |
 |------------|-------|
-| React | ![React](https://mauriciospark.github.io/coreIcons/Documentos/react.png) |
-| Angular | ![Angular](https://mauriciospark.github.io/coreIcons/Documentos/angular.png) |
-| Vue | ![Vue](https://mauriciospark.github.io/coreIcons/Documentos/vue.png) |
+| React | ![React](https://mauriciospark.github.io/coreIcons/fotos/react.png) |
+| Angular | ![Angular](https://mauriciospark.github.io/coreIcons/fotos/angular.png) |
+| Vue | ![Vue](https://mauriciospark.github.io/coreIcons/fotos/vue.png) |
 ```
 
 ## Uso em CSS
@@ -102,7 +102,7 @@ https://mauriciospark.github.io/coreIcons
 
 ```css
 .tech-badge {
-  background-image: url('https://mauriciospark.github.io/coreIcons/Documentos/react.png');
+  background-image: url('https://mauriciospark.github.io/coreIcons/fotos/react.png');
   background-size: contain;
   background-repeat: no-repeat;
   width: 32px;
@@ -118,7 +118,7 @@ https://mauriciospark.github.io/coreIcons
   display: inline-block;
   width: 16px;
   height: 16px;
-  background: url('Documentos/javascript.png') no-repeat center;
+  background: url('fotos/javascript.png') no-repeat center;
   background-size: contain;
   margin-right: 4px;
 }
@@ -257,7 +257,7 @@ public_html/
 ├── script.js
 ├── data.js
 ├── core-icons.js
-├── Documentos/
+├── fotos/
 │   ├── react.png
 │   ├── angular.png
 │   └── ... (370+ ícones)

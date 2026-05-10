@@ -29,7 +29,7 @@
   function publicImageUrl(icon) {
     var base = getPublicSiteBase();
     var path =
-      'Documentos/' + icon.file.split('/').map(encodeURIComponent).join('/');
+      'fotos/' + icon.file.split('/').map(encodeURIComponent).join('/');
     return base + '/' + path;
   }
 
@@ -157,7 +157,7 @@
     var localSrc =
       typeof CoreIcons !== 'undefined'
         ? CoreIcons.urlFor(icon)
-        : 'Documentos/' +
+        : 'fotos/' +
           icon.file.split('/').map(encodeURIComponent).join('/');
 
     modalIconImg.src = localSrc;
@@ -172,7 +172,7 @@
 
     if (modalHintSample) {
       modalHintSample.textContent =
-        getPublicSiteBase() + '/Documentos/' + icon.file;
+        getPublicSiteBase() + '/fotos/' + icon.file;
     }
 
     iconModal.classList.add('modal--open');
@@ -309,7 +309,7 @@
     img.src =
       typeof CoreIcons !== 'undefined'
         ? CoreIcons.urlFor(icon)
-        : 'Documentos/' +
+        : 'fotos/' +
           icon.file.split('/').map(encodeURIComponent).join('/');
     img.alt = icon.name;
     img.loading = 'lazy';
@@ -353,7 +353,7 @@
             height: 48,
             alt: icon.name,
           })
-        : '<img src="Documentos/' +
+        : '<img src="fotos/' +
           icon.file.split('/').map(encodeURIComponent).join('/') +
           '" alt="' +
           icon.name.replace(/"/g, '&quot;') +

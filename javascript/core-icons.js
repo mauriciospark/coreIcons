@@ -18,7 +18,7 @@
 (function (global) {
   'use strict';
 
-  var basePath = 'Documentos/';
+  var basePath = 'fotos/';
   var icons = [];
 
   function formatDisplayName(slug) {
