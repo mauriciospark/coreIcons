@@ -28,6 +28,7 @@ angularguard.png
 angularpipe.png
 angularresolver.png
 angularservice.png
+ansible.png
 apachevelocity.png
 apiblueprint.png
 apollo.png
@@ -61,6 +62,7 @@ browserslist.png
 buck.png
 bucklescript.png
 buildkite.png
+bun.png
 c.png
 c++.png
 cabal.png
@@ -124,6 +126,7 @@ email.png
 ember.png
 erlang.png
 eslint.png
+expo.png
 exe.png
 fastlane.png
 favicon.png
@@ -154,6 +157,7 @@ godot.png
 gogopher.png
 gomod.png
 gradle.png
+grafana.png
 grain.png
 graphcool.png
 graphql.png
@@ -194,9 +198,12 @@ json.png
 julia.png
 jupyter.png
 jython.png
+kafka.png
 karma.png
 key.png
 kotlin.png
+kubernetes.png
+langchain.png
 lerna.png
 less.png
 lib.png
@@ -248,10 +255,14 @@ nixos.png
 nodejs.png
 nodejssnippets .png
 nodemon.png
+ollama.png
+openai.png
 python.png
 pythonmisc.png
+prometheus.png
 qsharp.png
 quasar.png
+rabbit.png
 r.png
 racket.png
 raml.png
@@ -305,6 +316,7 @@ smarty.png
 sml.png
 snowpack.png
 snyk.png
+snowflake.png
 solidity .png
 steadybit.png
 stencil.png
@@ -314,6 +326,7 @@ stryker.png
 stylus .png
 sublimetext.png
 svelte.png
+supabase.png
 svgo.png
 swift.png
 tableformatter.png

@@ -1,4 +1,4 @@
-# Guia de Contribuição - Core Icons Library
+# Guia de Contribuição - Core Icons Library (Linhagem SPARK)
 
 Obrigado pelo interesse em contribuir com o Core Icons Library!
 
@@ -6,8 +6,10 @@ Obrigado pelo interesse em contribuir com o Core Icons Library!
 
 - [Código de Conduta](#código-de-conduta)
 - [Como Contribuir](#como-contribuir)
+- [Histórico de Mudanças](#histórico-de-mudanças)
 - [Adicionando Ícones](#adicionando-ícones)
 - [Padrões de Código](#padrões-de-código)
+- [Regras de Organização](#regras-de-organização)
 - [Processo de Review](#processo-de-review)
 
 ## Código de Conduta
@@ -31,13 +33,25 @@ Obrigado pelo interesse em contribuir com o Core Icons Library!
 2. Descreva o caso de uso
 3. Explique por que seria útil
 
-### Pull Requests
+## Histórico de Mudanças
 
-1. Fork o repositório
-2. Crie uma branch: `git checkout -b feature/nome-da-feature`
-3. Commit suas mudanças: `git commit -m 'Adiciona nova feature'`
-4. Push para a branch: `git push origin feature/nome-da-feature`
-5. Abra um Pull Request
+### Versão 1.0.0 (2026)
+
+[Added]
+- Catálogo inicial com 370+ ícones
+- Interface 3D com animações CSS
+- Pesquisa em tempo real
+- API JavaScript para integração
+- Modal de detalhes com cópia de URL
+- Dupla visualização (grade/lista)
+- Atalhos de teclado (Ctrl+K, Shift+Click, Escape)
+- Responsividade completa
+
+[Changed]
+- N/A (versão inicial)
+
+[Fixed]
+- N/A (versão inicial)
 
 ## Adicionando Ícones
 
@@ -86,6 +100,108 @@ flutter.png
 - **Pontos:** Remova ou substitua (ex: `node.js` → `nodejs`)
 - **Símbolos:** `c++`, `c#` mantêm os símbolos
 - **Espaços:** Substitua por hífen ou remova
+
+## Regras de Organização
+
+### Nomenclatura de Branches
+
+Utilize o padrão `tipo/descricao`:
+
+- `feature/nome-da-feature` — novas funcionalidades
+- `bugfix/descricao-do-bug` — correção de bugs
+- `hotfix/correcao-urgente` — correções críticas em produção
+- `docs/atualizacao-documentacao` — atualizações na documentação
+- `refactor/melhoria-codigo` — refatoração sem mudança de comportamento
+
+**Exemplos:**
+- `feature/adicionar-icone-kubernetes`
+- `bugfix/corrigir-pesquisa-mobile`
+- `docs/atualizar-readme`
+- `refactor/otimizar-busca`
+
+### Estilo de Escrita de Código
+
+**JavaScript:**
+- Indentação: 2 espaços
+- Variáveis: camelCase
+- Constantes: UPPER_SNAKE_CASE
+- Funções: camelCase com verbos descritivos
+- Comentários: Português para contexto, inglês para código técnico
+
+**CSS:**
+- Indentação: 2 espaços
+- Classes: kebab-case
+- Variáveis CSS: kebab-case
+- Comentários: Português
+
+**HTML:**
+- Indentação: 2 espaços
+- Atributos: ordem alfabética
+- Tags: lowercase
+- Comentários: Português
+
+### Validações Obrigatórias Antes de Submeter
+
+**Antes de abrir um Pull Request:**
+
+1. **Código:**
+   - [ ] Código segue os padrões do projeto
+   - [ ] Sem console.log() ou código de debug
+   - [ ] Comentários explicativos onde necessário
+   - [ ] Cabeçalho de arquivo incluído (se aplicável)
+
+2. **Funcionalidade:**
+   - [ ] Feature funciona conforme especificado
+   - [ ] Testado manualmente em múltiplos navegadores
+   - [ ] Responsividade verificada (mobile, tablet, desktop)
+   - [ ] Acessibilidade testada (Tab, Enter, Escape)
+
+3. **Ícones (se aplicável):**
+   - [ ] Arquivo PNG adicionado em `/fotos/`
+   - [ ] Nome do arquivo adicionado em `data.js`
+   - [ ] Ordem alfabética mantida em `data.js`
+   - [ ] Ícone segue especificações (128x128px, fundo transparente)
+
+4. **Documentação:**
+   - [ ] README.md atualizado (se necessário)
+   - [ ] CHANGELOG.md atualizado com [Added]/[Changed]/[Fixed]
+   - [ ] Comentários no código explicativos
+
+5. **Git:**
+   - [ ] Commits com mensagens claras e descritivas
+   - [ ] Branch nomeada corretamente
+   - [ ] Sem commits de merge na branch
+
+**Mensagem de Commit Padrão:**
+
+```
+tipo: descrição curta
+
+Descrição detalhada opcional.
+
+[Added] lista de adições
+[Changed] lista de modificações
+[Fixed] lista de correções
+```
+
+**Exemplos:**
+```
+feat: adicionar ícone Kubernetes
+
+Adiciona ícone para Kubernetes ao catálogo.
+
+[Added] kubernetes.png
+[Added] entrada em data.js
+```
+
+```
+fix: corrigir busca em dispositivos móveis
+
+Corrige problema onde a busca não funcionava corretamente em telas pequenas.
+
+[Fixed] debounce em script.js
+[Fixed] CSS para mobile
+```
 
 ## Padrões de Código
 

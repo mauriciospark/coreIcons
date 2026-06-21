@@ -1,4 +1,4 @@
-# Core Icons Library
+# Core Icons Library — (Linhagem SPARK)
 
 Uma biblioteca profissional de ícones para linguagens, frameworks e ferramentas de desenvolvimento.
 
@@ -8,11 +8,75 @@ Uma biblioteca profissional de ícones para linguagens, frameworks e ferramentas
 
 ---
 
-## O que é
+## Descrição
 
-Core Icons Library é um catálogo público de ícones técnicos com **370+ ícones** para stacks dev. Inclui interface 3D, pesquisa em tempo real, visualização em grade/lista e uma API JavaScript para integração em projetos.
+Core Icons Library é um catálogo público de ícones técnicos com **370+ ícones** para stacks dev. Inclui interface 3D, pesquisa em tempo real, visualização em grade/lista e uma API JavaScript para integração em projetos. O projeto resolve o problema de encontrar ícones consistentes e de alta qualidade para documentação técnica, apresentações e projetos de desenvolvimento.
 
 **Acesse:** `https://mauriciospark.github.io/coreIcons`
+
+---
+
+## Stack
+
+### Frontend
+- HTML5 semântico
+- CSS3 (Grid, Flexbox, variáveis, animações 3D)
+- JavaScript ES5+ (compatível IE11+)
+- Google Fonts (Plus Jakarta Sans)
+
+### Bibliotecas e Ferramentas
+- Nenhuma dependência externa (vanilla JavaScript)
+- CSS puro sem frameworks
+- Hospedagem estática (GitHub Pages, Netlify, Vercel, etc.)
+
+---
+
+## Funcionalidades
+
+- **370+ ícones** — linguagens, frameworks, ferramentas, CI/CD, cloud
+- **Interface 3D** — cards com perspectiva e inclinação ao passar o mouse
+- **Pesquisa em tempo real** — busca por nome, slug ou arquivo
+- **Dupla visualização** — modo grade ou lista
+- **Modal de detalhes** — URL pública e nome do ícone para copiar
+- **Atalhos de teclado** — Ctrl+K (busca), Shift+Click (copiar HTML), Escape (fechar)
+- **100% responsivo** — mobile, tablet e desktop
+- **API JavaScript** — integre em qualquer projeto
+
+---
+
+## Como Rodar
+
+### 1. Clonar o repositório
+
+```bash
+git clone https://github.com/mauriciospark/coreIcons.git
+cd coreIcons
+```
+
+### 2. Iniciar o ambiente local
+
+Como o projeto é estático (HTML, CSS, JavaScript puro), não é necessário instalar dependências. Basta abrir o arquivo `index.html` em um navegador ou usar um servidor local:
+
+```bash
+# Usando Python 3
+python -m http.server 8000
+
+# Usando Node.js (http-server)
+npx http-server
+
+# Usando PHP
+php -S localhost:8000
+```
+
+Acesse `http://localhost:8000` no seu navegador.
+
+### 3. Hospedagem em produção
+
+- **GitHub Pages:** Configure em Settings > Pages
+- **Netlify:** Drag and drop ou conecte o Git
+- **Vercel:** Importe o repositório
+- **Surge.sh:** `surge .`
+- **Qualquer servidor estático:** Apache, Nginx, etc.
 
 ---
 
@@ -27,7 +91,7 @@ coreIcons/
 │   ├── data.js         # Dados dos 370+ ícones
 │   ├── core-icons.js   # API JavaScript
 │   └── script.js       # Lógica da interface
-├── fotos/         # Ícones PNG (370+ arquivos)
+├── fotos/              # Ícones PNG (370+ arquivos)
 ├── favicon/            # Favicons e manifest
 └── docs/               # Documentação detalhada
     ├── README.md
@@ -45,19 +109,6 @@ coreIcons/
 | `javascript/script.js` | Busca, filtros, modal, efeitos 3D |
 | `fotos/` | Pasta com todos os arquivos PNG |
 | `docs/` | Documentação completa |
-
----
-
-## Funcionalidades
-
-- **370+ ícones** — linguagens, frameworks, ferramentas, CI/CD, cloud
-- **Interface 3D** — cards com perspectiva e inclinação ao passar o mouse
-- **Pesquisa em tempo real** — busca por nome, slug ou arquivo
-- **Dupla visualização** — modo grade ou lista
-- **Modal de detalhes** — URL pública e nome do ícone para copiar
-- **Atalhos de teclado** — Ctrl+K (busca), Shift+Click (copiar HTML), Escape (fechar)
-- **100% responsivo** — mobile, tablet e desktop
-- **API JavaScript** — integre em qualquer projeto
 
 ---
 
