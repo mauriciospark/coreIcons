@@ -233,7 +233,7 @@ lilypond.png
 liquid.png
 llamaindex.png
 lisp.png
-liveScript.png
+livescript.png
 lock.png
 lolcode.png
 lowcode.png
