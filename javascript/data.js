@@ -429,6 +429,7 @@ xaml.png
 xampp.png
 yaml.png
 yarn.png
+yang.png
 zig.png
 `.trim().split(/\r?\n/).filter(function (f) { return f.length > 0; });
 
