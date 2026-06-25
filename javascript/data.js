@@ -232,7 +232,9 @@ lighthouse.png
 lilypond.png
 liquid.png
 llamaindex.png
+llamaindex.png
 lisp.png
+livescript.png
 livescript.png
 lock.png
 lolcode.png
