@@ -231,6 +231,7 @@ lib.png
 lighthouse.png
 lilypond.png
 liquid.png
+llamaIndex.png
 llamaindex.png
 llamaindex.png
 lisp.png
