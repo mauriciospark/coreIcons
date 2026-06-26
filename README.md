@@ -10,7 +10,7 @@ Uma biblioteca profissional de ícones para linguagens, frameworks e ferramentas
 
 ## Descrição
 
-Core Icons Library é um catálogo público de ícones técnicos com **370+ ícones** para stacks dev. Inclui interface 3D, pesquisa em tempo real, visualização em grade/lista e uma API JavaScript para integração em projetos. O projeto resolve o problema de encontrar ícones consistentes e de alta qualidade para documentação técnica, apresentações e projetos de desenvolvimento.
+Core Icons Library é um catálogo público de ícones técnicos com **400+ ícones** para stacks dev. Inclui interface 3D, pesquisa em tempo real, visualização em grade/lista e uma API JavaScript para integração em projetos. O projeto resolve o problema de encontrar ícones consistentes e de alta qualidade para documentação técnica, apresentações e projetos de desenvolvimento.
 
 **Acesse:** `https://mauriciospark.github.io/coreIcons`
 
