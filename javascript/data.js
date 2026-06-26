@@ -288,6 +288,7 @@ notionai.png
 ollama.png
 openai.png
 perplexityai.png
+php.png
 pinecone.png
 prometheus.png
 pytorch.png
