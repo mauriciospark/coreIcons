@@ -293,6 +293,7 @@ ollama.png
 openai.png
 perplexityai.png
 perl.png
+php.png
 pinecone.png
 postgresql.png
 prometheus.png
