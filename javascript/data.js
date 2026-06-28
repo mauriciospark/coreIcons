@@ -113,6 +113,7 @@ dart.png
 dartgenerated.png
 database.png
 delphidevelopers.png
+deno.png
 denizenscripts.png
 dependabot.png
 dhall.png
@@ -142,6 +143,7 @@ erlang.png
 eslint.png
 expo.png
 exe.png
+fastapi.png
 fastlane.png
 favicon.png
 fibraoptica.png
@@ -233,7 +235,7 @@ lilypond.png
 liquid.png
 llamaindex.png
 lisp.png
-liveScript.png
+livescript.png
 lock.png
 lolcode.png
 lowcode.png
@@ -253,7 +255,9 @@ milvus.png
 mirrorImageagency.jpg
 mistralai.png
 mlflow.png
+mongodb.png
 mocha.png
+mysql.png
 modernizr.png
 mosaicai.png
 moonscript.png
@@ -288,7 +292,10 @@ notionai.png
 ollama.png
 openai.png
 perplexityai.png
+perl.png
+php.png
 pinecone.png
+postgresql.png
 prometheus.png
 pytorch.png
 python.png
@@ -297,6 +304,8 @@ qdrant.png
 qsharp.png
 quasar.png
 rabbit.png
+rails.png
+redis.png
 r.png
 racket.png
 raml.png
@@ -357,6 +366,7 @@ snyk.png
 solidity.png
 sora.png
 spark.png
+spring.png
 stablediffusion.png
 steadybit.png
 stencil.png
@@ -429,6 +439,7 @@ xaml.png
 xampp.png
 yaml.png
 yarn.png
+yang.png
 zig.png
 `.trim().split(/\r?\n/).filter(function (f) { return f.length > 0; });
 

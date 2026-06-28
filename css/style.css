@@ -68,6 +68,9 @@ body {
 .header-inner {
   position: relative;
   z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .header-glow {
@@ -97,6 +100,26 @@ body {
   vertical-align: middle;
   filter: drop-shadow(0 6px 18px rgba(0, 0, 0, 0.35))
     drop-shadow(0 0 28px rgba(34, 211, 238, 0.06));
+}
+
+.header-badge {
+  position: absolute;
+  left: 24px;
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.header-badge:hover {
+  opacity: 0.85;
+  transform: translateY(-1px);
+}
+
+.header-badge img {
+  display: block;
+  height: auto;
+  max-width: 100%;
 }
 
 .subtitle {
@@ -596,6 +619,23 @@ body.modal-open {
   font-weight: 600;
 }
 
+.footer-badge {
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+  transition: opacity 0.2s ease;
+}
+
+.footer-badge:hover {
+  opacity: 0.85;
+}
+
+.footer-badge img {
+  display: block;
+  height: auto;
+  max-width: 100%;
+}
+
 ::-webkit-scrollbar {
   width: 10px;
   height: 10px;
@@ -643,6 +683,16 @@ body.modal-open {
   .brand-logo {
     max-width: min(176px, 62vw);
     max-height: clamp(48px, 16vw, 72px);
+  }
+
+  .header-badge {
+    position: static;
+    margin-top: 12px;
+  }
+
+  .header-inner {
+    flex-direction: column;
+    gap: 8px;
   }
 
   .footer-inner {
