@@ -74,16 +74,21 @@ capacitor.png
 carbon.png
 certificate.png
 cerebras.png
+chakraui.png
 changelog.png
 chess.png
 chatgpt.png
 chromadb.png
 circleci.png
 claude.png
-clearml.png
 cloudfoundry.png
+clearml.png
+cloudflare.png
+digitalocean.png
 cmake.png
+biome.png
 coala.png
+crewai.png
 cobol.png
 codeclimate.png
 codecov.png
@@ -112,6 +117,7 @@ dalle.png
 dart.png
 dartgenerated.png
 database.png
+dagger.png
 delphidevelopers.png
 deno.png
 denizenscripts.png
@@ -150,6 +156,7 @@ fibraoptica.png
 figma.png
 firebase.png
 flash.png
+flyio.png
 flowlanguage.png
 flux.png
 font.png
@@ -157,6 +164,7 @@ forth.png
 fortran.png
 foundation.png
 foxpro.png
+ghost.png
 fsharp.png
 fusebox.png
 gatsby.png
@@ -227,6 +235,7 @@ kotlin.png
 kubeflow.png
 kubernetes.png
 langchain.png
+langsmith.png
 lerna.png
 less.png
 lib.png
@@ -234,6 +243,7 @@ lighthouse.png
 lilypond.png
 liquid.png
 llamaindex.png
+llamastack.png
 lisp.png
 livescript.png
 lock.png
@@ -250,6 +260,7 @@ mdx.png
 merlin.png
 meson.png
 metallama.png
+meilisearch.png
 midjourney.png
 milvus.png
 mirrorImageagency.jpg
@@ -257,6 +268,7 @@ mistralai.png
 mlflow.png
 mongodb.png
 mocha.png
+mui.png
 mysql.png
 modernizr.png
 mosaicai.png
@@ -302,9 +314,11 @@ python.png
 pythonmisc.png
 qdrant.png
 qsharp.png
+qwik.png
 quasar.png
 rabbit.png
 rails.png
+radixui.png
 redis.png
 r.png
 racket.png
@@ -348,6 +362,7 @@ scheme.png
 scikitlearn.png
 search.png
 semanticrelease.png
+shadcnui.png
 sentry.png
 sequelize.png
 serverless.png
@@ -377,7 +392,9 @@ stylus.png
 sublimetext.png
 suno.png
 supabase.png
+surrealdb.png
 svelte.png
+solidjs.png
 svgo.png
 swift.png
 tableformatter.png
@@ -400,6 +417,7 @@ tobi.png
 tor.png
 travis.png
 trae.png
+turbo.png
 tsconfig.png
 tune.png
 typescript.png
