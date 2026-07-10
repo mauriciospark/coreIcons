@@ -361,7 +361,6 @@ raml.png
 razor.png
 react.png
 reactnative.png
-reactts.png
 readme.png
 reason.png
 red.png
