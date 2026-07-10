@@ -15,7 +15,7 @@ Uma biblioteca profissional de ícones para linguagens, frameworks e ferramentas
 
 ## Características
 
-- **370+ ícones** para linguagens, frameworks e ferramentas
+- **504+ ícones** para linguagens, frameworks e ferramentas
 - **Interface 3D** com efeitos de perspectiva e inclinação
 - **Pesquisa em tempo real** com filtros inteligentes
 - **Visualização em grade ou lista**
