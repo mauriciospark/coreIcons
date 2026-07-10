@@ -4,6 +4,26 @@ Todas as mudanças notáveis neste projeto serão documentadas neste arquivo.
 
 O formato é baseado em [Keep a Changelog](https://keepachangelog.com/pt-BR/1.0.0/).
 
+## [1.0.1] - 2026-07-10
+
+### Adicionado
+
+- **Novos ícones de virtualização e infraestrutura:**
+  - Proxmox, VMware Workstation, Podman, Multipass, Hyper-V, QEMU, KVM, Nutanix, OpenStack, Citrix
+- **Novos frameworks e ferramentas de desenvolvimento:**
+  - Hono, Effect, TanStack Query, TanStack Router, Nuxt
+- **Novos ícones do ecossistema de IA e dados:**
+  - Groq, DuckDB, Turso, Tavily, ScyllaDB, LocalAI
+- **Novas ferramentas de produtividade (Developer Experience):**
+  - Zed, Ghostty, Dev Containers
+- **Total atualizado:** 400+ ícones
+
+### Alterado
+
+- Atualização do README.md para refletir novo total de ícones
+
+---
+
 ## [1.0.0] - 2026-06-21
 
 ### Adicionado

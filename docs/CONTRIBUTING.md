@@ -35,7 +35,19 @@ Obrigado pelo interesse em contribuir com o Core Icons Library!
 
 ## Histórico de Mudanças
 
-### Versão 1.0.0 (2026)
+### Versão 1.0.1 (2026-07-10)
+
+[Added]
+- Novos ícones de virtualização e infraestrutura: Proxmox, VMware, Podman, Multipass, Hyper-V, QEMU, KVM, Nutanix, OpenStack, Citrix
+- Novos frameworks e ferramentas: Hono, Effect, TanStack Query, TanStack Router, Nuxt
+- Novos ícones de IA e dados: Groq, DuckDB, Turso, Tavily, ScyllaDB, LocalAI
+- Novas ferramentas de produtividade: Zed, Ghostty, Dev Containers
+- Total atualizado para 400+ ícones
+
+[Changed]
+- Atualização do README.md para refletir novo total de ícones
+
+### Versão 1.0.0 (2026-06-21)
 
 [Added]
 - Catálogo inicial com 370+ ícones

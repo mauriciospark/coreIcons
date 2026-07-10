@@ -86,8 +86,10 @@ chess.png
 chromadb.png
 circleci.png
 claude.png
+citrix.png
 clearml.png
 cloudflare.png
+cloudfoundry.png
 cmake.png
 coala.png
 cobol.png
@@ -124,6 +126,7 @@ debian.png
 deepseek.png
 delphidevelopers.png
 denizenscripts.png
+devcontainers.png
 deno.png
 dependabot.png
 dhall.png
@@ -140,11 +143,13 @@ dronemonitor.png
 dronestatus.png
 duna.png
 dvc.png
+duckdb.png
 edge.png
 editorconfig.png
 ejs.png
 elevenlabs.png
 elixirls.png
+effect.png
 elm.png
 email.png
 ember.png
@@ -177,6 +182,7 @@ gemfile.png
 gemini.png
 gentoo.png
 ghost.png
+ghostty.png
 git.png
 github.png
 gitlab.png
@@ -194,6 +200,7 @@ graphcool.png
 graphql.png
 gridsome.png
 grok.png
+groq.png
 groovy.png
 grunt.png
 guj.png
@@ -207,6 +214,7 @@ hashicorphcl.png
 haskell.png
 haxe.png
 helm.png
+hono.png
 heroku.png
 hexadecimal.png
 horuseccli.png
@@ -214,6 +222,7 @@ html.png
 html6.png
 huggingface.png
 husky.png
+hyperv.png
 idris.png
 imba.png
 inteloneapi.png
@@ -242,8 +251,10 @@ key.png
 kotlin.png
 kubeflow.png
 kubernetes.png
+kvm.png
 langchain.png
 langsmith.png
+laravel.png
 lerna.png
 less.png
 lib.png
@@ -256,6 +267,7 @@ lisp.png
 livescript.png
 llamaindex.png
 llamastack.png
+localai.png
 lock.png
 lolcode.png
 lowcode.png
@@ -285,6 +297,7 @@ mosaicai.png
 mui.png
 mustache.png
 mysql.png
+multipass.png
 nest.png
 nestcontroller.png
 nestdecorator.png
@@ -312,31 +325,40 @@ nodejssnippets .png
 nodemon.png
 notionai.png
 nvidiacuda.png
+nuxt.png
+nutanix.png
 ollama.png
 openai.png
+openshift.png
 opensuse.png
+openstack.png
 oracle.png
 perl.png
 perplexityai.png
 php.png
 pinecone.png
+plawright.png
+podman.png
 popos.png
 postgresql.png
 prometheus.png
-pytorch.png
+proxmox.png
 python.png
 pythonmisc.png
+pytorch.png
 qdrant.png
 qsharp.png
-qwik.png
 quasar.png
+qemu.png
+qwik.png
+r.png
 rabbit.png
+racket.png
+radix.png
 radixui.png
 rails.png
-racket.png
 raml.png
 razor.png
-r.png
 react.png
 reactnative.png
 reactts.png
@@ -376,6 +398,7 @@ sbt.png
 scala.png
 scheme.png
 scikitlearn.png
+scylladb.png
 search.png
 semanticrelease.png
 sentry.png
@@ -396,8 +419,8 @@ snowflake.png
 snowpack.png
 snyk.png
 solaris.png
-solidjs.png
 solidity.png
+solidjs.png
 sora.png
 spark.png
 spring.png
@@ -419,12 +442,15 @@ tableformatter.png
 tabnine.png
 tailwindcss.png
 tauri.png
+tavily.png
 tcl.png
 teal.png
 template.png
+tanstackquery.png
+tanstackrouter.png
 tensorflow.png
 terraform.png
-testjs.png
+test js.png
 testjs.png
 testjsx.png
 testts.png
@@ -433,11 +459,12 @@ textlint.png
 tilt.png
 tobi.png
 tor.png
-travis.png
 trae.png
-turbo.png
+travis.png
 tsconfig.png
 tune.png
+turbo.png
+turso.png
 typescript.png
 typescriptimporter.png
 ubuntu.png
@@ -455,6 +482,7 @@ vim.png
 visualstudiocode.png
 vite.png
 vlang.png
+vmware.png
 vue.png
 vuestore.png
 waforth.png
@@ -469,18 +497,20 @@ webpack.png
 weightsbiases.png
 wepy.png
 whisper.png
+windicss.png
 windows.png
 windowsserver.png
-windicss.png
 windsurf.png
 wolfram.png
 writercom.png
 xaml.png
 xampp.png
-yang.png
 yaml.png
+yang.png
 yarn.png
+zed.png
 zig.png
+zod.png
 zorin.png`.trim().split(/\r?\n/).filter(function (f) { return f.length > 0; });
 
   function slugFromFile(file) {
