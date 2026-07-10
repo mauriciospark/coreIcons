@@ -339,7 +339,6 @@ razor.png
 r.png
 react.png
 reactnative.png
-reactts.png
 readme.png
 reason.png
 red.png
