@@ -4,6 +4,26 @@ Todas as mudanças notáveis neste projeto serão documentadas neste arquivo.
 
 O formato é baseado em [Keep a Changelog](https://keepachangelog.com/pt-BR/1.0.0/).
 
+## [1.0.2] - 2026-07-11
+
+### Adicionado
+
+- **Novos ícones de linguagens e ferramentas:**
+  - Clojure, Coconut, Diff
+- **Novos ícones de build e ferramentas de desenvolvimento:**
+  - Meson
+- **Novos ícones do ecossistema de IA:**
+  - Meta Llama
+- **Correção de dados:** Adicionados 5 ícones que estavam faltando no arquivo data.js
+- **Total atualizado:** 503+ ícones
+
+### Alterado
+
+- Atualização do README.md para refletir novo total de ícones (503+)
+- Atualização da versão para 1.0.2
+
+---
+
 ## [1.0.1] - 2026-07-10
 
 ### Adicionado

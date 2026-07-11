@@ -91,7 +91,9 @@ clearml.png
 cloudflare.png
 cloudfoundry.png
 cmake.png
+clojure.png
 coala.png
+coconut.png
 cobol.png
 codeclimate.png
 codecov.png
@@ -130,6 +132,7 @@ devcontainers.png
 deno.png
 dependabot.png
 dhall.png
+diff.png
 digitalocean.png
 dinophp.png
 disco.png
@@ -283,6 +286,8 @@ maven.png
 mdx.png
 meilisearch.png
 merlin.png
+meson.png
+meta-llama.png
 metallama.png
 midjourney.png
 milvus.png
