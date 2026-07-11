@@ -32,12 +32,22 @@ Histórico de versões do projeto:
 - Mudanças importantes
 - Versões lançadas
 
+<<<<<<< HEAD
 ### [STRUCTURE.md](STRUCTURE.md)
 Documentação sobre a arquitetura e estrutura do projeto:
 - Organização de arquivos
 - Como o sistema funciona
 - Dependências
 - Padrões utilizados
+=======
+- **504+ ícones** para linguagens, frameworks e ferramentas
+- **Interface 3D** com efeitos de perspectiva e inclinação
+- **Pesquisa em tempo real** com filtros inteligentes
+- **Visualização em grade ou lista**
+- **URLs públicas** para uso em documentação
+- **API JavaScript** para integração em projetos
+- **Suporte a atalhos de teclado** (Ctrl+K para pesquisa)
+>>>>>>> d5c4c39ff7853f9e59859fb4ba986df09cf99a23
 
 ### [ARCHITECTURE.md](ARCHITECTURE.md)
 Detalhes técnicos sobre a arquitetura do sistema:
