@@ -4,15 +4,15 @@
 
 ## História e Motivação
 
-O Core Icons Library nasceu da necessidade de encontrar ícones consistentes, de alta qualidade e facilmente acessíveis para documentação técnica, apresentações e projetos de desenvolvimento. Desenvolvedores frequentemente enfrentam o desafio de localizar ícones representativos de linguagens, frameworks, ferramentas e serviços em seus projetos, muitas vezes recorrendo a múltiplas fontes com estilos inconsistentes.
+O CoreIcons Library nasceu da necessidade de encontrar ícones consistentes, de alta qualidade e facilmente acessíveis para documentação técnica, apresentações e projetos de desenvolvimento. Desenvolvedores frequentemente enfrentam o desafio de localizar ícones representativos de linguagens, frameworks, ferramentas e serviços em seus projetos, muitas vezes recorrendo a múltiplas fontes com estilos inconsistentes.
 
-O problema real que o Core Icons Library soluciona é a fragmentação de recursos visuais técnicos. Ao centralizar 400+ ícones em um único catálogo com interface intuitiva, API JavaScript e hospedagem pública, o projeto elimina a necessidade de buscar em múltiplas fontes e garante consistência visual em toda a documentação e apresentações técnicas.
+O problema real que o CoreIcons Library soluciona é a fragmentação de recursos visuais técnicos. Ao centralizar 650+ ícones em um único catálogo com interface intuitiva, API JavaScript e hospedagem pública, o projeto elimina a necessidade de buscar em múltiplas fontes e garante consistência visual em toda a documentação e apresentações técnicas.
 
 ---
 
 ## Filosofia da Marca
 
-A marca SPARK, aplicada ao Core Icons Library, reflete os seguintes valores fundamentais:
+A marca SPARK, aplicada ao CoreIcons Library, reflete os seguintes valores fundamentais:
 
 ### Privacidade
 O projeto não coleta dados dos usuários. Toda a funcionalidade é executada localmente no navegador, sem rastreamento, cookies ou analytics. A API JavaScript pode ser usada offline após o download inicial dos arquivos.
@@ -30,7 +30,7 @@ A interface 3D e o design dark mode foram cuidadosamente elaborados para proporc
 
 ## Público-Alvo
 
-O Core Icons Library foi projetado para:
+O CoreIcons Library foi projetado para:
 
 ### Desenvolvedores
 - Documentação de projetos técnicos
@@ -92,6 +92,6 @@ O sistema gera valor ao economizar tempo na busca por recursos visuais, garantir
 
 ---
 
-**Core Icons Library** — Ícones para stacks, CI/CD e documentação técnica
+**CoreIcons Library** — Ícones para stacks, CI/CD e documentação técnica
 
-**Marca:** SPARK | **Linhagem:** SPARK | **Projeto:** Core Icons Library | **Versão:** 1.0.0
+**Marca:** SPARK | **Linhagem:** SPARK | **Projeto:** CoreIcons Library | **Versão:** 1.0.0

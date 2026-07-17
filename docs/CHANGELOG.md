@@ -1,8 +1,54 @@
-# Changelog - Core Icons Library
+# Changelog - CoreIcons Library
 
 Todas as mudanças notáveis neste projeto serão documentadas neste arquivo.
 
 O formato é baseado em [Keep a Changelog](https://keepachangelog.com/pt-BR/1.0.0/).
+
+## [1.0.4] - 2026-07-17
+
+### Adicionado
+
+- **Novo ícone de automação:**
+  - n8n
+
+### Removido
+
+- **Ícones removidos do catálogo:**
+  - flex
+  - daggerio
+  - darcula
+  - denyhosts
+- **Total atualizado:** 655+ ícones
+
+### Alterado
+
+- Atualização do README.md para refletir novo total de ícones (655+)
+- Atualização da versão para 1.0.4
+
+---
+
+## [1.0.3] - 2026-07-14
+
+### Adicionado
+
+- **Novos ícones de linguagens e ferramentas de desenvolvimento:**
+  - Aegis, Aix, Alloy, Amiga, Android NDK, Android SDK, Ansible Tower, Antlr, Apex, Appium, Arc, Arduino IDE, Asciidoctor, Asm.js, Asp.net, Atlassian, Aurelia, Autodesk, Awk, Azul
+  - Backbone.js, Bamboo, Basecamp, Bash, Behat, Bintray, Bitbucket Pipeline, Blazor, BluePrism, Blueprint, Bower, Broccoli, Brunch, Bucklescript, Buildbot, Bunny
+  - C#, C++, Cabal, Caddy, Caffe, CakePHP, Calabash, Capacitor, Carbon, Carto, Cassandra, Celery, CentOS, Ceylon, Chakra, Chai, Chalk, Checkstyle, Chef, Chruby, Cilium, Cirrus, ClamAV, Clang, ClickHouse, Cljs, Clojure, ClojureScript, CloudFoundry, CloudStack, CMake, Coala, Cobol, Cocoapods, CoffeeScript, ColdFusion, CommonLisp, Composer, Conan, Concourse, Consul, Cordova, Couchbase, CouchDB, Coveralls, Cppcheck, Crystal, Ctags, Cucumber
+  - D3.js, Dapr, Darcula, Darwin, Dask, Datomic, Db2, DBeaver, Delphi, Denyhosts, Dependency-Check, DevOps, DigitalOcean, Direnv, Django, Dnsmasq, Docker, Doctrine, Dojo, Doxygen, Drush, Drupal, DVC, DynamoDB
+  - Eclipse, Ecto, Ember.js, Emacs, Erlang, Esbuild, Etcd, EVM, Exim, Express
+  - F#, Fabric, Falcon, Fantom, FastAPI, Fastlane, FaunaDB, Feathers, Fedora, FFmpeg, Figma, Firebase, Firebird, Flask, Flatpak, Flex, Flow, Flutter, Flux, Fossil, FreeBSD, FreeRTOS, FuseBox
+- **Novos ícones de infraestrutura cloud e DevOps:**
+  - Aiven, Akv2k8s, Altinity, Apache Airflow, Apache Druid, Apache Flink, Apache Kyuubi, Apache Pinot, Appsmith, Aquasec, Argo Workflows, Atlantis, Authelia, Axway
+  - Backstage, Benthos, Bigpanda, Blumira, Buddy, Buildpacks, Calico, Canonical, Ceph, Checkmk, Chronograf, Cirrus CI, Cloudhealth, Cloudposse, CockroachDB, Confluent, Coralogix, Cortex, Crossplane, Dagger.io, Deepfence, Devtron, Digitalocean App Platform, Doks, Drone, Dynatrace, Elastic Cloud, Exoscale, Falco, Fargate, Fastly, Fluentd, Fly.io, Gitea, Gitlab CI, Glowroot
+- **Total atualizado:** 650+ ícones
+
+### Alterado
+
+- Atualização do README.md para refletir novo total de ícones (650+)
+- Atualização da versão para 1.0.3
+
+---
 
 ## [1.0.2] - 2026-07-11
 
@@ -48,7 +94,7 @@ O formato é baseado em [Keep a Changelog](https://keepachangelog.com/pt-BR/1.0.
 
 ### Adicionado
 
-- **Lançamento inicial** do Core Icons Library
+- **Lançamento inicial** do CoreIcons Library
 - **370+ ícones** para linguagens, frameworks e ferramentas dev
 - **Interface 3D** com efeitos de perspectiva e inclinação nos cards
 - **Sistema de busca** em tempo real com filtros por nome, slug e arquivo
@@ -152,4 +198,4 @@ Este projeto segue o [Versionamento Semântico](https://semver.org/lang/pt-BR/):
 
 ---
 
-**Core Icons Library** · © 2026 Maurício Spark
+**CoreIcons Library** · © 2026 Maurício Spark

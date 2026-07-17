@@ -1,91 +1,81 @@
-# Documentação - Core Icons Library
+# CoreIcons Library
 
-Bem-vindo à documentação do Core Icons Library. Este diretório contém toda a documentação técnica e guias de uso do projeto.
+Uma biblioteca profissional de ícones para linguagens, frameworks e ferramentas de desenvolvimento.
 
-## Documentos Disponíveis
+![CoreIcons](/favicon/coreicons.png)
 
-### [API.md](API.md)
-Documentação completa da API JavaScript do Core Icons. Inclui:
-- Referência de todos os métodos disponíveis
-- Exemplos de uso
-- Parâmetros e retornos
-- Integração em projetos
+## Sobre
 
-### [USAGE.md](USAGE.md)
-Guia prático de como usar os ícones em seus projetos:
-- Uso via CDN
-- Uso local
-- Integração com frameworks populares
-- Exemplos de código
+**CoreIcons Library** é um catálogo público de ícones técnicos para stacks e ferramentas dev. Inclui recursos de pesquisa, pré-visualização 3D e URLs para uso em documentação e projetos.
 
-### [CONTRIBUTING.md](CONTRIBUTING.md)
-Diretrizes para contribuidores que desejam adicionar novos ícones ou melhorar o projeto:
-- Como adicionar novos ícones
-- Padrões de nomenclatura
-- Processo de pull request
-- Código de conduta
+- **Versão:** 1.0.4
+- **Proprietário:** Maurício Spark
+- **Marca:** Spark
+- **Linhagem:** SPARK
 
-### [CHANGELOG.md](CHANGELOG.md)
-Histórico de versões do projeto:
-- Novas funcionalidades
-- Correções de bugs
-- Mudanças importantes
-- Versões lançadas
+## Características
 
-<<<<<<< HEAD
-### [STRUCTURE.md](STRUCTURE.md)
-Documentação sobre a arquitetura e estrutura do projeto:
-- Organização de arquivos
-- Como o sistema funciona
-- Dependências
-- Padrões utilizados
-=======
-- **504+ ícones** para linguagens, frameworks e ferramentas
+- **654+ ícones** para linguagens, frameworks e ferramentas
 - **Interface 3D** com efeitos de perspectiva e inclinação
 - **Pesquisa em tempo real** com filtros inteligentes
 - **Visualização em grade ou lista**
 - **URLs públicas** para uso em documentação
 - **API JavaScript** para integração em projetos
 - **Suporte a atalhos de teclado** (Ctrl+K para pesquisa)
->>>>>>> d5c4c39ff7853f9e59859fb4ba986df09cf99a23
 
-### [ARCHITECTURE.md](ARCHITECTURE.md)
-Detalhes técnicos sobre a arquitetura do sistema:
-- Design patterns utilizados
-- Fluxo de dados
-- Sistema de renderização 3D
-- Performance e otimizações
+## Estrutura do Projeto
 
-### [ABOUT.md](ABOUT.md)
-Informações sobre o projeto e seu propósito:
-- Visão e missão
-- História do projeto
-- Tecnologias utilizadas
-- Futuro do projeto
+```
+coreIcons/
+├── index.html          # Página principal
+├── style.css           # Estilos e animações 3D
+├── script.js           # Lógica da interface
+├── data.js             # Dados dos ícones
+├── core-icons.js       # API JavaScript
+├── docs/               # Documentação
+├── fotos/              # Arquivos de ícones PNG
+├── favicon/            # Favicons e manifest
+└── css/                # Estilos adicionais
+```
 
-### [fotos_list.md](fotos_list.md)
-Lista completa de todos os ícones disponíveis na biblioteca:
-- Nome dos arquivos
-- Total de ícones
-- Referência rápida
+## Documentação
 
-## Versão Atual
+- [API Reference](docs/API.md) - Documentação completa da API JavaScript
+- [Guia de Uso](docs/USAGE.md) - Como usar os ícones em seus projetos
+- [Contribuição](docs/CONTRIBUTING.md) - Diretrizes para contribuidores
+- [Changelog](docs/CHANGELOG.md) - Histórico de versões
+- [Estrutura](docs/STRUCTURE.md) - Arquitetura do projeto
 
-**Versão:** 1.0.2  
-**Total de Ícones:** 503+  
-**Última Atualização:** 2026-07-11
+## Uso Rápido
 
-## Como Navegar
+### Catálogo Online
 
-1. **Para desenvolvedores:** Comece com [API.md](API.md) e [USAGE.md](USAGE.md)
-2. **Para contribuidores:** Leia [CONTRIBUTING.md](CONTRIBUTING.md) e [STRUCTURE.md](STRUCTURE.md)
-3. **Para curiosos:** Veja [ABOUT.md](ABOUT.md) e [ARCHITECTURE.md](ARCHITECTURE.md)
-4. **Para referência:** Consulte [fotos_list.md](fotos_list.md) para ver todos os ícones
+Acesse o catálogo em: `https://mauriciospark.github.io/coreicons`
 
-## Suporte
+### API JavaScript
 
-Para dúvidas ou problemas, consulte a documentação específica ou abra uma issue no repositório do projeto.
+```html
+<script src="data.js"></script>
+<script src="core-icons.js"></script>
+<script>
+  // Buscar todos os ícones
+  const icons = CoreIcons.getAll();
+  
+  // Buscar por slug
+  const react = CoreIcons.getBySlug('react');
+  
+  // Pesquisar
+  const results = CoreIcons.search('java');
+  
+  // Gerar HTML de imagem
+  const html = CoreIcons.imgHtml('react', { width: 48, height: 48 });
+</script>
+```
+
+## Licença
+
+© 2026 Maurício Spark. Todos os direitos reservados.
 
 ---
 
-**Core Icons Library** · © 2026 Maurício Spark
+**CoreIcons Library** · ícones para stacks, CI/CD e documentação técnica

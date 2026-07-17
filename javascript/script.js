@@ -2,7 +2,7 @@
   ============================================================================
   PROPRIETÁRIO: Maurício Spark
   MARCA: Spark
-  PROJETO: Core Icons Library
+  PROJETO: CoreIcons
   VERSÃO: 1.0.0
   LINHAGEM: SPARK
   ============================================================================
@@ -158,7 +158,7 @@
       typeof CoreIcons !== 'undefined'
         ? CoreIcons.urlFor(icon)
         : 'fotos/' +
-          icon.file.split('/').map(encodeURIComponent).join('/');
+        icon.file.split('/').map(encodeURIComponent).join('/');
 
     modalIconImg.src = localSrc;
     modalIconImg.alt = icon.name;
@@ -310,7 +310,7 @@
       typeof CoreIcons !== 'undefined'
         ? CoreIcons.urlFor(icon)
         : 'fotos/' +
-          icon.file.split('/').map(encodeURIComponent).join('/');
+        icon.file.split('/').map(encodeURIComponent).join('/');
     img.alt = icon.name;
     img.loading = 'lazy';
 
@@ -349,15 +349,15 @@
     var textToCopy = useHtml
       ? typeof CoreIcons !== 'undefined'
         ? CoreIcons.imgHtml(icon.slug, {
-            width: 48,
-            height: 48,
-            alt: icon.name,
-          })
+          width: 48,
+          height: 48,
+          alt: icon.name,
+        })
         : '<img src="fotos/' +
-          icon.file.split('/').map(encodeURIComponent).join('/') +
-          '" alt="' +
-          icon.name.replace(/"/g, '&quot;') +
-          '" width="48" height="48">'
+        icon.file.split('/').map(encodeURIComponent).join('/') +
+        '" alt="' +
+        icon.name.replace(/"/g, '&quot;') +
+        '" width="48" height="48">'
       : icon.name;
 
     if (navigator.clipboard && navigator.clipboard.writeText) {

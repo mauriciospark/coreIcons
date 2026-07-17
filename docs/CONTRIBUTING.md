@@ -1,6 +1,6 @@
-# Guia de Contribuição - Core Icons Library (Linhagem SPARK)
+# Guia de Contribuição - CoreIcons Library (Linhagem SPARK)
 
-Obrigado pelo interesse em contribuir com o Core Icons Library!
+Obrigado pelo interesse em contribuir com o CoreIcons Library!
 
 ## Índice
 
@@ -34,6 +34,22 @@ Obrigado pelo interesse em contribuir com o Core Icons Library!
 3. Explique por que seria útil
 
 ## Histórico de Mudanças
+
+### Versão 1.0.3 (2026-07-14)
+
+[Added]
+- Novos ícones de linguagens e ferramentas de desenvolvimento: Aegis, Aix, Alloy, Amiga, Android NDK, Android SDK, Ansible Tower, Antlr, Apex, Appium, Arc, Arduino IDE, Asciidoctor, Asm.js, Asp.net, Atlassian, Aurelia, Autodesk, Awk, Azul
+- Novos ícones de frameworks e build tools: Backbone.js, Bamboo, Basecamp, Bash, Behat, Bintray, Bitbucket Pipeline, Blazor, BluePrism, Blueprint, Bower, Broccoli, Brunch, Bucklescript, Buildbot, Bunny
+- Novos ícones de linguagens C/C++: C#, C++, Cabal, Caddy, Caffe, CakePHP, Calabash, Capacitor, Carbon, Carto, Cassandra, Celery, CentOS, Ceylon, Chakra, Chai, Chalk, Checkstyle, Chef, Chruby, Cilium, Cirrus, ClamAV, Clang, ClickHouse, Cljs, Clojure, ClojureScript, CloudFoundry, CloudStack, CMake, Coala, Cobol, Cocoapods, CoffeeScript, ColdFusion, CommonLisp, Composer, Conan, Concourse, Consul, Cordova, Couchbase, CouchDB, Coveralls, Cppcheck, Crystal, Ctags, Cucumber
+- Novos ícones de linguagens D/E/F: D3.js, Dapr, Darcula, Darwin, Dask, Datomic, Db2, DBeaver, Delphi, Denyhosts, Dependency-Check, DevOps, DigitalOcean, Direnv, Django, Dnsmasq, Docker, Doctrine, Dojo, Doxygen, Drush, Drupal, DVC, DynamoDB
+- Novos ícones de ferramentas E/F: Eclipse, Ecto, Ember.js, Emacs, Erlang, Esbuild, Etcd, EVM, Exim, Express, F#, Fabric, Falcon, Fantom, FastAPI, Fastlane, FaunaDB, Feathers, Fedora, FFmpeg, Figma, Firebase, Firebird, Flask, Flatpak, Flex, Flow, Flutter, Flux, Fossil, FreeBSD, FreeRTOS, FuseBox
+- Novos ícones de infraestrutura cloud e DevOps: Aiven, Akv2k8s, Altinity, Apache Airflow, Apache Druid, Apache Flink, Apache Kyuubi, Apache Pinot, Appsmith, Aquasec, Argo Workflows, Atlantis, Authelia, Axway
+- Novos ícones de DevOps: Backstage, Benthos, Bigpanda, Blumira, Buddy, Buildpacks, Calico, Canonical, Ceph, Checkmk, Chronograf, Cirrus CI, Cloudhealth, Cloudposse, CockroachDB, Confluent, Coralogix, Cortex, Crossplane, Dagger.io, Deepfence, Devtron, Digitalocean App Platform, Doks, Drone, Dynatrace, Elastic Cloud, Exoscale, Falco, Fargate, Fastly, Fluentd, Fly.io, Gitea, Gitlab CI, Glowroot
+- Total atualizado para 650+ ícones
+
+[Changed]
+- Atualização do README.md para refletir novo total de ícones (650+)
+- Atualização da versão para 1.0.3
 
 ### Versão 1.0.1 (2026-07-10)
 
@@ -291,7 +307,7 @@ Todos os arquivos devem incluir:
   ============================================================================
   PROPRIETÁRIO: Maurício Spark
   MARCA: Spark
-  PROJETO: Core Icons Library
+  PROJETO: CoreIcons Library
   VERSÃO: 1.0.0
   LINHAGEM: SPARK
   ============================================================================

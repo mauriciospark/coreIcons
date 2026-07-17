@@ -1,4 +1,4 @@
-# API Reference - Core Icons Library
+# API Reference - CoreIcons Library
 
 Documentação completa da API JavaScript CoreIcons.
 

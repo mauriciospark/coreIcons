@@ -1,4 +1,4 @@
-# Estrutura do Projeto - Core Icons Library
+# Estrutura do Projeto - CoreIcons Library
 
 Documentação técnica da arquitetura e organização do projeto.
 

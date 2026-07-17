@@ -2,7 +2,7 @@
   ============================================================================
   PROPRIETÁRIO: Maurício Spark
   MARCA: Spark
-  PROJETO: Core Icons Library
+  PROJETO: CoreIcons
   VERSÃO: 1.0.0
   LINHAGEM: SPARK
   ============================================================================

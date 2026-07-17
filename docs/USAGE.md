@@ -1,4 +1,4 @@
-# Guia de Uso - Core Icons Library
+# Guia de Uso - CoreIcons Library
 
 Como usar os ícones em diferentes cenários e plataformas.
 

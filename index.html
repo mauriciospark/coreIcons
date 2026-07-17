@@ -3,7 +3,7 @@
   ============================================================================
   PROPRIETÁRIO: Maurício Spark
   MARCA: Spark
-  PROJETO: Core Icons Library
+  PROJETO: CoreIcons
   VERSÃO: 1.0.0
   LINHAGEM: SPARK
   ============================================================================
@@ -13,43 +13,44 @@
 -->
 <!--
   ═══════════════════════════════════════════════════════════════════════════
-  Core Icons Library — catálogo público de ícones para stacks e ferramentas dev.
+  CoreIcons Library — catálogo público de ícones para stacks e ferramentas dev.
   Marca: logotipo oficial em favicon/coreicons.png (identidade visual neon / 3D).
   ═══════════════════════════════════════════════════════════════════════════
 -->
 <html lang="pt-BR">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Core Icons Library — biblioteca profissional de ícones para linguagens, frameworks e ferramentas de desenvolvimento. Pesquisa, pré-visualização 3D e URLs para uso em documentação e projetos.">
+  <meta name="description"
+    content="CoreIcons Library — biblioteca profissional de ícones para linguagens, frameworks e ferramentas de desenvolvimento. Pesquisa, pré-visualização 3D e URLs para uso em documentação e projetos.">
   <meta name="theme-color" content="#0a0f1a">
-  <meta name="application-name" content="Core Icons Library">
-  <title>Core Icons</title>
+  <meta name="application-name" content="CoreIcons Library">
+  <title>CoreIcons</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
   <link rel="icon" type="image/png" sizes="512x512" href="favicon/coreicons.png">
   <link rel="apple-touch-icon" href="favicon/coreicons.png">
   <link rel="shortcut icon" href="favicon.ico">
   <link rel="manifest" href="favicon/manifest.json">
 </head>
+
 <body>
   <header class="header">
     <div class="container header-inner">
       <div class="header-glow" aria-hidden="true"></div>
       <h1 class="brand-heading">
-        <img
-          class="brand-logo"
-          src="favicon/coreicons.png"
-          width="200"
-          height="80"
-          alt="Core Icons Library"
-          decoding="async"
-          fetchpriority="high">
+        <img class="brand-logo" src="favicon/coreicons.png" width="200" height="80" alt="CoreIcons Library"
+          decoding="async" fetchpriority="high">
       </h1>
-      <a href="https://github.com/mauriciospark/coreIcons" target="_blank" rel="noopener noreferrer" class="header-badge">
-        <img src="https://img.shields.io/github/stars/mauriciospark/coreIcons?style=social" alt="GitHub Stars" loading="lazy">
+      <a href="https://github.com/mauriciospark/coreIcons" target="_blank" rel="noopener noreferrer"
+        class="header-badge">
+        <img src="https://img.shields.io/github/stars/mauriciospark/coreIcons?style=social" alt="GitHub Stars"
+          loading="lazy">
       </a>
     </div>
   </header>
@@ -58,10 +59,11 @@
     <div class="search-section">
       <div class="search-box">
         <svg class="search-icon" width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true">
-          <path d="M9 17A8 8 0 1 0 9 1a8 8 0 0 0 0 16z" stroke="currentColor" stroke-width="2"/>
-          <path d="M19 19l-4.35-4.35" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+          <path d="M9 17A8 8 0 1 0 9 1a8 8 0 0 0 0 16z" stroke="currentColor" stroke-width="2" />
+          <path d="M19 19l-4.35-4.35" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
         </svg>
-        <input type="text" id="search-input" placeholder="Buscar ícones… (ex: react, docker, python)" autocomplete="off">
+        <input type="text" id="search-input" placeholder="Buscar ícones… (ex: react, docker, python)"
+          autocomplete="off">
         <kbd class="shortcut">Ctrl + K</kbd>
       </div>
     </div>
@@ -70,17 +72,17 @@
       <div class="view-toggle">
         <button type="button" id="grid-view" class="active" title="Visualização em grade">
           <svg width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true">
-            <rect x="1" y="1" width="6" height="6" rx="1" stroke="currentColor" stroke-width="2"/>
-            <rect x="11" y="1" width="6" height="6" rx="1" stroke="currentColor" stroke-width="2"/>
-            <rect x="1" y="11" width="6" height="6" rx="1" stroke="currentColor" stroke-width="2"/>
-            <rect x="11" y="11" width="6" height="6" rx="1" stroke="currentColor" stroke-width="2"/>
+            <rect x="1" y="1" width="6" height="6" rx="1" stroke="currentColor" stroke-width="2" />
+            <rect x="11" y="1" width="6" height="6" rx="1" stroke="currentColor" stroke-width="2" />
+            <rect x="1" y="11" width="6" height="6" rx="1" stroke="currentColor" stroke-width="2" />
+            <rect x="11" y="11" width="6" height="6" rx="1" stroke="currentColor" stroke-width="2" />
           </svg>
         </button>
         <button type="button" id="list-view" title="Visualização em lista">
           <svg width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true">
-            <rect x="1" y="2" width="16" height="3" rx="1" fill="currentColor"/>
-            <rect x="1" y="7" width="16" height="3" rx="1" fill="currentColor"/>
-            <rect x="1" y="12" width="16" height="3" rx="1" fill="currentColor"/>
+            <rect x="1" y="2" width="16" height="3" rx="1" fill="currentColor" />
+            <rect x="1" y="7" width="16" height="3" rx="1" fill="currentColor" />
+            <rect x="1" y="12" width="16" height="3" rx="1" fill="currentColor" />
           </svg>
         </button>
       </div>
@@ -91,9 +93,9 @@
 
     <div id="no-results" class="no-results hidden">
       <svg width="64" height="64" viewBox="0 0 64 64" fill="none" aria-hidden="true">
-        <circle cx="32" cy="32" r="28" stroke="#CBD5E1" stroke-width="2"/>
-        <path d="M22 22L42 42" stroke="#CBD5E1" stroke-width="2" stroke-linecap="round"/>
-        <path d="M42 22L22 42" stroke="#CBD5E1" stroke-width="2" stroke-linecap="round"/>
+        <circle cx="32" cy="32" r="28" stroke="#CBD5E1" stroke-width="2" />
+        <path d="M22 22L42 42" stroke="#CBD5E1" stroke-width="2" stroke-linecap="round" />
+        <path d="M42 22L22 42" stroke="#CBD5E1" stroke-width="2" stroke-linecap="round" />
       </svg>
       <p>Nenhum ícone encontrado para «<span id="search-term"></span>»</p>
     </div>
@@ -116,8 +118,10 @@
           <input id="modal-url" class="modal-input" type="text" readonly autocomplete="off" spellcheck="false">
           <button type="button" class="modal-copy-btn" id="modal-copy-url">
             <svg class="modal-copy-ico" width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-              <path d="M8 4v12a2 2 0 002 2h8a2 2 0 002-2V7.242a2 2 0 00-.602-1.43L16.083 2.57A2 2 0 0014.685 2H10a2 2 0 00-2 2z" stroke="currentColor" stroke-width="2"/>
-              <path d="M16 18v2a2 2 0 01-2 2H6a2 2 0 01-2-2V8a2 2 0 012-2h2" stroke="currentColor" stroke-width="2"/>
+              <path
+                d="M8 4v12a2 2 0 002 2h8a2 2 0 002-2V7.242a2 2 0 00-.602-1.43L16.083 2.57A2 2 0 0014.685 2H10a2 2 0 00-2 2z"
+                stroke="currentColor" stroke-width="2" />
+              <path d="M16 18v2a2 2 0 01-2 2H6a2 2 0 01-2-2V8a2 2 0 012-2h2" stroke="currentColor" stroke-width="2" />
             </svg>
             Copiar URL
           </button>
@@ -130,8 +134,10 @@
           <input id="modal-slug" class="modal-input" type="text" readonly autocomplete="off" spellcheck="false">
           <button type="button" class="modal-copy-btn" id="modal-copy-name">
             <svg class="modal-copy-ico" width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-              <path d="M8 4v12a2 2 0 002 2h8a2 2 0 002-2V7.242a2 2 0 00-.602-1.43L16.083 2.57A2 2 0 0014.685 2H10a2 2 0 00-2 2z" stroke="currentColor" stroke-width="2"/>
-              <path d="M16 18v2a2 2 0 01-2 2H6a2 2 0 01-2-2V8a2 2 0 012-2h2" stroke="currentColor" stroke-width="2"/>
+              <path
+                d="M8 4v12a2 2 0 002 2h8a2 2 0 002-2V7.242a2 2 0 00-.602-1.43L16.083 2.57A2 2 0 0014.685 2H10a2 2 0 00-2 2z"
+                stroke="currentColor" stroke-width="2" />
+              <path d="M16 18v2a2 2 0 01-2 2H6a2 2 0 01-2-2V8a2 2 0 012-2h2" stroke="currentColor" stroke-width="2" />
             </svg>
             Copiar Nome
           </button>
@@ -147,8 +153,10 @@
 
   <footer class="footer">
     <div class="container footer-inner">
-      <img class="footer-mark" src="favicon/coreicons.png" width="40" height="40" alt="" decoding="async" aria-hidden="true">
-      <p class="footer-copy"><strong>Core Icons Library</strong> · 2026 · ícones para stacks, CI/CD e documentação técnica</p>
+      <img class="footer-mark" src="favicon/coreicons.png" width="40" height="40" alt="" decoding="async"
+        aria-hidden="true">
+      <p class="footer-copy"><strong>CoreIcons Library</strong> · 2026 · ícones para stacks, CI/CD e documentação
+        técnica</p>
     </div>
   </footer>
 
@@ -157,4 +165,5 @@
   <script src="javascript/core-icons.js"></script>
   <script src="javascript/script.js"></script>
 </body>
+
 </html>

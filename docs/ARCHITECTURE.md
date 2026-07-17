@@ -1,10 +1,10 @@
-# Arquitetura Técnica — Core Icons Library (Linhagem SPARK)
+# Arquitetura Técnica — CoreIcons (Linhagem SPARK)
 
 ---
 
 ## Design Arquitetural
 
-O Core Icons Library adota uma arquitetura **Client-Side Static** com separação clara de responsabilidades. O projeto não possui backend, banco de dados ou dependências externas, operando inteiramente no navegador do usuário.
+O CoreIcons adota uma arquitetura **Client-Side Static** com separação clara de responsabilidades. O projeto não possui backend, banco de dados ou dependências externas, operando inteiramente no navegador do usuário.
 
 ### Padrão Arquitetural
 
@@ -154,7 +154,7 @@ HTML é injetado no DOM do projeto
 
 ### Zero Coleta de Dados
 
-O Core Icons Library **não coleta, armazena ou transmite** qualquer dado do usuário:
+O CoreIcons Library **não coleta, armazena ou transmite** qualquer dado do usuário:
 
 - **Sem cookies:** Nenhum cookie é definido
 - **Sem analytics:** Nenhuma ferramenta de rastreamento
@@ -187,10 +187,10 @@ coreIcons/
 ├── css/
 │   └── style.css           # Todos os estilos (669 linhas)
 ├── javascript/
-│   ├── data.js             # Lista de 400+ ícones
+│   ├── data.js             # Lista de 650+ ícones
 │   ├── core-icons.js       # API JavaScript (137 linhas)
 │   └── script.js           # Lógica da interface (main logic)
-├── fotos/                  # 400+ arquivos PNG
+├── fotos/                  # 650+ arquivos PNG
 ├── favicon/                # Favicons e manifest.json
 └── docs/                   # Documentação
     ├── ABOUT.md
@@ -264,6 +264,6 @@ coreIcons/
 
 ---
 
-**Core Icons Library** — Arquitetura técnica documentada
+**CoreIcons Library** — Arquitetura técnica documentada
 
-**Marca:** SPARK | **Linhagem:** SPARK | **Projeto:** Core Icons Library | **Versão:** 1.0.0
+**Marca:** SPARK | **Linhagem:** SPARK | **Projeto:** CoreIcons Library | **Versão:** 1.0.0

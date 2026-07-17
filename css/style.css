@@ -2,7 +2,7 @@
   ============================================================================
   PROPRIETÁRIO: Maurício Spark
   MARCA: Spark
-  PROJETO: Core Icons Library
+  PROJETO: CoreIcons
   VERSÃO: 1.0.0
   LINHAGEM: SPARK
   ============================================================================
@@ -77,11 +77,9 @@ body {
   position: absolute;
   inset: -40% -20% auto;
   height: 85%;
-  background: radial-gradient(
-    circle at 50% 0%,
-    rgba(34, 211, 238, 0.06) 0%,
-    transparent 55%
-  );
+  background: radial-gradient(circle at 50% 0%,
+      rgba(34, 211, 238, 0.06) 0%,
+      transparent 55%);
   pointer-events: none;
 }
 
@@ -98,8 +96,7 @@ body {
   max-height: clamp(56px, 12vw, 76px);
   object-fit: contain;
   vertical-align: middle;
-  filter: drop-shadow(0 6px 18px rgba(0, 0, 0, 0.35))
-    drop-shadow(0 0 28px rgba(34, 211, 238, 0.06));
+  filter: drop-shadow(0 6px 18px rgba(0, 0, 0, 0.35)) drop-shadow(0 0 28px rgba(34, 211, 238, 0.06));
 }
 
 .header-badge {
@@ -304,12 +301,10 @@ body {
 
 .icon-card-inner {
   position: relative;
-  background: linear-gradient(
-    145deg,
-    rgba(51, 65, 85, 0.95) 0%,
-    var(--bg-card) 45%,
-    #162032 100%
-  );
+  background: linear-gradient(145deg,
+      rgba(51, 65, 85, 0.95) 0%,
+      var(--bg-card) 45%,
+      #162032 100%);
   border: 1px solid var(--border);
   border-radius: var(--radius);
   padding: 20px;
@@ -328,13 +323,11 @@ body {
   position: absolute;
   inset: 0;
   border-radius: inherit;
-  background: linear-gradient(
-    125deg,
-    rgba(255, 255, 255, 0.14) 0%,
-    transparent 42%,
-    transparent 58%,
-    rgba(99, 102, 241, 0.08) 100%
-  );
+  background: linear-gradient(125deg,
+      rgba(255, 255, 255, 0.14) 0%,
+      transparent 42%,
+      transparent 58%,
+      rgba(99, 102, 241, 0.08) 100%);
   opacity: 0.65;
   pointer-events: none;
   mix-blend-mode: soft-light;
