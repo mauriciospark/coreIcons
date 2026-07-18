@@ -3,6 +3,8 @@
 Uma biblioteca profissional de ícones para linguagens, frameworks e ferramentas de desenvolvimento.
 
 ![CoreIcons](/favicon/coreicons.png)
+![CoreIcons](/favicon/)
+![CoreIcons](/favicon/)
 
 ## Sobre
 
