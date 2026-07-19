@@ -4,6 +4,21 @@ Todas as mudanças notáveis neste projeto serão documentadas neste arquivo.
 
 O formato é baseado em [Keep a Changelog](https://keepachangelog.com/pt-BR/1.0.0/).
 
+## [1.0.5] - 2026-07-19
+
+### Adicionado
+
+- **Botão de estrelas do GitHub** no header com contagem em tempo real
+- Design com ícone do GitHub e estrela dourada
+- Integração com API do GitHub para busca de estrelas
+- Click no botão abre o repositório no GitHub
+
+### Alterado
+
+- Atualização do README.md para documentar nova funcionalidade
+
+---
+
 ## [1.0.4] - 2026-07-17
 
 ### Adicionado

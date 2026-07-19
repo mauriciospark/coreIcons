@@ -68,6 +68,7 @@
     setupModalListeners();
     updateIconCount();
     renderIcons();
+    fetchGitHubStars();
   }
 
   function loadIcons() {
@@ -415,6 +416,30 @@
     } else {
       resultsCount.textContent = 'Total: ' + count + ' ícones';
     }
+  }
+
+  function fetchGitHubStars() {
+    var starsBtn = document.getElementById('github-stars-btn');
+    var starsCount = document.getElementById('github-stars-count');
+
+    if (!starsBtn || !starsCount) return;
+
+    fetch('https://api.github.com/repos/mauriciospark/coreIcons')
+      .then(function (response) {
+        if (!response.ok) throw new Error('Erro ao buscar estrelas');
+        return response.json();
+      })
+      .then(function (data) {
+        var stars = data.stargazers_count;
+        starsCount.textContent = stars + ' estrela' + (stars !== 1 ? 's' : '');
+      })
+      .catch(function (error) {
+        starsCount.textContent = '★ GitHub';
+      });
+
+    starsBtn.addEventListener('click', function () {
+      window.open('https://github.com/mauriciospark/coreIcons', '_blank');
+    });
   }
 
   if (document.readyState === 'loading') {
