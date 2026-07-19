@@ -119,6 +119,43 @@ body {
   max-width: 100%;
 }
 
+.header-stars {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 8px 14px;
+  font-size: 0.8125rem;
+  background: rgba(30, 41, 59, 0.8);
+  border: 1px solid rgba(51, 65, 85, 0.8);
+  backdrop-filter: blur(8px);
+}
+
+.header-stars:hover {
+  background: rgba(51, 65, 85, 0.9);
+  border-color: var(--primary);
+  transform: translateY(-50%) translateY(-2px);
+}
+
+.header-stars svg {
+  width: 14px;
+  height: 14px;
+}
+
+.header-stars .github-icon {
+  color: var(--text-muted);
+  transition: color 0.2s ease;
+}
+
+.header-stars .star-icon {
+  color: var(--accent-gold);
+  margin-left: 2px;
+}
+
+.header-stars:hover .github-icon {
+  color: var(--text);
+}
+
 .subtitle {
   font-size: clamp(0.9375rem, 2.5vw, 1.0625rem);
   font-weight: 500;
@@ -189,6 +226,47 @@ body {
   font-size: 0.75rem;
   color: var(--text-muted);
   border: 1px solid var(--border);
+}
+
+.github-stars-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 16px;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  color: var(--text);
+  font-size: 0.875rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  margin: 0 auto;
+}
+
+.github-stars-btn:hover {
+  background: var(--bg-hover);
+  border-color: var(--primary);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow);
+}
+
+.github-stars-btn:active {
+  transform: translateY(0);
+}
+
+.github-stars-btn svg {
+  color: var(--text-muted);
+  transition: color 0.2s ease;
+}
+
+.github-stars-btn:hover svg {
+  color: var(--accent-gold);
+}
+
+#github-stars-count {
+  font-weight: 600;
+  color: var(--text);
 }
 
 .toolbar {
