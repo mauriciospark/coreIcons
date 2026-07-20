@@ -4,6 +4,41 @@ Todas as mudanças notáveis neste projeto serão documentadas neste arquivo.
 
 O formato é baseado em [Keep a Changelog](https://keepachangelog.com/pt-BR/1.0.0/).
 
+## [1.0.6] - 2026-07-20
+
+### Adicionado
+
+- **Monitoramento e Observabilidade:**
+  - datadog
+  - newrelic
+  - signoz
+  - jaeger
+
+- **Design e Prototipação:**
+  - miro
+  - zeplin
+  - invision
+  - xd
+
+- **Gerenciadores de Pacotes / Linguagens Alternativas:**
+  - pnpm
+  - pub
+  - hex
+
+- **Total atualizado:** 665+ ícones
+
+### Removido
+
+- **Gerenciadores de Pacotes:**
+  - yarnpkg
+
+### Alterado
+
+- Atualização do README.md para refletir novo total de ícones (665+)
+- Atualização da versão para 1.0.6
+
+---
+
 ## [1.0.5] - 2026-07-19
 
 ### Adicionado

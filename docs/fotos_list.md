@@ -203,12 +203,12 @@ dask.png
 dalle.png
 dart.png
 dartgenerated.png
+datadog.png
 datomic.png
 database.png
 db2.png
 dbeaver.png
 debian.png
-deepseek.png
 deepfence.png
 delphi.png
 delphidevelopers.png
@@ -353,6 +353,7 @@ helm.png
 hono.png
 heroku.png
 hexadecimal.png
+hex.png
 horuseccli.png
 html.png
 html6.png
@@ -362,6 +363,7 @@ hyperv.png
 idris.png
 imba.png
 inteloneapi.png
+invision.png
 ionic.png
 ios.png
 istanbul.png
@@ -369,6 +371,7 @@ jarviewer.png
 jasper.png
 java.png
 javaclass.png
+jaeger.png
 javascript.png
 javascriptmap.png
 jenkins.png
@@ -427,6 +430,7 @@ midjourney.png
 milvus.png
 mirrorImageagency.jpg
 mistralai.png
+miro.png
 mlflow.png
 mocha.png
 modernizr.png
@@ -450,12 +454,12 @@ nestresolver.png
 nestservice.png
 netlify.png
 nextjs.png
+newrelic.png
 nginx.png
 ngrxactions.png
 ngrxeffects.png
 ngrxentity.png
 ngrxreducer.png
-ngrxmodifiers.png
 ngrxselectors.png
 ngrxstate.png
 nimlanguage.png
@@ -480,11 +484,13 @@ php.png
 pinecone.png
 pinot.png
 plawright.png
+pnpm.png
 podman.png
 popos.png
 postgresql.png
 prometheus.png
 proxmox.png
+pub.png
 python.png
 pythonmisc.png
 pytorch.png
@@ -549,6 +555,7 @@ shadcnui.png
 shader.png
 shaderlab.png
 silverstripe.png
+signoz.png
 siyuan.png
 sketch.png
 slackware.png
@@ -645,6 +652,7 @@ windsurf.png
 wolfram.png
 writercom.png
 xaml.png
+xd.png
 xampp.png
 yaml.png
 yang.png
@@ -652,5 +660,6 @@ yarn.png
 zed.png
 zig.png
 zod.png
+zeplin.png
 zorin.png
 zookeeper.png

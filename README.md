@@ -10,14 +10,14 @@ Uma biblioteca profissional de ícones para linguagens, frameworks e ferramentas
 
 **CoreIcons Library** é um catálogo público de ícones técnicos para stacks e ferramentas dev. Inclui recursos de pesquisa, pré-visualização 3D e URLs para uso em documentação e projetos.
 
-- **Versão:** 1.0.5
+- **Versão:** 1.0.6
 - **Proprietário:** Maurício Spark
 - **Marca:** Spark
 - **Linhagem:** SPARK
 
 ## Características
 
-- **654+ ícones** para linguagens, frameworks e ferramentas
+- **665+ ícones** para linguagens, frameworks e ferramentas
 - **Interface 3D** com efeitos de perspectiva e inclinação
 - **Pesquisa em tempo real** com filtros inteligentes
 - **Visualização em grade ou lista**
