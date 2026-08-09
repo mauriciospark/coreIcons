@@ -440,6 +440,7 @@ merlin.png
 meson.png
 meta-llama.png
 metallama.png
+microsoft.png
 midjourney.png
 milvus.png
 mirrorImageagency.jpg
