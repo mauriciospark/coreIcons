@@ -484,6 +484,7 @@ nodejs.png
 nodejssnippets.png
 nodemon.png
 notionai.png
+npm.png
 nvidiacuda.png
 nuxt.png
 nutanix.png
