@@ -593,6 +593,7 @@ steadybit.png
 stencil.png
 stitches.png
 storybook.png
+streamlit.png
 stryker.png
 stylus.png
 sublimetext.png
