@@ -594,7 +594,6 @@ stencil.png
 stitches.png
 streamlit.png
 storybook.png
-streamlit.png
 stryker.png
 stylus.png
 sublimetext.png
