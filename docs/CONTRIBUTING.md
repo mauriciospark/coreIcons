@@ -308,7 +308,7 @@ Todos os arquivos devem incluir:
   PROPRIETÁRIO: Maurício Spark
   MARCA: Spark
   PROJETO: CoreIcons Library
-  VERSÃO: 1.0.0
+  VERSÃO: 1.0.7
   LINHAGEM: SPARK
   ============================================================================
   COPYRIGHT: © 2026 / Maurício Spark.

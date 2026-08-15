@@ -4,6 +4,42 @@ Todas as mudanças notáveis neste projeto serão documentadas neste arquivo.
 
 O formato é baseado em [Keep a Changelog](https://keepachangelog.com/pt-BR/1.0.0/).
 
+## [1.0.7] - 2026-08-15
+
+### Adicionado
+
+- **Banco de Dados:**
+  - sqlite
+
+- **Framework Web (Python):**
+  - djangorest
+
+- **Servidor Web:**
+  - gunicorn
+
+- **Infraestrutura:**
+  - vps
+
+- **Web Scraping e Automação:**
+  - beautifulsoup
+  - selenium
+  - scrapy
+  - requests
+
+- **Pagamentos (Irã):**
+  - zarinpal
+  - idpay
+  - balewallet
+
+- **Total atualizado:** 676+ ícones
+
+### Alterado
+
+- Atualização do README.md para refletir novo total de ícones (676+)
+- Atualização da versão para 1.0.7
+
+---
+
 ## [1.0.6] - 2026-07-20
 
 ### Adicionado

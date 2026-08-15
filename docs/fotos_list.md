@@ -72,7 +72,9 @@ ballerina.png
 bamboo.png
 basecamp.png
 backstage.png
+balewallet.png
 bash.png
+beautifulsoup.png
 behat.png
 bintray.png
 bazel.png
@@ -184,6 +186,8 @@ crystal.png
 crossplane.png
 csharp.png
 ctags.png
+sqlite.png
+ssh.png
 css.png
 cssmap.png
 couchbase.png
@@ -228,6 +232,7 @@ disco.png
 doks.png
 doapp.png
 django.png
+djangorest.png
 docker.png
 doctrine.png
 document.png
@@ -331,6 +336,7 @@ gogopher.png
 gomod.png
 gradle.png
 grafana.png
+gunicorn.png
 grain.png
 graphcool.png
 graphql.png
@@ -360,6 +366,7 @@ html6.png
 huggingface.png
 husky.png
 hyperv.png
+idpay.png
 idris.png
 imba.png
 inteloneapi.png
@@ -426,6 +433,7 @@ merlin.png
 meson.png
 meta-llama.png
 metallama.png
+microsoft.png
 midjourney.png
 milvus.png
 mirrorImageagency.jpg
@@ -469,6 +477,7 @@ nodejs.png
 nodejssnippets.png
 nodemon.png
 notionai.png
+npm.png
 nvidiacuda.png
 nuxt.png
 nutanix.png
@@ -545,10 +554,12 @@ sbt.png
 scala.png
 scheme.png
 scikitlearn.png
+scrapy.png
 scylladb.png
 search.png
 semanticrelease.png
 sentry.png
+selenium.png
 sequelize.png
 serverless.png
 shadcnui.png
@@ -576,6 +587,7 @@ stablediffusion.png
 steadybit.png
 stencil.png
 stitches.png
+streamlit.png
 storybook.png
 stryker.png
 stylus.png
@@ -622,6 +634,7 @@ uml.png
 vagrant.png
 vala.png
 velocidade.png
+vps.png
 vercel.png
 verdaccio.png
 verilog.png
@@ -660,6 +673,7 @@ yarn.png
 zed.png
 zig.png
 zod.png
+zarinpal.png
 zeplin.png
 zorin.png
 zookeeper.png

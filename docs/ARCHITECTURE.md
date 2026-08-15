@@ -187,10 +187,10 @@ coreIcons/
 ├── css/
 │   └── style.css           # Todos os estilos (669 linhas)
 ├── javascript/
-│   ├── data.js             # Lista de 650+ ícones
+│   ├── data.js             # Lista de 676+ ícones
 │   ├── core-icons.js       # API JavaScript (137 linhas)
 │   └── script.js           # Lógica da interface (main logic)
-├── fotos/                  # 650+ arquivos PNG
+├── fotos/                  # 676+ arquivos PNG
 ├── favicon/                # Favicons e manifest.json
 └── docs/                   # Documentação
     ├── ABOUT.md
@@ -266,4 +266,4 @@ coreIcons/
 
 **CoreIcons Library** — Arquitetura técnica documentada
 
-**Marca:** SPARK | **Linhagem:** SPARK | **Projeto:** CoreIcons Library | **Versão:** 1.0.0
+**Marca:** SPARK | **Linhagem:** SPARK | **Projeto:** CoreIcons Library | **Versão:** 1.0.7
