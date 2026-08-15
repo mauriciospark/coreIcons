@@ -260,7 +260,7 @@ public_html/
 ├── fotos/
 │   ├── react.png
 │   ├── angular.png
-│   └── ... (370+ ícones)
+│   └── ... (676+ ícones)
 └── favicon/
     └── coreIcons.png
 ```

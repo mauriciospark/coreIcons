@@ -86,7 +86,9 @@ ballerina.png
 bamboo.png
 basecamp.png
 backstage.png
+ballet.png
 bash.png
+beautifulsoup.png
 behat.png
 bintray.png
 bazel.png
@@ -242,6 +244,7 @@ disco.png
 doks.png
 doapp.png
 django.png
+djangorest.png
 docker.png
 doctrine.png
 document.png
@@ -345,6 +348,7 @@ gogopher.png
 gomod.png
 gradle.png
 grafana.png
+gunicorn.png
 grain.png
 graphcool.png
 graphql.png
@@ -374,6 +378,7 @@ html6.png
 huggingface.png
 husky.png
 hyperv.png
+idpay.png
 idris.png
 imba.png
 inteloneapi.png
@@ -518,6 +523,7 @@ qwik.png
 r.png
 rabbit.png
 racket.png
+requests.png
 radix.png
 radixui.png
 rails.png
@@ -561,10 +567,12 @@ sbt.png
 scala.png
 scheme.png
 scikitlearn.png
+scrapy.png
 scylladb.png
 search.png
 semanticrelease.png
 sentry.png
+selenium.png
 sequelize.png
 serverless.png
 shadcnui.png
@@ -588,6 +596,7 @@ solidjs.png
 sora.png
 spark.png
 spring.png
+sqlite.png
 stablediffusion.png
 steadybit.png
 stencil.png
@@ -639,6 +648,7 @@ uml.png
 vagrant.png
 vala.png
 velocidade.png
+vps.png
 vercel.png
 verdaccio.png
 verilog.png
@@ -677,6 +687,7 @@ yarn.png
 zed.png
 zig.png
 zod.png
+zarinpal.png
 zeplin.png
 zorin.png
 zookeeper.png`.trim().split(/\r?\n/).filter(function (f) { return f.length > 0; });

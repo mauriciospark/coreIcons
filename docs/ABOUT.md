@@ -94,4 +94,4 @@ O sistema gera valor ao economizar tempo na busca por recursos visuais, garantir
 
 **CoreIcons Library** — Ícones para stacks, CI/CD e documentação técnica
 
-**Marca:** SPARK | **Linhagem:** SPARK | **Projeto:** CoreIcons Library | **Versão:** 1.0.0
+**Marca:** SPARK | **Linhagem:** SPARK | **Projeto:** CoreIcons Library | **Versão:** 1.0.7

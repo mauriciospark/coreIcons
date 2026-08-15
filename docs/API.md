@@ -44,7 +44,7 @@ const path = CoreIcons.getBasePath();
 Retorna a versão da API.
 
 ```javascript
-console.log(CoreIcons.version); // '1.0.0'
+console.log(CoreIcons.version); // '1.0.7'
 ```
 
 ---
