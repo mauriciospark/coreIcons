@@ -688,6 +688,7 @@ windows.png
 windowsserver.png
 windsurf.png
 wolfram.png
+wolframlanguage.png
 writercom.png
 xaml.png
 xd.png
