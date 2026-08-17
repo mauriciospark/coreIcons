@@ -67,6 +67,7 @@ audio.png
 aurelia.png
 atlassian.png
 atlantis.png
+atlassiansourcetree.png
 autodesk.png
 authors.png
 autohotkey.png
@@ -86,7 +87,6 @@ ballerina.png
 bamboo.png
 basecamp.png
 backstage.png
-ballet.png
 bash.png
 beautifulsoup.png
 behat.png
@@ -200,6 +200,7 @@ crystal.png
 crossplane.png
 csharp.png
 ctags.png
+sqlite.png
 css.png
 cssmap.png
 couchbase.png
@@ -332,10 +333,14 @@ gemfile.png
 gemini.png
 gentoo.png
 ghost.png
+githubcli.png
 ghostty.png
+forgejo.png
 gitea.png
 git.png
 github.png
+githubactions.png
+githubdesktop.png
 gitlabci.png
 gitlab.png
 glowroot.png
@@ -348,6 +353,8 @@ gogopher.png
 gomod.png
 gradle.png
 grafana.png
+gitkraken.png
+gogs.png
 gunicorn.png
 grain.png
 graphcool.png
@@ -382,6 +389,7 @@ idpay.png
 idris.png
 imba.png
 inteloneapi.png
+intellij.png
 invision.png
 ionic.png
 ios.png
@@ -447,10 +455,10 @@ meta-llama.png
 metallama.png
 microsoft.png
 midjourney.png
+miro.png
 milvus.png
 mirrorImageagency.jpg
 mistralai.png
-miro.png
 mlflow.png
 mocha.png
 modernizr.png
@@ -514,6 +522,7 @@ proxmox.png
 pub.png
 python.png
 pythonmisc.png
+pycharm.png
 pytorch.png
 qdrant.png
 qsharp.png
@@ -583,6 +592,7 @@ signoz.png
 siyuan.png
 sketch.png
 slackware.png
+sourcetree.png
 slim.png
 slug.png
 smarty.png
@@ -654,6 +664,7 @@ verdaccio.png
 verilog.png
 vertex.png
 vim.png
+visualstudio.png
 visualstudiocode.png
 vite.png
 vlang.png

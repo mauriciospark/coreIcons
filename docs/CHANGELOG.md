@@ -4,6 +4,36 @@ Todas as mudanças notáveis neste projeto serão documentadas neste arquivo.
 
 O formato é baseado em [Keep a Changelog](https://keepachangelog.com/pt-BR/1.0.0/).
 
+## [1.0.8] - 2026-08-17
+
+### Adicionado
+
+- **IDEs e Editores de Código:**
+  - pycharm
+  - visualstudio
+  - intellij
+
+- **Ferramentas Git e Versionamento:**
+  - githubcli (GitHub CLI)
+  - atlassiansourcetree
+
+### Removido
+
+- **Pagamentos:**
+  - balewallet
+
+- **IDEs:**
+  - idea
+
+- **Total atualizado:** 689+ ícones
+
+### Alterado
+
+- Atualização do README.md para refletir novo total de ícones (689+)
+- Atualização da versão para 1.0.8
+
+---
+
 ## [1.0.7] - 2026-08-15
 
 ### Adicionado
