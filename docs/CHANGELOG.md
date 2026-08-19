@@ -4,6 +4,62 @@ Todas as mudanças notáveis neste projeto serão documentadas neste arquivo.
 
 O formato é baseado em [Keep a Changelog](https://keepachangelog.com/pt-BR/1.0.0/).
 
+## [1.0.9] - 2026-08-19
+
+### Adicionado
+
+- **Linguagens de Programação:**
+  - abap, ada, agda, apl, assembly, assemblyscript, asmjs, autohotkey, autoit, axum, h++, hack, idris, imba, qsharp, waforth
+
+- **Frameworks e Bibliotecas:**
+  - adonisjs, alpinejs, angularcomponent, angulardirective, angularguard, angularpipe, angularresolver, angularservice, codeigniter, djangorestframework, dropwizard, emotion, fastify, flowbite, framermotion, foundationdb, glimmer, groqcloud, hashicorpvault
+
+- **Cloud e Infraestrutura:**
+  - akv2k8s, alloy, altinity, amdrocm, argocd, argoworkflows, awsbedrock, azureaks, azureappservice, azureaifoundry, azurefunctions, azurekeyvault, azureopenai, azurestorage, buildah, cloudflareworkers, cloudrun, cloudsql, confluentcloud, containerd, crossplaneio, datastore, digitaloceandroplets, digitaloceanappplatform, dockercompose, dockerdesktop, dockerhub, dotnet, dynamodbstreams, earthly, ec2, eventbridge, faiss, fiber, firebird, flask, flink, foundationdb, githubcodespaces, githubcopilot, githubgist, githubissues, githubmodels, githubpages, gitextensions, gitlabpages, gitlabrunner, gitflow, gitkrakencli, gitlens, grafanaalloy, grafanak6, grafanaloki, grafanapromtail, grafanatempo
+
+- **Banco de Dados:**
+  - cockroach, databricks, dgraph, elasticsearch
+
+- **Ferramentas de Desenvolvimento:**
+  - astyle, crane, cssmodules, eclipseide, gitflow, gitkrakencli, gitlens, glimmer
+
+- **DevOps e CI/CD:**
+  - airbyte, ansibletower, apachevelocity, apiblueprint, antlr, appium, appsmith, argocd, argoworkflows, authelia, buildah, cloudflareworkers, cloudrun, cloudsql, confluentcloud, containerd, crossplaneio, crane, databricks, datastore, digitaloceandroplets, digitaloceanappplatform, dockercompose, dockerdesktop, dockerhub, dotnet, dropwizard, dynamodbstreams, earthly, ec2, eventbridge, fastify, faiss, gitflow, gitkrakencli, gitlens, grafanaalloy, grafanak6, grafanaloki, grafanapromtail, grafanatempo
+
+- **Sistemas Operacionais:**
+  - almalinux
+
+- **Design e Prototipação:**
+  - architecture, autodesk, authors
+
+- **Outros:**
+  - audio, gemma
+
+### Removido
+
+- **Ícones removidos por duplicidade/nomeação:**
+  - argocdimageupdater
+  - astrobuild
+  - bitbucketpipelines
+  - bootstrapicons
+  - claudeai
+  - crossplaneio
+  - digitaloceanappplatform
+  - djangorestframework
+  - eclipseide
+  - geminiai
+  - hacklang
+
+- **Total atualizado:** 757 ícones
+
+### Alterado
+
+- Atualização do README.md para refletir novo total de ícones (757)
+- Atualização da versão para 1.0.9
+- Regeneração completa do fotos_list.md
+
+---
+
 ## [1.0.8] - 2026-08-17
 
 ### Adicionado
