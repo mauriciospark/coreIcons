@@ -367,6 +367,7 @@ flyio.png
 font.png
 forth.png
 fortran.png
+forgejo.png
 foundation.png
 foundationdb.png
 foxpro.png
@@ -386,7 +387,6 @@ gentoo.png
 ghost.png
 githubcli.png
 ghostty.png
-forgejo.png
 gitea.png
 git.png
 gitextensions.png
