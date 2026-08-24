@@ -16,45 +16,47 @@ Documentação técnica da arquitetura e organização do projeto.
 ```
 coreIcons/
 ├── index.html              # Entry point, estrutura da página
-├── style.css               # Estilos globais, animações, tema
-├── script.js               # Controlador da UI, eventos
-├── data.js                 # Fonte de dados dos ícones
-├── core-icons.js           # API JavaScript pública
+├── css/                    # Estilos globais, animações, tema
+│   └── style.css
+├── javascript/             # Scripts da aplicação
+│   ├── data.js             # Fonte de dados dos ícones
+│   ├── core-icons.js       # API JavaScript pública
+│   └── script.js           # Controlador da UI, eventos
 ├── docs/                   # Documentação
-├── fotos/                  # Assets de ícones (676+ PNGs)
+├── fotos/                  # Assets de ícones (1002+ PNGs)
 ├── favicon/                # Favicons e manifest PWA
-├── css/                    # Estilos adicionais (vazio)
-├── javascript/             # Scripts adicionais (vazio)
+├── LICENSE                 # Licença
 └── SPARK_TECH.txt          # Arte ASCII da marca
 ```
 
 ## Fluxo de Dados
 
 ```
-┌─────────────┐     ┌─────────────┐     ┌─────────────┐
-│   data.js   │────▶│core-icons.js│────▶│  script.js  │
-│  (source)   │     │    (API)    │     │   (UI/UX)   │
-└─────────────┘     └─────────────┘     └──────┬──────┘
-                                                │
-                     ┌──────────────────────────┘
-                     ▼
-              ┌─────────────┐
-              │ index.html  │
-              │   (DOM)     │
-              └─────────────┘
+┌──────────────────┐     ┌──────────────────┐     ┌──────────────────┐
+│ javascript/data │────▶│javascript/core-  │────▶│javascript/script │
+│      .js         │     │    icons.js      │     │      .js         │
+│    (source)      │     │     (API)        │     │     (UI/UX)       │
+└──────────────────┘     └──────────────────┘     └──────────┬───────┘
+                                                              │
+                                          ┌───────────────────┘
+                                          ▼
+                                   ┌─────────────┐
+                                   │ index.html  │
+                                   │   (DOM)     │
+                                   └─────────────┘
 ```
 
-### 1. data.js
+### 1. javascript/data.js
 - **Propósito:** Fonte única de verdade para dados dos ícones
 - **Formato:** String multiline com nomes de arquivos
 - **Saída:** Array `coreIconsData` com objetos `{name, file}`
 
-### 2. core-icons.js
+### 2. javascript/core-icons.js
 - **Propósito:** API JavaScript para acesso programático
 - **Dependências:** `data.js` (opcional)
 - **Saída:** Objeto global `CoreIcons` com métodos utilitários
 
-### 3. script.js
+### 3. javascript/script.js
 - **Propósito:** Controlador da interface do usuário
 - **Dependências:** `core-icons.js` ou `data.js`
 - **Funções:**
@@ -95,7 +97,7 @@ coreIcons/
 | `toast` | Notificações temporárias |
 | `icon-modal` | Modal com detalhes do ícone |
 
-### CSS (style.css)
+### CSS (css/style.css)
 
 #### Sistema de Design
 
@@ -129,7 +131,7 @@ coreIcons/
 | `.modal` | Overlay de detalhes |
 | `.toast` | Notificação flutuante |
 
-### JavaScript (script.js)
+### JavaScript (javascript/script.js)
 
 #### Módulos Funcionais
 
@@ -271,11 +273,10 @@ Eventos são registrados diretamente em elementos específicos devido à naturez
 
 ### Métricas de Referência
 
-- **Tamanho de data.js:** ~5KB
-- **Tamanho de core-icons.js:** ~4KB
-- **Tamanho de script.js:** ~13KB
-- **Total JS:** ~22KB (minified: ~8KB)
-- **Total CSS:** ~13KB (minified: ~4KB)
+- **Total de ícones:** 1002 arquivos PNG
+- **Ícones indexados:** 989 entradas em data.js
+- **Total de arquivos fotos/:** 1005 itens (incluindo .gitkeep)
+- **Estrutura otimizada:** Organização em subdiretórios (css/, javascript/)
 
 ### Boas Práticas
 

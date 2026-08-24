@@ -132,8 +132,8 @@ https://mauriciospark.github.io/coreIcons
 <!DOCTYPE html>
 <html>
 <head>
-  <script src="https://mauriciospark.github.io/coreIcons/data.js"></script>
-  <script src="https://mauriciospark.github.io/coreIcons/core-icons.js"></script>
+  <script src="https://mauriciospark.github.io/coreIcons/javascript/data.js"></script>
+  <script src="https://mauriciospark.github.io/coreIcons/javascript/core-icons.js"></script>
 </head>
 <body>
   <div id="app"></div>
@@ -253,14 +253,16 @@ window.CORE_ICONS_PUBLIC_BASE = 'https://seu-dominio.com/coreIcons';
 ```
 public_html/
 ├── index.html
-├── style.css
-├── script.js
-├── data.js
-├── core-icons.js
+├── css/
+│   └── style.css
+├── javascript/
+│   ├── data.js
+│   ├── core-icons.js
+│   └── script.js
 ├── fotos/
 │   ├── react.png
 │   ├── angular.png
-│   └── ... (676+ ícones)
+│   └── ... (1002+ ícones)
 └── favicon/
     └── coreIcons.png
 ```
@@ -284,8 +286,8 @@ function TechIcon({ slug, size = 32 }) {
       });
     };
     
-    loadScript('https://mauriciospark.github.io/coreIcons/data.js')
-      .then(() => loadScript('https://mauriciospark.github.io/coreIcons/core-icons.js'));
+    loadScript('https://mauriciospark.github.io/coreIcons/javascript/data.js')
+      .then(() => loadScript('https://mauriciospark.github.io/coreIcons/javascript/core-icons.js'));
   }, []);
   
   const getIconHtml = () => {
@@ -328,8 +330,8 @@ onMounted(async () => {
 });
 
 async function loadCoreIcons() {
-  await loadScript('https://mauriciospark.github.io/coreIcons/data.js');
-  await loadScript('https://mauriciospark.github.io/coreIcons/core-icons.js');
+  await loadScript('https://mauriciospark.github.io/coreIcons/javascript/data.js');
+  await loadScript('https://mauriciospark.github.io/coreIcons/javascript/core-icons.js');
 }
 
 function loadScript(src) {
@@ -353,8 +355,8 @@ export default function Page() {
   return (
     <>
       <Head>
-        <script src="https://mauriciospark.github.io/coreIcons/data.js" async />
-        <script src="https://mauriciospark.github.io/coreIcons/core-icons.js" async />
+        <script src="https://mauriciospark.github.io/coreIcons/javascript/data.js" async />
+        <script src="https://mauriciospark.github.io/coreIcons/javascript/core-icons.js" async />
       </Head>
       <div id="icons-container" />
     </>

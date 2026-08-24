@@ -2,22 +2,26 @@
 
 Uma biblioteca profissional de ícones para linguagens, frameworks e ferramentas de desenvolvimento.
 
-![CoreIcons](/favicon/coreicons.png)
-![CoreIcons](/favicon/187.png)
-![CoreIcons](/favicon/186.png)
+![CoreIcons](favicon/coreicons.png)
+![CoreIcons](favicon/187.png)
+![CoreIcons](favicon/186.png)
 
 ## Sobre
 
 **CoreIcons Library** é um catálogo público de ícones técnicos para stacks e ferramentas dev. Inclui recursos de pesquisa, pré-visualização 3D e URLs para uso em documentação e projetos.
 
-- **Versão:** 1.0.9
+- **Versão:** 1.1.0
 - **Proprietário:** Maurício Spark
 - **Marca:** Spark
 - **Linhagem:** SPARK
 
 ## Características
 
+<<<<<<< HEAD
 - **758 ícones** para linguagens, frameworks e ferramentas
+=======
+- **990 ícones** para linguagens, frameworks e ferramentas
+>>>>>>> fb25ae3 (Atualiza os ícones do projeto (fecha #29))
 - **Interface 3D** com efeitos de perspectiva e inclinação
 - **Pesquisa em tempo real** com filtros inteligentes
 - **Visualização em grade ou lista**
@@ -31,14 +35,16 @@ Uma biblioteca profissional de ícones para linguagens, frameworks e ferramentas
 ```
 coreIcons/
 ├── index.html          # Página principal
-├── style.css           # Estilos e animações 3D
-├── script.js           # Lógica da interface
-├── data.js             # Dados dos ícones
-├── core-icons.js       # API JavaScript
+├── css/                # Estilos e animações 3D
+│   └── style.css
+├── javascript/         # Scripts da aplicação
+│   ├── data.js         # Dados dos ícones
+│   ├── core-icons.js   # API JavaScript
+│   └── script.js       # Lógica da interface
 ├── docs/               # Documentação
-├── fotos/              # Arquivos de ícones PNG
+├── fotos/              # Arquivos de ícones PNG (1002+ ícones)
 ├── favicon/            # Favicons e manifest
-└── css/                # Estilos adicionais
+└── LICENSE             # Licença
 ```
 
 ## Documentação
@@ -53,13 +59,13 @@ coreIcons/
 
 ### Catálogo Online
 
-Acesse o catálogo em: `https://mauriciospark.github.io/coreicons`
+Acesse o catálogo em: `https://mauriciospark.github.io/coreIcons`
 
 ### API JavaScript
 
 ```html
-<script src="data.js"></script>
-<script src="core-icons.js"></script>
+<script src="javascript/data.js"></script>
+<script src="javascript/core-icons.js"></script>
 <script>
   // Buscar todos os ícones
   const icons = CoreIcons.getAll();

@@ -41,7 +41,6 @@
   const searchTerm = document.getElementById('search-term');
   const toast = document.getElementById('toast');
   const gridViewBtn = document.getElementById('grid-view');
-  const listViewBtn = document.getElementById('list-view');
 
   const iconModal = document.getElementById('icon-modal');
   const modalBackdrop = iconModal && iconModal.querySelector('[data-close-modal]');
@@ -55,7 +54,6 @@
   const modalCopyNameBtn = document.getElementById('modal-copy-name');
 
   let icons = [];
-  let currentView = 'grid';
   let searchQuery = '';
 
   const reduceMotion =
@@ -66,6 +64,7 @@
     loadIcons();
     setupEventListeners();
     setupModalListeners();
+    setupScrollPersistence();
     updateIconCount();
     renderIcons();
     fetchGitHubStars();
@@ -99,6 +98,32 @@
       .join(' ');
   }
 
+  function setupScrollPersistence() {
+    var mainContent = document.querySelector('.main-content');
+    if (!mainContent) return;
+
+    var SCROLL_KEY = 'coreicons_scroll_position';
+
+    // Restore scroll position on load
+    var savedScroll = localStorage.getItem(SCROLL_KEY);
+    if (savedScroll) {
+      var scrollPosition = parseInt(savedScroll, 10);
+      if (!isNaN(scrollPosition)) {
+        // Use setTimeout to ensure the content is rendered first
+        setTimeout(function () {
+          mainContent.scrollTop = scrollPosition;
+        }, 100);
+      }
+    }
+
+    // Save scroll position on scroll (debounced)
+    var saveScroll = debounce(function () {
+      localStorage.setItem(SCROLL_KEY, mainContent.scrollTop);
+    }, 300);
+
+    mainContent.addEventListener('scroll', saveScroll);
+  }
+
   function setupEventListeners() {
     searchInput.addEventListener('input', debounce(handleSearch, 200));
 
@@ -107,13 +132,6 @@
         e.preventDefault();
         searchInput.focus();
       }
-    });
-
-    gridViewBtn.addEventListener('click', function () {
-      setView('grid');
-    });
-    listViewBtn.addEventListener('click', function () {
-      setView('list');
     });
   }
 
@@ -132,14 +150,25 @@
     if (modalCloseBtn) {
       modalCloseBtn.addEventListener('click', closeModal);
     }
-    if (modalCopyUrlBtn && modalUrlInput) {
-      modalCopyUrlBtn.addEventListener('click', function () {
-        copyText(modalUrlInput.value, 'URL copiada');
+
+    // Re-select elements to ensure they exist
+    var copyUrlBtn = document.getElementById('modal-copy-url');
+    var copyNameBtn = document.getElementById('modal-copy-name');
+
+    if (copyUrlBtn) {
+      copyUrlBtn.addEventListener('click', function () {
+        var urlInput = document.getElementById('modal-url');
+        if (urlInput) {
+          copyModalText(urlInput.value, 'URL copiada');
+        }
       });
     }
-    if (modalCopyNameBtn && modalSlugInput) {
-      modalCopyNameBtn.addEventListener('click', function () {
-        copyText(modalSlugInput.value, 'Nome copiado');
+    if (copyNameBtn) {
+      copyNameBtn.addEventListener('click', function () {
+        var slugInput = document.getElementById('modal-slug');
+        if (slugInput) {
+          copyModalText(slugInput.value, 'Nome copiado');
+        }
       });
     }
 
@@ -168,8 +197,7 @@
     var url = publicImageUrl(icon);
     modalUrlInput.value = url;
 
-    var slug = icon.slug || '';
-    modalSlugInput.value = slug;
+    modalSlugInput.value = icon.name || icon.file || '';
 
     if (modalHintSample) {
       modalHintSample.textContent =
@@ -183,22 +211,22 @@
     modalUrlInput.select();
   }
 
-  function copyText(text, toastMsg) {
+  function copyModalText(text, toastMsg) {
     if (navigator.clipboard && navigator.clipboard.writeText) {
       navigator.clipboard.writeText(text).then(
         function () {
           showToast(toastMsg);
         },
         function () {
-          fallbackCopyRaw(text, toastMsg);
+          fallbackCopy(text, toastMsg);
         }
       );
     } else {
-      fallbackCopyRaw(text, toastMsg);
+      fallbackCopy(text, toastMsg);
     }
   }
 
-  function fallbackCopyRaw(text, toastMsg) {
+  function fallbackCopy(text, toastMsg) {
     var textArea = document.createElement('textarea');
     textArea.value = text;
     document.body.appendChild(textArea);
@@ -228,13 +256,6 @@
   function handleSearch(e) {
     searchQuery = e.target.value.toLowerCase().trim();
     renderIcons();
-  }
-
-  function setView(view) {
-    currentView = view;
-    gridViewBtn.classList.toggle('active', view === 'grid');
-    listViewBtn.classList.toggle('active', view === 'list');
-    iconsGrid.classList.toggle('list-view', view === 'list');
   }
 
   function getFilteredIcons() {
@@ -273,10 +294,6 @@
     var maxTilt = 14;
 
     function onMove(e) {
-      if (iconsGrid.classList.contains('list-view')) {
-        inner.style.transform = '';
-        return;
-      }
       var r = card.getBoundingClientRect();
       var px = (e.clientX - r.left) / r.width - 0.5;
       var py = (e.clientY - r.top) / r.height - 0.5;
@@ -371,26 +388,26 @@
           );
         },
         function () {
-          fallbackCopy(textToCopy, useHtml);
+          fallbackCopy(textToCopy, useHtml
+            ? 'HTML copiado para a área de transferência'
+            : 'Copiado: ' + textToCopy);
         }
       );
     } else {
-      fallbackCopy(textToCopy, useHtml);
+      fallbackCopy(textToCopy, useHtml
+        ? 'HTML copiado para a área de transferência'
+        : 'Copiado: ' + textToCopy);
     }
   }
 
-  function fallbackCopy(textToCopy, useHtml) {
+  function fallbackCopy(text, toastMsg) {
     var textArea = document.createElement('textarea');
-    textArea.value = textToCopy;
+    textArea.value = text;
     document.body.appendChild(textArea);
     textArea.select();
     try {
       document.execCommand('copy');
-      showToast(
-        useHtml
-          ? 'HTML copiado para a área de transferência'
-          : 'Copiado: ' + textToCopy
-      );
+      showToast(toastMsg);
     } catch (err) {
       showToast('Não foi possível copiar');
     }
