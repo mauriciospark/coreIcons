@@ -4,16 +4,18 @@ Todas as mudanças notáveis neste projeto serão documentadas neste arquivo.
 
 O formato é baseado em [Keep a Changelog](https://keepachangelog.com/pt-BR/1.0.0/).
 
-## [1.1.0] - 2026-08-24
+## [1.1.0] - 2026-08-25
 
 ### Alterado
 
-- Atualização de contagem de ícones: Corrigido de 757 para 990 ícones no README.md
+- Resolução de conflito git: Removido conflito de merge no README.md
+- Atualização de contagem de ícones: Corrigido para 1034 ícones no README.md (contagem real em data.js)
+- Sincronização de versão: Atualizado data.js para versão 1.1.0
+- Documentação atualizada: ABOUT.md com contagem correta de 1034 ícones e versão 1.1.0
 - Reorganização de estrutura: Atualizada documentação para refletir nova estrutura de diretórios (css/, javascript/)
 - Correção de caminhos: Atualizados todos os caminhos de arquivos JavaScript em toda a documentação
-- Atualização de versão: Incrementado para versão 1.1.0
-- Documentação sincronizada: README.md, API.md, STRUCTURE.md, CONTRIBUTING.md e USAGE.md atualizados
-- Atualização real: Documentação agora reflete 990 arquivos PNG e 989 entradas indexadas em data.js
+- Documentação sincronizada: README.md, API.md, STRUCTURE.md, CONTRIBUTING.md, USAGE.md e ABOUT.md atualizados
+- Atualização real: Documentação agora reflete 1034 arquivos PNG e 1034 entradas indexadas em data.js
 
 ---
 

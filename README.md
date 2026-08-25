@@ -17,11 +17,7 @@ Uma biblioteca profissional de ícones para linguagens, frameworks e ferramentas
 
 ## Características
 
-<<<<<<< HEAD
-- **758 ícones** para linguagens, frameworks e ferramentas
-=======
-- **990 ícones** para linguagens, frameworks e ferramentas
->>>>>>> fb25ae3 (Atualiza os ícones do projeto (fecha #29))
+- **1034 ícones** para linguagens, frameworks e ferramentas
 - **Interface 3D** com efeitos de perspectiva e inclinação
 - **Pesquisa em tempo real** com filtros inteligentes
 - **Visualização em grade ou lista**

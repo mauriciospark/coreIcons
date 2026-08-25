@@ -3,7 +3,7 @@
   PROPRIETÁRIO: Maurício Spark
   MARCA: Spark
   PROJETO: CoreIcons
-  VERSÃO: 1.0.0
+  VERSÃO: 1.1.0
   LINHAGEM: SPARK
   ============================================================================
   Documento de Planejamento de Escopo
@@ -12,11 +12,9 @@
 */
 
 var coreIconsData = (function () {
-  var FILES = `abap.png
+    var FILES = `abap.png
 abc.png
 acorn.png
-aegis.png
-aiven.png
 actionscript.png
 activemq.png
 actix.png
@@ -28,10 +26,12 @@ advplinclude.png
 advplptm.png
 advpltlpp.png
 adyen.png
+aegis.png
 affinity.png
 agda.png
 airbyte.png
 airflow.png
+aiven.png
 aix.png
 akamai.png
 akv2k8s.png
@@ -56,8 +56,9 @@ angularmaterial.png
 angularpipe.png
 angularresolver.png
 angularservice.png
-ansiblesemaphore.png
 ansible.png
+ansiblecli.png
+ansiblesemaphore.png
 ansibletower.png
 anthropic.png
 antlr.png
@@ -98,8 +99,8 @@ atlassiansourcetree.png
 atmos.png
 audio.png
 aurelia.png
-autho.png
 authelia.png
+autho.png
 authors.png
 autodesk.png
 autohotkey.png
@@ -108,6 +109,7 @@ avalanche.png
 awk.png
 aws.png
 awsbedrock.png
+awscloudshell.png
 axum.png
 axure.png
 axway.png
@@ -116,6 +118,7 @@ azure.png
 azureaifoundry.png
 azureaks.png
 azureappservice.png
+azurecloudshell.png
 azurefunctions.png
 azurekeyvault.png
 azureopenai.png
@@ -142,6 +145,7 @@ bintray.png
 biome.png
 bitbucket.png
 bitcoin.png
+blackbox.png
 blazor.png
 blink.png
 blitz.png
@@ -169,6 +173,7 @@ buildpacks.png
 bulma.png
 bun.png
 bunny.png
+busybox.png
 c.png
 c++.png
 cabal.png
@@ -188,8 +193,8 @@ celery.png
 centos.png
 ceph.png
 cerebras.png
-certmanager.png
 certificate.png
+certmanager.png
 ceylon.png
 chai.png
 chainlink.png
@@ -219,8 +224,8 @@ cljs.png
 clojure.png
 clojurescript.png
 cloud.png
-cloudflarepages.png
 cloudflare.png
+cloudflarepages.png
 cloudflareworkers.png
 cloudfoundry.png
 cloudhealth.png
@@ -229,36 +234,41 @@ cloudrun.png
 cloudsql.png
 cloudstack.png
 cmake.png
+cmder.png
 coala.png
 cobol.png
 cockroach.png
 cockroachdb.png
 cocoapods.png
-codeoss.png
 codeclimate.png
 codecov.png
 codeigniter.png
 codeium.png
 codenvy.png
+codeoss.png
 codeowners.png
 codestral.png
 coffeescript.png
 cohere.png
 coldfusion.png
 command.png
+commandprompt.png
 commonlisp.png
 composer.png
 conan.png
 concourse.png
 conda.png
 conduct.png
+conemu.png
 confluent.png
 confluentcloud.png
 console.png
 consul.png
 containerd.png
 contentful.png
+contour.png
 contributing.png
+coolretroterm.png
 copilot.png
 coralogix.png
 cordova.png
@@ -301,6 +311,7 @@ db2.png
 dbeaver.png
 debian.png
 deepfence.png
+deepinterminal.png
 deepmind.png
 deepseek.png
 delphi.png
@@ -326,6 +337,7 @@ djangorest.png
 dnsmasq.png
 doapp.png
 docker.png
+dockercli.png
 dockercompose.png
 dockerdesktop.png
 dockerhub.png
@@ -366,8 +378,10 @@ ejs.png
 elastic.png
 elasticsearch.png
 elevenlabs.png
+elixir.png
 elixirls.png
 elm.png
+elvish.png
 elysia.png
 email.png
 ember.png
@@ -381,7 +395,6 @@ eventbridge.png
 evm.png
 exe.png
 exim.png
-elixir.png
 exoscale.png
 expo.png
 express.png
@@ -419,20 +432,18 @@ flow.png
 flowbite.png
 flowlanguage.png
 fluentd.png
+fluentterminal.png
 flutter.png
 flutterflow.png
 flux.png
 flyio.png
 font.png
+foot.png
 forgejo.png
 forth.png
 fortinet.png
 fortran.png
-<<<<<<< HEAD
-forgejo.png
-=======
 fossil.png
->>>>>>> fb25ae3 (Atualiza os ícones do projeto (fecha #29))
 foundation.png
 foundationdb.png
 foxpro.png
@@ -451,12 +462,9 @@ gemma.png
 gentoo.png
 ghost.png
 ghostty.png
-<<<<<<< HEAD
-gitea.png
-=======
 gin.png
->>>>>>> fb25ae3 (Atualiza os ícones do projeto (fecha #29))
 git.png
+gitbash.png
 gitea.png
 gitextensions.png
 gitflow.png
@@ -478,13 +486,14 @@ gleam.png
 glide.png
 glimmer.png
 glowroot.png
-gocd.png
 go.png
 gobotassets.png
+gocd.png
 godot.png
 gogopher.png
 gogs.png
 gomod.png
+googlecloudshell.png
 gradle.png
 grafana.png
 grafanaalloy.png
@@ -502,6 +511,7 @@ groqcloud.png
 growcloud.png
 grpc.png
 grunt.png
+guake.png
 guj.png
 gulp.png
 gunicorn.png
@@ -532,6 +542,7 @@ html6.png
 huggingface.png
 hugo.png
 husky.png
+hyper.png
 hyperv.png
 idpay.png
 idris.png
@@ -546,6 +557,7 @@ ios.png
 ipfs.png
 istanbul.png
 istio.png
+iterm2.png
 jaeger.png
 jarviewer.png
 jasper.png
@@ -569,9 +581,12 @@ karma.png
 keras.png
 key.png
 keystonejs.png
+kitty.png
 knex.png
 koa.png
+konsole.png
 kotlin.png
+ksh.png
 kubedge.png
 kubeflow.png
 kubernetes.png
@@ -597,9 +612,9 @@ liquid.png
 lisp.png
 lit.png
 livescript.png
+llama3.png
 llamaindex.png
 llamastack.png
-llama3.png
 localai.png
 lock.png
 lolcode.png
@@ -642,6 +657,7 @@ mistralai.png
 mithril.png
 mkdocs.png
 mlflow.png
+mobaxterm.png
 mocha.png
 modernizr.png
 mongodb.png
@@ -689,6 +705,7 @@ notionai.png
 novu.png
 npm.png
 numpy.png
+nushell.png
 nutanix.png
 nuxt.png
 nvidiacuda.png
@@ -741,6 +758,7 @@ prettier.png
 prometheus.png
 protopie.png
 proxmox.png
+ptyxis.png
 pub.png
 pulsar.png
 puppeteer.png
@@ -753,6 +771,7 @@ q.png
 qdrant.png
 qemu.png
 qsharp.png
+qterminal.png
 quasar.png
 quicksight.png
 qwik.png
@@ -770,9 +789,9 @@ rancher.png
 rapid7.png
 ray.png
 razor.png
-reactquery.png
 react.png
 reactnative.png
+reactquery.png
 readme.png
 readthedocs.png
 reason.png
@@ -794,6 +813,7 @@ resend.png
 restql.png
 retool.png
 rhel.png
+rio.png
 riotgames.png
 roadmap.png
 robot.png
@@ -809,8 +829,10 @@ rubocop.png
 ruby.png
 runway.png
 rust.png
-salesforcecommerce.png
+rxvt.png
+sakura.png
 salesforce.png
+salesforcecommerce.png
 san.png
 sas.png
 sass.png
@@ -823,8 +845,8 @@ scrapy.png
 scylladb.png
 search.png
 selenium.png
-semanticui.png
 semanticrelease.png
+semanticui.png
 sendgrid.png
 sentry.png
 sequelize.png
@@ -835,6 +857,7 @@ shaderlab.png
 shopify.png
 signoz.png
 silverstripe.png
+simpleterminal.png
 siyuan.png
 sketch.png
 slackware.png
@@ -858,8 +881,8 @@ spark.png
 sparkpost.png
 spinnaker.png
 splunk.png
-springboot.png
 spring.png
+springboot.png
 sqlite.png
 square.png
 stabilityai.png
@@ -889,6 +912,7 @@ svgo.png
 swagger.png
 swift.png
 swiftlint.png
+tabby.png
 tableau.png
 tableformatter.png
 tabnine.png
@@ -906,6 +930,9 @@ template.png
 tenable.png
 tencentcloud.png
 tensorflow.png
+terminalw.png
+terminator.png
+terminology.png
 terraform.png
 testjs.png
 testjsx.png
@@ -917,6 +944,8 @@ thegraph.png
 threejs.png
 tidb.png
 tide.png
+tilda.png
+tilix.png
 tilt.png
 timescaledb.png
 tobi.png
@@ -966,6 +995,7 @@ waforth.png
 wakatime.png
 wallaby.png
 warp.png
+warpterminal.png
 watchman.png
 watsonx.png
 wazuh.png
@@ -976,10 +1006,12 @@ webhintio.png
 webpack.png
 weightsbiases.png
 wepy.png
+wezterm.png
 whisper.png
 windicss.png
 windows.png
 windowsserver.png
+windowsterminal.png
 windsurf.png
 wolfram.png
 wolframlanguage.png
@@ -990,7 +1022,11 @@ writercom.png
 xaml.png
 xampp.png
 xd.png
+xfceterminal.png
 xgboost.png
+xonsh.png
+xterm.png
+yakuake.png
 yaml.png
 yang.png
 yarn.png
@@ -1011,26 +1047,26 @@ zscaler.png
 zsh.png
 zulip.png`.trim().split(/\r?\n/).filter(function (f) { return f.length > 0; });
 
-  function slugFromFile(file) {
-    var base = file.replace(/\.[^.]+$/i, "").trim();
-    if (/^c\+\+$/i.test(base)) return "c++";
-    if (/^h\+\+$/i.test(base)) return "h++";
-    var s = base.toLowerCase().replace(/\s+/g, "-");
-    s = s.replace(/[^a-z0-9+\-]/g, "-");
-    s = s.replace(/-+/g, "-").replace(/^-|-$/g, "");
-    return s || "icon";
-  }
-
-  var seen = Object.create(null);
-  return FILES.map(function (file, i) {
-    var name = slugFromFile(file);
-    var orig = name;
-    var n = 2;
-    while (seen[name]) {
-      name = orig + "-" + n;
-      n++;
+    function slugFromFile(file) {
+        var base = file.replace(/\.[^.]+$/i, "").trim();
+        if (/^c\+\+$/i.test(base)) return "c++";
+        if (/^h\+\+$/i.test(base)) return "h++";
+        var s = base.toLowerCase().replace(/\s+/g, "-");
+        s = s.replace(/[^a-z0-9+\-]/g, "-");
+        s = s.replace(/-+/g, "-").replace(/^-|-$/g, "");
+        return s || "icon";
     }
-    seen[name] = true;
-    return { name: name, file: file };
-  });
+
+    var seen = Object.create(null);
+    return FILES.map(function (file, i) {
+        var name = slugFromFile(file);
+        var orig = name;
+        var n = 2;
+        while (seen[name]) {
+            name = orig + "-" + n;
+            n++;
+        }
+        seen[name] = true;
+        return { name: name, file: file };
+    });
 })();
