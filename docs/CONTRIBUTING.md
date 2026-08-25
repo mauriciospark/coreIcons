@@ -94,8 +94,8 @@ Obrigado pelo interesse em contribuir com o CoreIcons Library!
 ### Processo
 
 1. Adicione o arquivo PNG em `/fotos/`
-2. Atualize `data.js` adicionando o nome do arquivo na lista `FILES`
-3. Atualize `fotos-list.txt` (gerado automaticamente)
+2. Atualize `javascript/data.js` adicionando o nome do arquivo na lista `FILES`
+3. Atualize `docs/fotos_list.md` (gerado automaticamente)
 4. Teste no catálogo
 
 ### Exemplo
@@ -103,7 +103,7 @@ Obrigado pelo interesse em contribuir com o CoreIcons Library!
 Adicionando ícone para "Flutter":
 
 ```javascript
-// data.js - adicionar na lista FILES
+// javascript/data.js - adicionar na lista FILES
 flutter.png
 ```
 
@@ -186,8 +186,8 @@ Utilize o padrão `tipo/descricao`:
 
 3. **Ícones (se aplicável):**
    - [ ] Arquivo PNG adicionado em `/fotos/`
-   - [ ] Nome do arquivo adicionado em `data.js`
-   - [ ] Ordem alfabética mantida em `data.js`
+   - [ ] Nome do arquivo adicionado em `javascript/data.js`
+   - [ ] Ordem alfabética mantida em `javascript/data.js`
    - [ ] Ícone segue especificações (128x128px, fundo transparente)
 
 4. **Documentação:**
@@ -219,7 +219,7 @@ feat: adicionar ícone Kubernetes
 Adiciona ícone para Kubernetes ao catálogo.
 
 [Added] kubernetes.png
-[Added] entrada em data.js
+[Added] entrada em javascript/data.js
 ```
 
 ```
@@ -308,7 +308,7 @@ Todos os arquivos devem incluir:
   PROPRIETÁRIO: Maurício Spark
   MARCA: Spark
   PROJETO: CoreIcons Library
-  VERSÃO: 1.0.0
+  VERSÃO: 1.0.7
   LINHAGEM: SPARK
   ============================================================================
   COPYRIGHT: © 2026 / Maurício Spark.
@@ -366,14 +366,16 @@ php -S localhost:8000
 ```
 coreicons/
 ├── docs/               # Documentação
-├── fotos/              # Ícones PNG
-├── css/                # Estilos adicionais
-├── javascript/         # Scripts adicionais
+├── fotos/              # Ícones PNG (1002+ arquivos)
+├── css/                # Estilos principais
+│   └── style.css
+├── javascript/         # Scripts da aplicação
+│   ├── data.js         # Dados dos ícones
+│   ├── core-icons.js   # API JavaScript
+│   └── script.js       # Lógica da interface
 ├── index.html          # Página principal
-├── style.css           # Estilos principais
-├── script.js           # Lógica da interface
-├── data.js             # Dados dos ícones
-└── core-icons.js       # API JavaScript
+├── favicon/            # Favicons e manifest
+└── LICENSE             # Licença
 ```
 
 ### Testando Mudanças

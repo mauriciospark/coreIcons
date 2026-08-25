@@ -14,8 +14,8 @@ Documentação completa da API JavaScript CoreIcons.
 A API é carregada automaticamente ao incluir `core-icons.js`. Requer `data.js` ou dados customizados.
 
 ```html
-<script src="data.js"></script>
-<script src="core-icons.js"></script>
+<script src="javascript/data.js"></script>
+<script src="javascript/core-icons.js"></script>
 ```
 
 ### Dados Customizados
@@ -44,7 +44,7 @@ const path = CoreIcons.getBasePath();
 Retorna a versão da API.
 
 ```javascript
-console.log(CoreIcons.version); // '1.0.0'
+console.log(CoreIcons.version); // '1.1.0'
 ```
 
 ---

@@ -6,7 +6,7 @@
 
 O CoreIcons Library nasceu da necessidade de encontrar ícones consistentes, de alta qualidade e facilmente acessíveis para documentação técnica, apresentações e projetos de desenvolvimento. Desenvolvedores frequentemente enfrentam o desafio de localizar ícones representativos de linguagens, frameworks, ferramentas e serviços em seus projetos, muitas vezes recorrendo a múltiplas fontes com estilos inconsistentes.
 
-O problema real que o CoreIcons Library soluciona é a fragmentação de recursos visuais técnicos. Ao centralizar 650+ ícones em um único catálogo com interface intuitiva, API JavaScript e hospedagem pública, o projeto elimina a necessidade de buscar em múltiplas fontes e garante consistência visual em toda a documentação e apresentações técnicas.
+O problema real que o CoreIcons Library soluciona é a fragmentação de recursos visuais técnicos. Ao centralizar 1048 ícones em um único catálogo com interface intuitiva, API JavaScript e hospedagem pública, o projeto elimina a necessidade de buscar em múltiplas fontes e garante consistência visual em toda a documentação e apresentações técnicas.
 
 ---
 
@@ -94,4 +94,4 @@ O sistema gera valor ao economizar tempo na busca por recursos visuais, garantir
 
 **CoreIcons Library** — Ícones para stacks, CI/CD e documentação técnica
 
-**Marca:** SPARK | **Linhagem:** SPARK | **Projeto:** CoreIcons Library | **Versão:** 1.0.0
+**Marca:** SPARK | **Linhagem:** SPARK | **Projeto:** CoreIcons Library | **Versão:** 1.1.0

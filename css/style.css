@@ -41,7 +41,8 @@ body {
   font-family: "Plus Jakarta Sans", "Segoe UI", system-ui, -apple-system, sans-serif;
   background: var(--bg);
   color: var(--text);
-  min-height: 100vh;
+  height: 100vh;
+  overflow: hidden;
   display: flex;
   flex-direction: column;
 }
@@ -55,6 +56,7 @@ body {
 
 .header {
   position: relative;
+  flex-shrink: 0;
   overflow: hidden;
   text-align: center;
   padding: 22px 0 28px;
@@ -92,8 +94,8 @@ body {
   display: inline-block;
   width: auto;
   height: auto;
-  max-width: min(200px, 58vw);
-  max-height: clamp(56px, 12vw, 76px);
+  max-width: min(180px, 50vw);
+  max-height: clamp(48px, 10vw, 64px);
   object-fit: contain;
   vertical-align: middle;
   filter: drop-shadow(0 6px 18px rgba(0, 0, 0, 0.35)) drop-shadow(0 0 28px rgba(34, 211, 238, 0.06));
@@ -175,20 +177,36 @@ body {
   border: 1px solid rgba(251, 191, 36, 0.22);
 }
 
+.controls-bar {
+  flex-shrink: 0;
+  background: transparent;
+  border-bottom: 1px solid var(--border);
+  margin-bottom: 0;
+}
+
+.controls-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
 .search-section {
-  padding: 32px 0;
+  padding: 20px 0;
+  flex: 1;
+  max-width: 600px;
 }
 
 .search-box {
   position: relative;
-  max-width: 600px;
+  max-width: 100%;
   margin: 0 auto;
 }
 
 .search-box input {
   width: 100%;
-  padding: 16px 20px 16px 52px;
-  font-size: 1rem;
+  padding: 14px 20px 14px 52px;
+  font-size: 0.95rem;
   background: var(--bg-card);
   border: 2px solid var(--border);
   border-radius: var(--radius);
@@ -217,7 +235,7 @@ body {
 
 .shortcut {
   position: absolute;
-  right: 16px;
+  right: 14px;
   top: 50%;
   transform: translateY(-50%);
   background: var(--bg);
@@ -269,18 +287,16 @@ body {
   color: var(--text);
 }
 
-.toolbar {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 16px 0;
-  border-bottom: 1px solid var(--border);
-  margin-bottom: 24px;
+.results-count {
+  color: var(--text-muted);
+  font-size: 0.875rem;
+  font-weight: 500;
+  white-space: nowrap;
 }
 
 .view-toggle {
   display: flex;
-  gap: 8px;
+  gap: 6px;
 }
 
 .view-toggle button {
@@ -307,9 +323,15 @@ body {
   color: white;
 }
 
-.results-count {
-  color: var(--text-muted);
-  font-size: 0.875rem;
+.view-toggle button svg {
+  width: 16px;
+  height: 16px;
+}
+
+.main-content {
+  flex: 1;
+  overflow-y: auto;
+  padding-top: 32px;
 }
 
 .icons-grid {
@@ -319,46 +341,6 @@ body {
   padding-bottom: 48px;
   perspective: 1400px;
   perspective-origin: 50% 40%;
-}
-
-.icons-grid.list-view {
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-  perspective: none;
-}
-
-.icons-grid.list-view .icon-card {
-  transform: none;
-}
-
-.icons-grid.list-view .icon-card:hover {
-  transform: translateY(-2px);
-}
-
-.icons-grid.list-view .icon-card-inner {
-  transform: none !important;
-}
-
-.icons-grid.list-view .icon-card-inner::before {
-  opacity: 0;
-}
-
-.icons-grid.list-view .icon-card {
-  flex-direction: row;
-  align-items: center;
-  gap: 16px;
-  padding: 12px 20px;
-}
-
-.icons-grid.list-view .icon-card img {
-  width: 32px;
-  height: 32px;
-}
-
-.icons-grid.list-view .icon-name {
-  font-size: 1rem;
-  text-align: left;
 }
 
 .icon-card {
@@ -756,19 +738,44 @@ body.modal-open {
     max-height: clamp(48px, 16vw, 72px);
   }
 
-  .header-badge {
-    position: static;
-    margin-top: 12px;
-  }
-
   .header-inner {
     flex-direction: column;
     gap: 8px;
   }
 
-  .footer-inner {
+  .controls-container {
     flex-direction: column;
-    gap: 10px;
+    gap: 12px;
+  }
+
+  .search-section {
+    width: 100%;
+    max-width: 100%;
+    order: 1;
+    padding: 16px 0;
+  }
+
+  .search-box input {
+    padding: 12px 16px 12px 44px;
+    font-size: 0.875rem;
+  }
+
+  .view-toggle {
+    order: 0;
+  }
+
+  .view-toggle button {
+    padding: 7px 10px;
+  }
+
+  .view-toggle button svg {
+    width: 15px;
+    height: 15px;
+  }
+
+  .results-count {
+    order: 2;
+    font-size: 0.8125rem;
   }
 
   .icons-grid {
@@ -781,9 +788,8 @@ body.modal-open {
     display: none;
   }
 
-  .toolbar {
+  .footer-inner {
     flex-direction: column;
-    gap: 12px;
-    align-items: flex-start;
+    gap: 10px;
   }
 }
