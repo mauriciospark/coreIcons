@@ -200,6 +200,7 @@ chai.png
 chainlink.png
 chakra.png
 chakraui.png
+chatgpt.png
 chalk.png
 chapel.png
 chartjs.png
