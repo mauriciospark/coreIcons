@@ -273,9 +273,9 @@ Eventos são registrados diretamente em elementos específicos devido à naturez
 
 ### Métricas de Referência
 
-- **Total de ícones:** 1002 arquivos PNG
-- **Ícones indexados:** 989 entradas em data.js
-- **Total de arquivos fotos/:** 1005 itens (incluindo .gitkeep)
+- **Total de ícones:** 1077 arquivos PNG
+- **Ícones indexados:** 1077 entradas em data.js
+- **Total de arquivos fotos/:** 1077 itens
 - **Estrutura otimizada:** Organização em subdiretórios (css/, javascript/)
 
 ### Boas Práticas

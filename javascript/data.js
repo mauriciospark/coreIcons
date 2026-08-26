@@ -39,6 +39,7 @@ alacritty.png
 alibabacloud.png
 alloy.png
 almalinux.png
+alohabrowser.png
 alpine.png
 alpinejs.png
 altinity.png
@@ -78,6 +79,7 @@ aptos.png
 aquasec.png
 arangodb.png
 arbitrum.png
+arc.png
 arc.png
 architecture.png
 archlinux.png
@@ -157,6 +159,7 @@ bootstrap.png
 bower.png
 brainfuck.png
 brave.png
+brave.png
 brex.png
 broccoli.png
 browserslist.png
@@ -183,6 +186,7 @@ cake.png
 cakephp.png
 calabash.png
 calico.png
+camino.png
 canonical.png
 canva.png
 capacitor.png
@@ -204,6 +208,7 @@ chatgpt.png
 chalk.png
 chapel.png
 chartjs.png
+chatgpt.png
 checkmarx.png
 checkmk.png
 checkstyle.png
@@ -211,6 +216,8 @@ chef.png
 chi.png
 chisel.png
 chromadb.png
+chrome.png
+chromium.png
 cilium.png
 circleci.png
 cirrus.png
@@ -362,6 +369,7 @@ drupal.png
 drush.png
 dubco.png
 duckdb.png
+duckduckgobrowser.png
 duna.png
 dvc.png
 dynamodb.png
@@ -372,6 +380,7 @@ ec2.png
 echo.png
 eclipse.png
 ecto.png
+edge.png
 edge.png
 editorconfig.png
 effect.png
@@ -397,6 +406,7 @@ evm.png
 exe.png
 exim.png
 exoscale.png
+explorer.png
 expo.png
 express.png
 externalsecrets.png
@@ -404,6 +414,7 @@ fabric.png
 faiss.png
 falco.png
 falcon.png
+falkon.png
 fantom.png
 fargate.png
 fastapi.png
@@ -423,12 +434,15 @@ filecoin.png
 fingerprint.png
 firebase.png
 firebird.png
+firefox.png
 fish.png
 flash.png
 flask.png
 flatpak.png
 fleet.png
 flink.png
+flock.png
+floorp.png
 flow.png
 flowbite.png
 flowlanguage.png
@@ -487,6 +501,7 @@ gleam.png
 glide.png
 glimmer.png
 glowroot.png
+gnomeweb.png
 go.png
 gobotassets.png
 gocd.png
@@ -583,8 +598,10 @@ keras.png
 key.png
 keystonejs.png
 kitty.png
+kiwibrowser.png
 knex.png
 koa.png
+konqueror.png
 konsole.png
 kotlin.png
 ksh.png
@@ -603,6 +620,7 @@ laravelnova.png
 lerna.png
 less.png
 lib.png
+librewolf.png
 lighthouse.png
 lilypond.png
 linkerd.png
@@ -624,6 +642,7 @@ looker.png
 lowcode.png
 lua.png
 lunacy.png
+lynx.png
 macos.png
 maestro.png
 magento.png
@@ -639,6 +658,7 @@ mathematica.png
 matlab.png
 matplotlib.png
 maven.png
+maxthon.png
 mdx.png
 meilisearch.png
 mercurial.png
@@ -651,6 +671,7 @@ metallama.png
 microgen.png
 microsoft.png
 midjourney.png
+midori.png
 milvus.png
 miro.png
 mirrorimageagency.png
@@ -663,8 +684,10 @@ mocha.png
 modernizr.png
 mongodb.png
 moonscript.png
+mosaic.png
 mosaicai.png
 mui.png
+mullvadbrowser.png
 multipass.png
 mustache.png
 mxnet.png
@@ -687,6 +710,7 @@ nestpipe.png
 nestresolver.png
 nestservice.png
 netlify.png
+netscapernavigator.png
 newrelic.png
 nextjs.png
 nginx.png
@@ -719,6 +743,8 @@ openshift.png
 openstack.png
 opensuse.png
 opentelemetry.png
+opera.png
+operamini.png
 opsgenie.png
 optimism.png
 oracle.png
@@ -775,6 +801,7 @@ qsharp.png
 qterminal.png
 quasar.png
 quicksight.png
+qutebrowser.png
 qwik.png
 r.png
 rabbit.png
@@ -831,9 +858,11 @@ ruby.png
 runway.png
 rust.png
 rxvt.png
+safari.png
 sakura.png
 salesforce.png
 salesforcecommerce.png
+samsunginternet.png
 san.png
 sas.png
 sass.png
@@ -951,6 +980,7 @@ tilt.png
 timescaledb.png
 tobi.png
 tor.png
+torbrowser.png
 trae.png
 travis.png
 trigger.png
@@ -964,6 +994,7 @@ typescript.png
 typescriptimporter.png
 ubuntu.png
 ubuntuserver.png
+ucbrowser.png
 udio.png
 uml.png
 unity.png
@@ -986,6 +1017,7 @@ visualstudiocode.png
 vite.png
 vitepress.png
 vitess.png
+vivaldi.png
 vlang.png
 vmware.png
 vps.png
@@ -998,6 +1030,7 @@ wallaby.png
 warp.png
 warpterminal.png
 watchman.png
+waterfox.png
 watsonx.png
 wazuh.png
 weaviate.png
