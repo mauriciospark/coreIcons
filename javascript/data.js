@@ -653,7 +653,7 @@ microsoft.png
 midjourney.png
 milvus.png
 miro.png
-mirrorImageagency.jpg
+mirrorimageagency.png
 mistralai.png
 mithril.png
 mkdocs.png
