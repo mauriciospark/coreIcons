@@ -159,7 +159,6 @@ bootstrap.png
 bower.png
 brainfuck.png
 brave.png
-brave.png
 brex.png
 broccoli.png
 browserslist.png
