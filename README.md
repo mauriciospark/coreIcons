@@ -59,15 +59,6 @@ Acesse o catálogo em: `https://mauriciospark.github.io/coreIcons`
 
 ### API JavaScript
 
-💻 Linguagens de programação → cobertas
-🧩 Frameworks e bibliotecas → cobertos
-🗄️ Bancos de dados → cobertos
-🖥️ Sistemas operacionais → cobertos
-🛠️ Softwares e ferramentas → cobertos
-🤖 Inteligência Artificial →  coberta
-⌨️ Terminais →  cobertos
-🌐 Navegadores →  cobertos
-
 ## Licença
 
 © 2026 Maurício Spark. Todos os direitos reservados.
