@@ -35,6 +35,19 @@ Obrigado pelo interesse em contribuir com o CoreIcons Library!
 
 ## Histórico de Mudanças
 
+### Versão 1.1.0 (2026-08-25)
+
+[Added]
+- Novo ícone: wolframlanguage.png
+- Novo ícone: zookeeper.png
+- Total atualizado para 1067 ícones
+
+[Changed]
+- Atualização do README.md para refletir novo total de ícones (1067)
+- Atualização da versão para 1.1.0
+- Resolução de conflito git no README.md
+- Sincronização de documentação com contagem correta de ícones
+
 ### Versão 1.0.3 (2026-07-14)
 
 [Added]
@@ -308,7 +321,7 @@ Todos os arquivos devem incluir:
   PROPRIETÁRIO: Maurício Spark
   MARCA: Spark
   PROJETO: CoreIcons Library
-  VERSÃO: 1.0.7
+  VERSÃO: 1.1.0
   LINHAGEM: SPARK
   ============================================================================
   COPYRIGHT: © 2026 / Maurício Spark.
@@ -366,7 +379,7 @@ php -S localhost:8000
 ```
 coreicons/
 ├── docs/               # Documentação
-├── fotos/              # Ícones PNG (1002+ arquivos)
+├── fotos/              # Ícones PNG (1067+ arquivos)
 ├── css/                # Estilos principais
 │   └── style.css
 ├── javascript/         # Scripts da aplicação
