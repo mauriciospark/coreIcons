@@ -187,10 +187,10 @@ coreIcons/
 ├── css/
 │   └── style.css           # Todos os estilos (669 linhas)
 ├── javascript/
-│   ├── data.js             # Lista de 676+ ícones
+│   ├── data.js             # Lista de 1067+ ícones
 │   ├── core-icons.js       # API JavaScript (137 linhas)
 │   └── script.js           # Lógica da interface (main logic)
-├── fotos/                  # 676+ arquivos PNG
+├── fotos/                  # 1067+ arquivos PNG
 ├── favicon/                # Favicons e manifest.json
 └── docs/                   # Documentação
     ├── ABOUT.md

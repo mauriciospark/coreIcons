@@ -26,6 +26,17 @@ Uma biblioteca profissional de ícones para linguagens, frameworks e ferramentas
 - **Suporte a atalhos de teclado** (Ctrl+K para pesquisa)
 - **Botão de estrelas do GitHub** com contagem em tempo real
 
+## Categorias Cobertas
+
+- 💻 **Linguagens de programação** - Python, JavaScript, Java, C++, Go, Rust, TypeScript, PHP, Ruby, Swift, Kotlin, e muitas mais
+- 🧩 **Frameworks e bibliotecas** - React, Vue, Angular, Laravel, Django, Spring, Express, Next.js, Nuxt.js, e outras
+- 🗄️ **Bancos de dados** - PostgreSQL, MySQL, MongoDB, Redis, SQLite, MariaDB, Oracle, e mais
+- 🖥️ **Sistemas operacionais** - Linux, Windows, macOS, Android, iOS, Ubuntu, Debian, CentOS, e outros
+- 🛠️ **Softwares e ferramentas** - Docker, Kubernetes, Git, VS Code, GitHub, GitLab, AWS, Azure, Google Cloud, e diversas ferramentas DevOps
+- 🤖 **Inteligência Artificial** - TensorFlow, PyTorch, Keras, OpenAI, scikit-learn, Hugging Face, e frameworks de ML/DL
+- ⌨️ **Terminais** - PowerShell, Bash, Zsh, Fish, CMD, iTerm2, Hyper, e outros emuladores de terminal
+- 🌐 **Navegadores** - Chrome, Firefox, Safari, Edge, Brave, Opera, e navegadores web modernos
+
 ## Estrutura do Projeto
 
 ```
