@@ -59,23 +59,14 @@ Acesse o catálogo em: `https://mauriciospark.github.io/coreIcons`
 
 ### API JavaScript
 
-```html
-<script src="javascript/data.js"></script>
-<script src="javascript/core-icons.js"></script>
-<script>
-  // Buscar todos os ícones
-  const icons = CoreIcons.getAll();
-  
-  // Buscar por slug
-  const react = CoreIcons.getBySlug('react');
-  
-  // Pesquisar
-  const results = CoreIcons.search('java');
-  
-  // Gerar HTML de imagem
-  const html = CoreIcons.imgHtml('react', { width: 48, height: 48 });
-</script>
-```
+💻 Linguagens de programação → cobertas
+🧩 Frameworks e bibliotecas → cobertos
+🗄️ Bancos de dados → cobertos
+🖥️ Sistemas operacionais → cobertos
+🛠️ Softwares e ferramentas → cobertos
+🤖 Inteligência Artificial →  coberta
+⌨️ Terminais →  cobertos
+🌐 Navegadores →  cobertos
 
 ## Licença
 
