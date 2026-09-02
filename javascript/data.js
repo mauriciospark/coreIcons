@@ -80,7 +80,6 @@ aquasec.png
 arangodb.png
 arbitrum.png
 arc.png
-arc.png
 architecture.png
 archlinux.png
 arduino.png
