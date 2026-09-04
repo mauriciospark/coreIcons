@@ -379,7 +379,6 @@ echo.png
 eclipse.png
 ecto.png
 edge.png
-edge.png
 editorconfig.png
 effect.png
 ejs.png
