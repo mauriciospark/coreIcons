@@ -1015,6 +1015,7 @@ vite.png
 vitepress.png
 vitess.png
 vivaldi.png
+vscodium.png
 vlang.png
 vmware.png
 vps.png
