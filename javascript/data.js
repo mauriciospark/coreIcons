@@ -80,6 +80,7 @@ aquasec.png
 arangodb.png
 arbitrum.png
 arc.png
+arc.png
 architecture.png
 archlinux.png
 arduino.png
@@ -378,6 +379,7 @@ ec2.png
 echo.png
 eclipse.png
 ecto.png
+edge.png
 edge.png
 editorconfig.png
 effect.png
@@ -1015,10 +1017,10 @@ vite.png
 vitepress.png
 vitess.png
 vivaldi.png
-vscodium.png
 vlang.png
 vmware.png
 vps.png
+vscodium.png
 vue.png
 vuestore.png
 vultr.png
