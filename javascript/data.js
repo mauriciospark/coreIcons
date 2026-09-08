@@ -292,6 +292,7 @@ crewai.png
 crossplane.png
 crowdstrike.png
 crystal.png
+csharp.png
 css.png
 cssmap.png
 cssmodules.png
