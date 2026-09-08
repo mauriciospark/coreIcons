@@ -408,6 +408,7 @@ exim.png
 exoscale.png
 explorer.png
 expo.png
+expressjs.png
 express.png
 externalsecrets.png
 fabric.png
