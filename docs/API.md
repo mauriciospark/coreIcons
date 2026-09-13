@@ -11,10 +11,11 @@ Documentação completa da API JavaScript CoreIcons.
 
 ## Inicialização
 
-A API é carregada automaticamente ao incluir `core-icons.js`. Requer `data.js` ou dados customizados.
+A API é carregada automaticamente ao incluir `core-icons.js`. Requer `data.js` (PNG), `datasvg.js` (SVG) ou dados customizados.
 
 ```html
 <script src="javascript/data.js"></script>
+<script src="javascript/datasvg.js"></script>
 <script src="javascript/core-icons.js"></script>
 ```
 
@@ -22,8 +23,8 @@ A API é carregada automaticamente ao incluir `core-icons.js`. Requer `data.js` 
 
 ```javascript
 CoreIcons.useData([
-  { name: 'react', file: 'react.png' },
-  { name: 'vue', file: 'vue.png' }
+  { name: "react", file: "react.png" },
+  { name: "vue", file: "vue.png" },
 ]);
 ```
 
@@ -31,7 +32,7 @@ CoreIcons.useData([
 
 ```javascript
 // Alterar caminho base para ícones
-CoreIcons.setBasePath('assets/icons/');
+CoreIcons.setBasePath("assets/icons/");
 
 // Obter caminho atual
 const path = CoreIcons.getBasePath();
@@ -44,7 +45,7 @@ const path = CoreIcons.getBasePath();
 Retorna a versão da API.
 
 ```javascript
-console.log(CoreIcons.version); // '1.1.0'
+console.log(CoreIcons.version); // '1.2.0'
 ```
 
 ---
@@ -71,15 +72,16 @@ const icons = CoreIcons.getAll();
 Busca um ícone pelo seu identificador (slug).
 
 **Parâmetros:**
+
 - `slug` (string) - Identificador do ícone
 
 **Retorno:** `Object|null` - Objeto ícone ou null
 
 ```javascript
-const icon = CoreIcons.getBySlug('react');
+const icon = CoreIcons.getBySlug("react");
 // { slug: 'react', name: 'React', file: 'react.png' }
 
-const missing = CoreIcons.getBySlug('inexistente');
+const missing = CoreIcons.getBySlug("inexistente");
 // null
 ```
 
@@ -90,20 +92,22 @@ const missing = CoreIcons.getBySlug('inexistente');
 Pesquisa ícones por termo.
 
 **Parâmetros:**
+
 - `query` (string) - Termo de busca
 
 **Retorno:** `Array<Object>` - Ícones que correspondem à busca
 
 Busca em:
+
 - Slug do ícone
 - Nome de exibição
 - Nome do arquivo
 
 ```javascript
-const results = CoreIcons.search('java');
+const results = CoreIcons.search("java");
 // Retorna: java, javascript, jenkins, etc.
 
-const nodeResults = CoreIcons.search('node');
+const nodeResults = CoreIcons.search("node");
 // Retorna: nodejs, nodemon, etc.
 ```
 
@@ -114,17 +118,18 @@ const nodeResults = CoreIcons.search('node');
 Gera a URL para um ícone.
 
 **Parâmetros:**
+
 - `iconOrSlug` (string|Object) - Slug ou objeto ícone
 
 **Retorno:** `string` - URL do arquivo
 
 ```javascript
 // Por slug
-const url1 = CoreIcons.urlFor('react');
+const url1 = CoreIcons.urlFor("react");
 // 'fotos/react.png'
 
 // Por objeto
-const icon = CoreIcons.getBySlug('vue');
+const icon = CoreIcons.getBySlug("vue");
 const url2 = CoreIcons.urlFor(icon);
 // 'fotos/vue.png'
 ```
@@ -136,6 +141,7 @@ const url2 = CoreIcons.urlFor(icon);
 Gera uma tag HTML `<img>` para o ícone.
 
 **Parâmetros:**
+
 - `iconOrSlug` (string|Object) - Slug ou objeto ícone
 - `attrs` (Object) - Atributos opcionais:
   - `alt` (string) - Texto alternativo
@@ -147,15 +153,15 @@ Gera uma tag HTML `<img>` para o ícone.
 
 ```javascript
 // Básico
-const img1 = CoreIcons.imgHtml('react');
+const img1 = CoreIcons.imgHtml("react");
 // '<img src="fotos/react.png" alt="React">'
 
 // Com atributos
-const img2 = CoreIcons.imgHtml('angular', {
+const img2 = CoreIcons.imgHtml("angular", {
   width: 48,
   height: 48,
-  class: 'icon',
-  alt: 'Angular Framework'
+  class: "icon",
+  alt: "Angular Framework",
 });
 // '<img src="fotos/angular.png" alt="Angular Framework" class="icon" width="48" height="48">'
 ```
@@ -167,11 +173,12 @@ const img2 = CoreIcons.imgHtml('angular', {
 Define o caminho base para os arquivos de ícones.
 
 **Parâmetros:**
+
 - `path` (string) - Novo caminho base
 
 ```javascript
-CoreIcons.setBasePath('assets/icons/');
-CoreIcons.setBasePath('https://cdn.exemplo.com/icons/');
+CoreIcons.setBasePath("assets/icons/");
+CoreIcons.setBasePath("https://cdn.exemplo.com/icons/");
 ```
 
 ---
@@ -194,12 +201,13 @@ const path = CoreIcons.getBasePath();
 Carrega dados de ícones customizados.
 
 **Parâmetros:**
+
 - `data` (Array) - Array de objetos `{ name: string, file: string }`
 
 ```javascript
 CoreIcons.useData([
-  { name: 'custom-icon', file: 'custom.png' },
-  { name: 'another', file: 'subdir/another.png' }
+  { name: "custom-icon", file: "custom.png" },
+  { name: "another", file: "subdir/another.png" },
 ]);
 ```
 
@@ -209,22 +217,25 @@ Estrutura do objeto retornado pelos métodos da API:
 
 ```typescript
 {
-  slug: string,    // Identificador único (ex: 'react')
-  name: string,    // Nome formatado (ex: 'React')
-  file: string     // Nome do arquivo (ex: 'react.png')
+  slug: string,      // Identificador único (ex: 'react')
+  name: string,      // Nome formatado (ex: 'React')
+  file: string,      // Nome do arquivo PNG (ex: 'react.png')
+  fileSVG?: string   // Nome do arquivo SVG (ex: 'react.svg') - opcional
 }
 ```
+
+**Nota:** A propriedade `fileSVG` está disponível quando `datasvg.js` é carregado.
 
 ## Exemplos
 
 ### Renderizar Lista de Ícones
 
 ```javascript
-const container = document.getElementById('icons');
+const container = document.getElementById("icons");
 const icons = CoreIcons.getAll();
 
-icons.forEach(icon => {
-  const div = document.createElement('div');
+icons.forEach((icon) => {
+  const div = document.createElement("div");
   div.innerHTML = `
     ${CoreIcons.imgHtml(icon, { width: 32, height: 32 })}
     <span>${icon.name}</span>
@@ -236,16 +247,16 @@ icons.forEach(icon => {
 ### Busca com Autocomplete
 
 ```javascript
-const searchInput = document.getElementById('search');
-const resultsDiv = document.getElementById('results');
+const searchInput = document.getElementById("search");
+const resultsDiv = document.getElementById("results");
 
-searchInput.addEventListener('input', (e) => {
+searchInput.addEventListener("input", (e) => {
   const query = e.target.value;
   const results = CoreIcons.search(query);
-  
+
   resultsDiv.innerHTML = results
-    .map(icon => `<div>${icon.name}</div>`)
-    .join('');
+    .map((icon) => `<div>${icon.name}</div>`)
+    .join("");
 });
 ```
 
@@ -254,11 +265,13 @@ searchInput.addEventListener('input', (e) => {
 ```javascript
 function generateIconTable() {
   const icons = CoreIcons.getAll();
-  
-  return icons.map(icon => {
-    const url = CoreIcons.urlFor(icon);
-    return `| ![${icon.name}](${url}) | ${icon.name} | \`${icon.slug}\` |`;
-  }).join('\n');
+
+  return icons
+    .map((icon) => {
+      const url = CoreIcons.urlFor(icon);
+      return `| ![${icon.name}](${url}) | ${icon.name} | \`${icon.slug}\` |`;
+    })
+    .join("\n");
 }
 ```
 
@@ -268,9 +281,9 @@ function generateIconTable() {
 
 ```jsx
 function Icon({ slug, size = 32 }) {
-  const html = CoreIcons.imgHtml(slug, { 
-    width: size, 
-    height: size 
+  const html = CoreIcons.imgHtml(slug, {
+    width: size,
+    height: size,
   });
   return <span dangerouslySetInnerHTML={{ __html: html }} />;
 }
@@ -285,16 +298,16 @@ function Icon({ slug, size = 32 }) {
 
 <script>
 export default {
-  props: ['slug', 'size'],
+  props: ["slug", "size"],
   computed: {
     iconHtml() {
       return CoreIcons.imgHtml(this.slug, {
         width: this.size || 32,
-        height: this.size || 32
+        height: this.size || 32,
       });
-    }
-  }
-}
+    },
+  },
+};
 </script>
 ```
 

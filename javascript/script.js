@@ -13,52 +13,63 @@
 
 // CoreIcons Library — catálogo com cartões 3D (perspectiva + inclinação)
 (function () {
-  'use strict';
+  "use strict";
 
   /** Base do site publicado (GitHub Pages etc.). Sobrescreva antes dos scripts: window.CORE_ICONS_PUBLIC_BASE = 'https://usuario.github.io/coreIcons'; */
   function getPublicSiteBase() {
     if (
-      typeof window.CORE_ICONS_PUBLIC_BASE === 'string' &&
+      typeof window.CORE_ICONS_PUBLIC_BASE === "string" &&
       window.CORE_ICONS_PUBLIC_BASE.trim()
     ) {
-      return window.CORE_ICONS_PUBLIC_BASE.replace(/\/+$/, '');
+      return window.CORE_ICONS_PUBLIC_BASE.replace(/\/+$/, "");
     }
-    return 'https://mauriciospark.github.io/coreIcons';
+    return "https://mauriciospark.github.io/coreIcons";
   }
 
   function publicImageUrl(icon) {
     var base = getPublicSiteBase();
     var path =
-      'fotos/' + icon.file.split('/').map(encodeURIComponent).join('/');
-    return base + '/' + path;
+      "fotos/" + icon.file.split("/").map(encodeURIComponent).join("/");
+    return base + "/" + path;
   }
 
-  const searchInput = document.getElementById('search-input');
-  const iconsGrid = document.getElementById('icons-grid');
-  const iconCount = document.getElementById('icon-count');
-  const resultsCount = document.getElementById('results-count');
-  const noResults = document.getElementById('no-results');
-  const searchTerm = document.getElementById('search-term');
-  const toast = document.getElementById('toast');
-  const gridViewBtn = document.getElementById('grid-view');
+  function publicImageUrlSVG(icon) {
+    if (!icon.fileSVG) return "";
+    var base = getPublicSiteBase();
+    var path =
+      "fotos/" + icon.fileSVG.split("/").map(encodeURIComponent).join("/");
+    return base + "/" + path;
+  }
 
-  const iconModal = document.getElementById('icon-modal');
-  const modalBackdrop = iconModal && iconModal.querySelector('[data-close-modal]');
-  const modalCloseBtn = document.getElementById('modal-close-btn');
-  const modalIconImg = document.getElementById('modal-icon-img');
-  const modalTitle = document.getElementById('modal-title');
-  const modalUrlInput = document.getElementById('modal-url');
-  const modalSlugInput = document.getElementById('modal-slug');
-  const modalHintSample = document.getElementById('modal-hint-sample');
-  const modalCopyUrlBtn = document.getElementById('modal-copy-url');
-  const modalCopyNameBtn = document.getElementById('modal-copy-name');
+  const searchInput = document.getElementById("search-input");
+  const iconsGrid = document.getElementById("icons-grid");
+  const iconCount = document.getElementById("icon-count");
+  const resultsCount = document.getElementById("results-count");
+  const noResults = document.getElementById("no-results");
+  const searchTerm = document.getElementById("search-term");
+  const toast = document.getElementById("toast");
+  const gridViewBtn = document.getElementById("grid-view");
+
+  const iconModal = document.getElementById("icon-modal");
+  const modalBackdrop =
+    iconModal && iconModal.querySelector("[data-close-modal]");
+  const modalCloseBtn = document.getElementById("modal-close-btn");
+  const modalIconImg = document.getElementById("modal-icon-img");
+  const modalTitle = document.getElementById("modal-title");
+  const modalUrlInput = document.getElementById("modal-url");
+  const modalUrlInputSVG = document.getElementById("modal-url-svg");
+  const modalSlugInput = document.getElementById("modal-slug");
+  const modalHintSample = document.getElementById("modal-hint-sample");
+  const modalCopyUrlBtn = document.getElementById("modal-copy-url");
+  const modalCopyUrlBtnSVG = document.getElementById("modal-copy-url-svg");
+  const modalCopyNameBtn = document.getElementById("modal-copy-name");
 
   let icons = [];
-  let searchQuery = '';
+  let searchQuery = "";
 
   const reduceMotion =
-    typeof window.matchMedia === 'function' &&
-    window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    typeof window.matchMedia === "function" &&
+    window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
   function init() {
     loadIcons();
@@ -71,11 +82,11 @@
   }
 
   function loadIcons() {
-    if (typeof CoreIcons !== 'undefined' && CoreIcons.getAll().length > 0) {
+    if (typeof CoreIcons !== "undefined" && CoreIcons.getAll().length > 0) {
       icons = CoreIcons.getAll().map(function (i) {
         return { slug: i.slug, name: i.name, file: i.file };
       });
-    } else if (typeof coreIconsData !== 'undefined') {
+    } else if (typeof coreIconsData !== "undefined") {
       icons = coreIconsData.map(function (icon) {
         return {
           slug: icon.name,
@@ -84,25 +95,42 @@
         };
       });
     } else {
-      console.error('coreIconsData not found. Verifique se data.js está carregado.');
+      console.error(
+        "coreIconsData not found. Verifique se data.js está carregado.",
+      );
       icons = [];
+    }
+
+    // Load SVG data if available
+    if (typeof coreIconsDataSVG !== "undefined") {
+      icons = icons.map(function (icon) {
+        var svgIcon = coreIconsDataSVG.find(function (svgItem) {
+          return svgItem.name === icon.slug;
+        });
+        return {
+          slug: icon.slug,
+          name: icon.name,
+          file: icon.file,
+          fileSVG: svgIcon ? svgIcon.file : null,
+        };
+      });
     }
   }
 
   function formatIconName(name) {
     return String(name)
-      .split('-')
+      .split("-")
       .map(function (word) {
         return word.charAt(0).toUpperCase() + word.slice(1);
       })
-      .join(' ');
+      .join(" ");
   }
 
   function setupScrollPersistence() {
-    var mainContent = document.querySelector('.main-content');
+    var mainContent = document.querySelector(".main-content");
     if (!mainContent) return;
 
-    var SCROLL_KEY = 'coreicons_scroll_position';
+    var SCROLL_KEY = "coreicons_scroll_position";
 
     // Restore scroll position on load
     var savedScroll = localStorage.getItem(SCROLL_KEY);
@@ -121,14 +149,14 @@
       localStorage.setItem(SCROLL_KEY, mainContent.scrollTop);
     }, 300);
 
-    mainContent.addEventListener('scroll', saveScroll);
+    mainContent.addEventListener("scroll", saveScroll);
   }
 
   function setupEventListeners() {
-    searchInput.addEventListener('input', debounce(handleSearch, 200));
+    searchInput.addEventListener("input", debounce(handleSearch, 200));
 
-    document.addEventListener('keydown', function (e) {
-      if ((e.ctrlKey || e.metaKey) && e.key === 'k') {
+    document.addEventListener("keydown", function (e) {
+      if ((e.ctrlKey || e.metaKey) && e.key === "k") {
         e.preventDefault();
         searchInput.focus();
       }
@@ -139,56 +167,70 @@
     if (!iconModal) return;
 
     function closeModal() {
-      iconModal.classList.remove('modal--open');
-      iconModal.setAttribute('aria-hidden', 'true');
-      document.body.classList.remove('modal-open');
+      iconModal.classList.remove("modal--open");
+      iconModal.setAttribute("aria-hidden", "true");
+      document.body.classList.remove("modal-open");
     }
 
     if (modalBackdrop) {
-      modalBackdrop.addEventListener('click', closeModal);
+      modalBackdrop.addEventListener("click", closeModal);
     }
     if (modalCloseBtn) {
-      modalCloseBtn.addEventListener('click', closeModal);
+      modalCloseBtn.addEventListener("click", closeModal);
     }
 
     // Re-select elements to ensure they exist
-    var copyUrlBtn = document.getElementById('modal-copy-url');
-    var copyNameBtn = document.getElementById('modal-copy-name');
+    var copyUrlBtn = document.getElementById("modal-copy-url");
+    var copyUrlBtnSVG = document.getElementById("modal-copy-url-svg");
+    var copyNameBtn = document.getElementById("modal-copy-name");
 
     if (copyUrlBtn) {
-      copyUrlBtn.addEventListener('click', function () {
-        var urlInput = document.getElementById('modal-url');
+      copyUrlBtn.addEventListener("click", function () {
+        var urlInput = document.getElementById("modal-url");
         if (urlInput) {
-          copyModalText(urlInput.value, 'URL copiada');
+          copyModalText(urlInput.value, "URL copiada");
+        }
+      });
+    }
+    if (copyUrlBtnSVG) {
+      copyUrlBtnSVG.addEventListener("click", function () {
+        var urlInputSVG = document.getElementById("modal-url-svg");
+        if (urlInputSVG) {
+          copyModalText(urlInputSVG.value, "URL SVG copiada");
         }
       });
     }
     if (copyNameBtn) {
-      copyNameBtn.addEventListener('click', function () {
-        var slugInput = document.getElementById('modal-slug');
+      copyNameBtn.addEventListener("click", function () {
+        var slugInput = document.getElementById("modal-slug");
         if (slugInput) {
-          copyModalText(slugInput.value, 'Nome copiado');
+          copyModalText(slugInput.value, "Nome copiado");
         }
       });
     }
 
-    document.addEventListener('keydown', function (e) {
-      if (e.key === 'Escape' && iconModal.classList.contains('modal--open')) {
+    document.addEventListener("keydown", function (e) {
+      if (e.key === "Escape" && iconModal.classList.contains("modal--open")) {
         closeModal();
       }
     });
   }
 
   function openIconModal(icon) {
-    if (!iconModal || !modalIconImg || !modalTitle || !modalUrlInput || !modalSlugInput) {
+    if (
+      !iconModal ||
+      !modalIconImg ||
+      !modalTitle ||
+      !modalUrlInput ||
+      !modalSlugInput
+    ) {
       return;
     }
 
     var localSrc =
-      typeof CoreIcons !== 'undefined'
+      typeof CoreIcons !== "undefined"
         ? CoreIcons.urlFor(icon)
-        : 'fotos/' +
-        icon.file.split('/').map(encodeURIComponent).join('/');
+        : "fotos/" + icon.file.split("/").map(encodeURIComponent).join("/");
 
     modalIconImg.src = localSrc;
     modalIconImg.alt = icon.name;
@@ -197,16 +239,20 @@
     var url = publicImageUrl(icon);
     modalUrlInput.value = url;
 
-    modalSlugInput.value = icon.name || icon.file || '';
-
-    if (modalHintSample) {
-      modalHintSample.textContent =
-        getPublicSiteBase() + '/fotos/' + icon.file;
+    var urlSVG = publicImageUrlSVG(icon);
+    if (modalUrlInputSVG) {
+      modalUrlInputSVG.value = urlSVG;
     }
 
-    iconModal.classList.add('modal--open');
-    iconModal.setAttribute('aria-hidden', 'false');
-    document.body.classList.add('modal-open');
+    modalSlugInput.value = icon.name || icon.file || "";
+
+    if (modalHintSample) {
+      modalHintSample.textContent = getPublicSiteBase() + "/fotos/" + icon.file;
+    }
+
+    iconModal.classList.add("modal--open");
+    iconModal.setAttribute("aria-hidden", "false");
+    document.body.classList.add("modal-open");
     modalUrlInput.focus();
     modalUrlInput.select();
   }
@@ -219,7 +265,7 @@
         },
         function () {
           fallbackCopy(text, toastMsg);
-        }
+        },
       );
     } else {
       fallbackCopy(text, toastMsg);
@@ -227,15 +273,15 @@
   }
 
   function fallbackCopy(text, toastMsg) {
-    var textArea = document.createElement('textarea');
+    var textArea = document.createElement("textarea");
     textArea.value = text;
     document.body.appendChild(textArea);
     textArea.select();
     try {
-      document.execCommand('copy');
+      document.execCommand("copy");
       showToast(toastMsg);
     } catch (err) {
-      showToast('Não foi possível copiar');
+      showToast("Não foi possível copiar");
     }
     document.body.removeChild(textArea);
   }
@@ -261,7 +307,7 @@
   function getFilteredIcons() {
     if (!searchQuery) return icons;
     return icons.filter(function (icon) {
-      const slug = (icon.slug || '').toLowerCase();
+      const slug = (icon.slug || "").toLowerCase();
       return (
         icon.name.toLowerCase().includes(searchQuery) ||
         slug.includes(searchQuery) ||
@@ -275,13 +321,13 @@
     updateResultsCount(filtered.length);
 
     if (filtered.length === 0 && searchQuery) {
-      noResults.classList.remove('hidden');
+      noResults.classList.remove("hidden");
       searchTerm.textContent = searchQuery;
     } else {
-      noResults.classList.add('hidden');
+      noResults.classList.add("hidden");
     }
 
-    iconsGrid.innerHTML = '';
+    iconsGrid.innerHTML = "";
 
     filtered.forEach(function (icon) {
       iconsGrid.appendChild(createIconCard(icon));
@@ -300,55 +346,54 @@
       var rotY = px * 2 * maxTilt;
       var rotX = -py * 2 * maxTilt;
       inner.style.transform =
-        'rotateX(' + rotX + 'deg) rotateY(' + rotY + 'deg) translateZ(12px)';
+        "rotateX(" + rotX + "deg) rotateY(" + rotY + "deg) translateZ(12px)";
     }
 
     function onLeave() {
-      inner.style.transform = '';
+      inner.style.transform = "";
     }
 
-    card.addEventListener('mousemove', onMove);
-    card.addEventListener('mouseleave', onLeave);
+    card.addEventListener("mousemove", onMove);
+    card.addEventListener("mouseleave", onLeave);
   }
 
   function createIconCard(icon) {
-    var card = document.createElement('div');
-    card.className = 'icon-card';
+    var card = document.createElement("div");
+    card.className = "icon-card";
     card.dataset.name = icon.name;
-    card.setAttribute('role', 'button');
+    card.setAttribute("role", "button");
     card.tabIndex = 0;
     card.title =
-      'Clique para ver a URL pública; Shift+clique para copiar HTML do <img>';
+      "Clique para ver a URL pública; Shift+clique para copiar HTML do <img>";
 
-    var inner = document.createElement('div');
-    inner.className = 'icon-card-inner';
+    var inner = document.createElement("div");
+    inner.className = "icon-card-inner";
 
-    var img = document.createElement('img');
+    var img = document.createElement("img");
     img.src =
-      typeof CoreIcons !== 'undefined'
+      typeof CoreIcons !== "undefined"
         ? CoreIcons.urlFor(icon)
-        : 'fotos/' +
-        icon.file.split('/').map(encodeURIComponent).join('/');
+        : "fotos/" + icon.file.split("/").map(encodeURIComponent).join("/");
     img.alt = icon.name;
-    img.loading = 'lazy';
+    img.loading = "lazy";
 
-    var name = document.createElement('span');
-    name.className = 'icon-name';
+    var name = document.createElement("span");
+    name.className = "icon-name";
     name.textContent = icon.name;
 
     inner.appendChild(img);
     inner.appendChild(name);
     card.appendChild(inner);
 
-    card.addEventListener('click', function (ev) {
+    card.addEventListener("click", function (ev) {
       if (ev.shiftKey) {
         copyToClipboard(icon, ev);
         return;
       }
       openIconModal(icon);
     });
-    card.addEventListener('keydown', function (ev) {
-      if (ev.key === 'Enter' || ev.key === ' ') {
+    card.addEventListener("keydown", function (ev) {
+      if (ev.key === "Enter" || ev.key === " ") {
         ev.preventDefault();
         if (ev.shiftKey) {
           copyToClipboard(icon, ev);
@@ -365,17 +410,17 @@
   function copyToClipboard(icon, e) {
     var useHtml = e && e.shiftKey;
     var textToCopy = useHtml
-      ? typeof CoreIcons !== 'undefined'
+      ? typeof CoreIcons !== "undefined"
         ? CoreIcons.imgHtml(icon.slug, {
-          width: 48,
-          height: 48,
-          alt: icon.name,
-        })
+            width: 48,
+            height: 48,
+            alt: icon.name,
+          })
         : '<img src="fotos/' +
-        icon.file.split('/').map(encodeURIComponent).join('/') +
-        '" alt="' +
-        icon.name.replace(/"/g, '&quot;') +
-        '" width="48" height="48">'
+          icon.file.split("/").map(encodeURIComponent).join("/") +
+          '" alt="' +
+          icon.name.replace(/"/g, "&quot;") +
+          '" width="48" height="48">'
       : icon.name;
 
     if (navigator.clipboard && navigator.clipboard.writeText) {
@@ -383,42 +428,48 @@
         function () {
           showToast(
             useHtml
-              ? 'HTML copiado para a área de transferência'
-              : 'Copiado: ' + textToCopy
+              ? "HTML copiado para a área de transferência"
+              : "Copiado: " + textToCopy,
           );
         },
         function () {
-          fallbackCopy(textToCopy, useHtml
-            ? 'HTML copiado para a área de transferência'
-            : 'Copiado: ' + textToCopy);
-        }
+          fallbackCopy(
+            textToCopy,
+            useHtml
+              ? "HTML copiado para a área de transferência"
+              : "Copiado: " + textToCopy,
+          );
+        },
       );
     } else {
-      fallbackCopy(textToCopy, useHtml
-        ? 'HTML copiado para a área de transferência'
-        : 'Copiado: ' + textToCopy);
+      fallbackCopy(
+        textToCopy,
+        useHtml
+          ? "HTML copiado para a área de transferência"
+          : "Copiado: " + textToCopy,
+      );
     }
   }
 
   function fallbackCopy(text, toastMsg) {
-    var textArea = document.createElement('textarea');
+    var textArea = document.createElement("textarea");
     textArea.value = text;
     document.body.appendChild(textArea);
     textArea.select();
     try {
-      document.execCommand('copy');
+      document.execCommand("copy");
       showToast(toastMsg);
     } catch (err) {
-      showToast('Não foi possível copiar');
+      showToast("Não foi possível copiar");
     }
     document.body.removeChild(textArea);
   }
 
   function showToast(message) {
     toast.textContent = message;
-    toast.classList.add('show');
+    toast.classList.add("show");
     setTimeout(function () {
-      toast.classList.remove('show');
+      toast.classList.remove("show");
     }, 2000);
   }
 
@@ -429,38 +480,38 @@
   function updateResultsCount(count) {
     if (searchQuery) {
       resultsCount.textContent =
-        count + ' resultado' + (count !== 1 ? 's' : '');
+        count + " resultado" + (count !== 1 ? "s" : "");
     } else {
-      resultsCount.textContent = 'Total: ' + count + ' ícones';
+      resultsCount.textContent = "Total: " + count + " ícones";
     }
   }
 
   function fetchGitHubStars() {
-    var starsBtn = document.getElementById('github-stars-btn');
-    var starsCount = document.getElementById('github-stars-count');
+    var starsBtn = document.getElementById("github-stars-btn");
+    var starsCount = document.getElementById("github-stars-count");
 
     if (!starsBtn || !starsCount) return;
 
-    fetch('https://api.github.com/repos/mauriciospark/coreIcons')
+    fetch("https://api.github.com/repos/mauriciospark/coreIcons")
       .then(function (response) {
-        if (!response.ok) throw new Error('Erro ao buscar estrelas');
+        if (!response.ok) throw new Error("Erro ao buscar estrelas");
         return response.json();
       })
       .then(function (data) {
         var stars = data.stargazers_count;
-        starsCount.textContent = stars + ' estrela' + (stars !== 1 ? 's' : '');
+        starsCount.textContent = stars + " estrela" + (stars !== 1 ? "s" : "");
       })
       .catch(function (error) {
-        starsCount.textContent = '★ GitHub';
+        starsCount.textContent = "★ GitHub";
       });
 
-    starsBtn.addEventListener('click', function () {
-      window.open('https://github.com/mauriciospark/coreIcons', '_blank');
+    starsBtn.addEventListener("click", function () {
+      window.open("https://github.com/mauriciospark/coreIcons", "_blank");
     });
   }
 
-  if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', init);
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", init);
   } else {
     init();
   }

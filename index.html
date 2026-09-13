@@ -26,6 +26,24 @@
     content="CoreIcons Library — biblioteca profissional de ícones para linguagens, frameworks e ferramentas de desenvolvimento. Pesquisa, pré-visualização 3D e URLs para uso em documentação e projetos.">
   <meta name="theme-color" content="#0a0f1a">
   <meta name="application-name" content="CoreIcons Library">
+  <meta name="keywords" content="ícones, icons, desenvolvimento, programação, linguagens, frameworks, ferramentas, dev, tech">
+  <meta name="author" content="Maurício Spark">
+  <meta name="robots" content="index, follow">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://mauriciospark.github.io/coreIcons/">
+  <meta property="og:title" content="CoreIcons Library - Ícones para Desenvolvedores">
+  <meta property="og:description" content="Biblioteca profissional de ícones para linguagens, frameworks e ferramentas de desenvolvimento.">
+  <meta property="og:image" content="https://mauriciospark.github.io/coreIcons/favicon/coreicons.png">
+  
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="https://mauriciospark.github.io/coreIcons/">
+  <meta name="twitter:title" content="CoreIcons Library - Ícones para Desenvolvedores">
+  <meta name="twitter:description" content="Biblioteca profissional de ícones para linguagens, frameworks e ferramentas de desenvolvimento.">
+  <meta name="twitter:image" content="https://mauriciospark.github.io/coreIcons/favicon/coreicons.png">
+  
   <title>CoreIcons</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -41,6 +59,8 @@
 </head>
 
 <body>
+  <a href="#main-content" class="skip-link">Pular para o conteúdo principal</a>
+  
   <header class="header">
     <div class="container header-inner">
       <div class="header-glow" aria-hidden="true"></div>
@@ -63,7 +83,7 @@
   <div class="controls-bar">
     <div class="container controls-container">
       <div class="view-toggle">
-        <button type="button" id="grid-view" class="active" title="Visualização em grade">
+        <button type="button" id="grid-view" class="active" title="Visualização em grade" aria-label="Visualização em grade">
           <svg width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true">
             <rect x="1" y="1" width="6" height="6" rx="1" stroke="currentColor" stroke-width="2" />
             <rect x="11" y="1" width="6" height="6" rx="1" stroke="currentColor" stroke-width="2" />
@@ -88,7 +108,7 @@
       <span class="results-count" id="results-count">Carregando...</span>
     </div>
   </div>
-  <main class="container main-content">
+  <main class="container main-content" id="main-content">
 
     <div id="icons-grid" class="icons-grid"></div>
 
@@ -114,10 +134,26 @@
       <h2 id="modal-title" class="modal-title"></h2>
 
       <div class="modal-field">
-        <label class="modal-label" for="modal-url">URL da imagem:</label>
+        <label class="modal-label" for="modal-url">URL da imagem (PNG):</label>
         <div class="modal-row">
           <input id="modal-url" class="modal-input" type="text" readonly autocomplete="off" spellcheck="false">
-          <button type="button" class="modal-copy-btn" id="modal-copy-url">
+          <button type="button" class="modal-copy-btn" id="modal-copy-url" aria-label="Copiar URL PNG">
+            <svg class="modal-copy-ico" width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <path
+                d="M8 4v12a2 2 0 002 2h8a2 2 0 002-2V7.242a2 2 0 00-.602-1.43L16.083 2.57A2 2 0 0014.685 2H10a2 2 0 00-2 2z"
+                stroke="currentColor" stroke-width="2" />
+              <path d="M16 18v2a2 2 0 01-2 2H6a2 2 0 01-2-2V8a2 2 0 012-2h2" stroke="currentColor" stroke-width="2" />
+            </svg>
+            Copiar URL
+          </button>
+        </div>
+      </div>
+
+      <div class="modal-field">
+        <label class="modal-label" for="modal-url-svg">URL da imagem (SVG):</label>
+        <div class="modal-row">
+          <input id="modal-url-svg" class="modal-input" type="text" readonly autocomplete="off" spellcheck="false">
+          <button type="button" class="modal-copy-btn" id="modal-copy-url-svg" aria-label="Copiar URL SVG">
             <svg class="modal-copy-ico" width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true">
               <path
                 d="M8 4v12a2 2 0 002 2h8a2 2 0 002-2V7.242a2 2 0 00-.602-1.43L16.083 2.57A2 2 0 0014.685 2H10a2 2 0 00-2 2z"
@@ -155,6 +191,7 @@
 
   <!-- Opcional: URL pública ao publicar (GitHub Pages). Ex.: window.CORE_ICONS_PUBLIC_BASE = 'https://mauriciospark.github.io/coreicons'; -->
   <script src="javascript/data.js"></script>
+  <script src="javascript/datasvg.js"></script>
   <script src="javascript/core-icons.js"></script>
   <script src="javascript/script.js"></script>
 </body>

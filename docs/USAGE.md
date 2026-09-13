@@ -24,25 +24,45 @@ https://mauriciospark.github.io/coreIcons
 1. Abra o catálogo
 2. Pesquise o ícone desejado
 3. Clique no ícone para abrir o modal
-4. Copie a URL ou o nome
+4. Copie a URL PNG ou SVG conforme necessário
+5. Copie o nome do ícone para referência
 
 **Dica:** Segure `Shift` e clique para copiar o HTML diretamente.
 
 ## Uso em HTML
 
-### URL Pública (GitHub Pages)
+### URL Pública (GitHub Pages) - PNG
 
 ```html
-<img src="https://mauriciospark.github.io/coreIcons/fotos/react.png" 
-     alt="React" 
-     width="48" 
-     height="48">
+<img
+  src="https://mauriciospark.github.io/coreIcons/fotos/react.png"
+  alt="React"
+  width="48"
+  height="48"
+/>
 ```
 
-### URL Relativa (Mesmo Servidor)
+### URL Pública (GitHub Pages) - SVG
 
 ```html
-<img src="fotos/react.png" alt="React" width="48" height="48">
+<img
+  src="https://mauriciospark.github.io/coreIcons/fotos/react.svg"
+  alt="React"
+  width="48"
+  height="48"
+/>
+```
+
+### URL Relativa (Mesmo Servidor) - PNG
+
+```html
+<img src="fotos/react.png" alt="React" width="48" height="48" />
+```
+
+### URL Relativa (Mesmo Servidor) - SVG
+
+```html
+<img src="fotos/react.svg" alt="React" width="48" height="48" />
 ```
 
 ### Usando a API
@@ -51,10 +71,12 @@ https://mauriciospark.github.io/coreIcons
 <script src="data.js"></script>
 <script src="core-icons.js"></script>
 <script>
-  document.write(CoreIcons.imgHtml('react', { 
-    width: 48, 
-    height: 48 
-  }));
+  document.write(
+    CoreIcons.imgHtml("react", {
+      width: 48,
+      height: 48,
+    }),
+  );
 </script>
 ```
 
@@ -62,9 +84,9 @@ https://mauriciospark.github.io/coreIcons
 
 ```html
 <div class="tech-stack">
-  <img src="fotos/react.png" alt="React" width="32" height="32">
-  <img src="fotos/typescript.png" alt="TypeScript" width="32" height="32">
-  <img src="fotos/nodejs.png" alt="Node.js" width="32" height="32">
+  <img src="fotos/react.png" alt="React" width="32" height="32" />
+  <img src="fotos/typescript.png" alt="TypeScript" width="32" height="32" />
+  <img src="fotos/nodejs.png" alt="Node.js" width="32" height="32" />
 </div>
 ```
 
@@ -89,11 +111,11 @@ https://mauriciospark.github.io/coreIcons
 ### Tabela de Tecnologias
 
 ```markdown
-| Tecnologia | Ícone |
-|------------|-------|
-| React | ![React](https://mauriciospark.github.io/coreIcons/fotos/react.png) |
-| Angular | ![Angular](https://mauriciospark.github.io/coreIcons/fotos/angular.png) |
-| Vue | ![Vue](https://mauriciospark.github.io/coreIcons/fotos/vue.png) |
+| Tecnologia | Ícone                                                                   |
+| ---------- | ----------------------------------------------------------------------- |
+| React      | ![React](https://mauriciospark.github.io/coreIcons/fotos/react.png)     |
+| Angular    | ![Angular](https://mauriciospark.github.io/coreIcons/fotos/angular.png) |
+| Vue        | ![Vue](https://mauriciospark.github.io/coreIcons/fotos/vue.png)         |
 ```
 
 ## Uso em CSS
@@ -102,7 +124,7 @@ https://mauriciospark.github.io/coreIcons
 
 ```css
 .tech-badge {
-  background-image: url('https://mauriciospark.github.io/coreIcons/fotos/react.png');
+  background-image: url("https://mauriciospark.github.io/coreIcons/fotos/react.png");
   background-size: contain;
   background-repeat: no-repeat;
   width: 32px;
@@ -114,11 +136,11 @@ https://mauriciospark.github.io/coreIcons
 
 ```css
 .tech-tag::before {
-  content: '';
+  content: "";
   display: inline-block;
   width: 16px;
   height: 16px;
-  background: url('fotos/javascript.png') no-repeat center;
+  background: url("fotos/javascript.png") no-repeat center;
   background-size: contain;
   margin-right: 4px;
 }
@@ -131,18 +153,18 @@ https://mauriciospark.github.io/coreIcons
 ```html
 <!DOCTYPE html>
 <html>
-<head>
-  <script src="https://mauriciospark.github.io/coreIcons/javascript/data.js"></script>
-  <script src="https://mauriciospark.github.io/coreIcons/javascript/core-icons.js"></script>
-</head>
-<body>
-  <div id="app"></div>
-  
-  <script>
-    // Agora CoreIcons está disponível
-    console.log(CoreIcons.getAll().length + ' ícones carregados');
-  </script>
-</body>
+  <head>
+    <script src="https://mauriciospark.github.io/coreIcons/javascript/data.js"></script>
+    <script src="https://mauriciospark.github.io/coreIcons/javascript/core-icons.js"></script>
+  </head>
+  <body>
+    <div id="app"></div>
+
+    <script>
+      // Agora CoreIcons está disponível
+      console.log(CoreIcons.getAll().length + " ícones carregados");
+    </script>
+  </body>
 </html>
 ```
 
@@ -150,10 +172,12 @@ https://mauriciospark.github.io/coreIcons
 
 ```javascript
 function renderIconGrid() {
-  const container = document.getElementById('icon-grid');
+  const container = document.getElementById("icon-grid");
   const icons = CoreIcons.getAll();
-  
-  container.innerHTML = icons.map(icon => `
+
+  container.innerHTML = icons
+    .map(
+      (icon) => `
     <div class="icon-item" data-slug="${icon.slug}">
       <img src="${CoreIcons.urlFor(icon)}" 
            alt="${icon.name}" 
@@ -161,24 +185,35 @@ function renderIconGrid() {
            height="48">
       <span>${icon.name}</span>
     </div>
-  `).join('');
+  `,
+    )
+    .join("");
 }
 ```
 
 ### Busca Dinâmica
 
 ```javascript
-const searchInput = document.getElementById('search');
-const resultsContainer = document.getElementById('results');
+const searchInput = document.getElementById("search");
+const resultsContainer = document.getElementById("results");
 
-searchInput.addEventListener('input', debounce((e) => {
-  const query = e.target.value;
-  const results = CoreIcons.search(query);
-  
-  resultsContainer.innerHTML = results.map(icon =>
-    CoreIcons.imgHtml(icon, { width: 32, height: 32, class: 'search-result' })
-  ).join('');
-}, 200));
+searchInput.addEventListener(
+  "input",
+  debounce((e) => {
+    const query = e.target.value;
+    const results = CoreIcons.search(query);
+
+    resultsContainer.innerHTML = results
+      .map((icon) =>
+        CoreIcons.imgHtml(icon, {
+          width: 32,
+          height: 32,
+          class: "search-result",
+        }),
+      )
+      .join("");
+  }, 200),
+);
 
 function debounce(fn, ms) {
   let timeout;
@@ -193,21 +228,21 @@ function debounce(fn, ms) {
 
 ```javascript
 function createIconSelect() {
-  const select = document.createElement('select');
+  const select = document.createElement("select");
   const icons = CoreIcons.getAll();
-  
-  icons.forEach(icon => {
-    const option = document.createElement('option');
+
+  icons.forEach((icon) => {
+    const option = document.createElement("option");
     option.value = icon.slug;
     option.textContent = icon.name;
     select.appendChild(option);
   });
-  
-  select.addEventListener('change', (e) => {
+
+  select.addEventListener("change", (e) => {
     const selected = CoreIcons.getBySlug(e.target.value);
-    console.log('Selecionado:', selected);
+    console.log("Selecionado:", selected);
   });
-  
+
   return select;
 }
 ```
@@ -245,7 +280,7 @@ Após hospedar, configure o caminho base:
 
 ```javascript
 // Antes de usar a API
-window.CORE_ICONS_PUBLIC_BASE = 'https://seu-dominio.com/coreIcons';
+window.CORE_ICONS_PUBLIC_BASE = "https://seu-dominio.com/coreIcons";
 ```
 
 ### Estrutura de Arquivos Necessária
@@ -257,12 +292,15 @@ public_html/
 │   └── style.css
 ├── javascript/
 │   ├── data.js
+│   ├── datasvg.js
 │   ├── core-icons.js
 │   └── script.js
 ├── fotos/
 │   ├── react.png
+│   ├── react.svg
 │   ├── angular.png
-│   └── ... (1002+ ícones)
+│   ├── angular.svg
+│   └── ... (1067+ ícones em PNG e SVG)
 └── favicon/
     └── coreIcons.png
 ```
@@ -272,29 +310,34 @@ public_html/
 ### React
 
 ```jsx
-import { useEffect } from 'react';
+import { useEffect } from "react";
 
 function TechIcon({ slug, size = 32 }) {
   useEffect(() => {
     // Carregar scripts dinamicamente
     const loadScript = (src) => {
       return new Promise((resolve) => {
-        const script = document.createElement('script');
+        const script = document.createElement("script");
         script.src = src;
         script.onload = resolve;
         document.head.appendChild(script);
       });
     };
-    
-    loadScript('https://mauriciospark.github.io/coreIcons/javascript/data.js')
-      .then(() => loadScript('https://mauriciospark.github.io/coreIcons/javascript/core-icons.js'));
+
+    loadScript(
+      "https://mauriciospark.github.io/coreIcons/javascript/data.js",
+    ).then(() =>
+      loadScript(
+        "https://mauriciospark.github.io/coreIcons/javascript/core-icons.js",
+      ),
+    );
   }, []);
-  
+
   const getIconHtml = () => {
-    if (typeof CoreIcons === 'undefined') return '';
+    if (typeof CoreIcons === "undefined") return "";
     return CoreIcons.imgHtml(slug, { width: size, height: size });
   };
-  
+
   return <span dangerouslySetInnerHTML={{ __html: getIconHtml() }} />;
 }
 ```
@@ -307,20 +350,20 @@ function TechIcon({ slug, size = 32 }) {
 </template>
 
 <script setup>
-import { ref, computed, onMounted } from 'vue';
+import { ref, computed, onMounted } from "vue";
 
 const props = defineProps({
   slug: String,
-  size: { type: Number, default: 32 }
+  size: { type: Number, default: 32 },
 });
 
 const loaded = ref(false);
 
 const iconHtml = computed(() => {
-  if (!loaded.value || typeof CoreIcons === 'undefined') return '';
+  if (!loaded.value || typeof CoreIcons === "undefined") return "";
   return CoreIcons.imgHtml(props.slug, {
     width: props.size,
-    height: props.size
+    height: props.size,
   });
 });
 
@@ -330,13 +373,17 @@ onMounted(async () => {
 });
 
 async function loadCoreIcons() {
-  await loadScript('https://mauriciospark.github.io/coreIcons/javascript/data.js');
-  await loadScript('https://mauriciospark.github.io/coreIcons/javascript/core-icons.js');
+  await loadScript(
+    "https://mauriciospark.github.io/coreIcons/javascript/data.js",
+  );
+  await loadScript(
+    "https://mauriciospark.github.io/coreIcons/javascript/core-icons.js",
+  );
 }
 
 function loadScript(src) {
   return new Promise((resolve, reject) => {
-    const script = document.createElement('script');
+    const script = document.createElement("script");
     script.src = src;
     script.onload = resolve;
     script.onerror = reject;
@@ -349,14 +396,20 @@ function loadScript(src) {
 ### Next.js
 
 ```jsx
-import Head from 'next/head';
+import Head from "next/head";
 
 export default function Page() {
   return (
     <>
       <Head>
-        <script src="https://mauriciospark.github.io/coreIcons/javascript/data.js" async />
-        <script src="https://mauriciospark.github.io/coreIcons/javascript/core-icons.js" async />
+        <script
+          src="https://mauriciospark.github.io/coreIcons/javascript/data.js"
+          async
+        />
+        <script
+          src="https://mauriciospark.github.io/coreIcons/javascript/core-icons.js"
+          async
+        />
       </Head>
       <div id="icons-container" />
     </>
@@ -370,7 +423,9 @@ export default function Page() {
 2. **Lazy Loading:** Adicione `loading="lazy"` em imagens
 3. **Alt Text:** Sempre forneça texto alternativo para acessibilidade
 4. **Tamanhos:** Use tamanhos múltiplos de 8 para melhor renderização
-5. **Formato:** Os ícones estão em PNG com fundo transparente
+5. **Formato PNG:** Ideal para uso em interfaces web e documentos
+6. **Formato SVG:** Ideal para escalabilidade, impressão e gráficos vetoriais
+7. **Escolha do Formato:** Use PNG para compatibilidade máxima, SVG para qualidade em qualquer tamanho
 
 ---
 

@@ -4,6 +4,32 @@ Todas as mudanças notáveis neste projeto serão documentadas neste arquivo.
 
 O formato é baseado em [Keep a Changelog](https://keepachangelog.com/pt-BR/1.0.0/).
 
+## [1.2.0] - 2026-09-12
+
+### Adicionado
+
+- **Suporte a duplo formato:** Cada ícone agora está disponível em PNG e SVG
+- **Novo arquivo de dados:** `datasvg.js` com dados dos ícones em formato SVG
+- **Modal aprimorado:** Campos separados para URL PNG e URL SVG com botões de cópia individuais
+- **SEO otimizado:** Meta tags para SEO e Open Graph para compartilhamento social
+- **Acessibilidade melhorada:** Skip link para navegação por teclado
+- **Labels ARIA:** Melhoria nos atributos ARIA para melhor acessibilidade
+- **Documentação atualizada:** README.md e USAGE.md com informações sobre duplo formato
+
+### Alterado
+
+- **Contagem de ícones:** Atualizado para 1067 ícones
+- **Estrutura de dados:** `script.js` agora carrega e mescla dados de `data.js` (PNG) e `datasvg.js` (SVG)
+- **Versão:** Atualizada para 1.2.0
+- **Licença:** README.md agora referencia corretamente a licença MIT
+
+### Removido
+
+- **Funcionalidade de download de imagem** (não solicitada pelo usuário)
+- **Toggle de modo escuro/claro** (não solicitado pelo usuário)
+
+---
+
 ## [1.1.0] - 2026-08-25
 
 ### Alterado
@@ -318,27 +344,35 @@ O formato é baseado em [Keep a Changelog](https://keepachangelog.com/pt-BR/1.0.
 ### Ícones Incluídos
 
 #### Linguagens de Programação
+
 - Assembly, C, C++, C#, D, Dart, Delphi, Elixir, Erlang, Fortran, Go, Haskell, Java, JavaScript, Julia, Kotlin, Lisp, Lua, MATLAB, Perl, PHP, Python, R, Ruby, Rust, Scala, Swift, TypeScript, Zig
 
 #### Frameworks Frontend
+
 - Angular, Astro, Ember, Foundation, Gatsby, Gridsome, Next.js, Nuxt.js, React, Remix, SolidJS, Svelte, Vue.js
 
 #### Frameworks Backend
+
 - Adonis, Django, Express, Fastify, Flask, Laravel, NestJS, Next.js, Node.js, Rails, Spring, Strapi
 
 #### Mobile
+
 - Android, Capacitor, Flutter, Ionic, iOS, React Native
 
 #### DevOps & CI/CD
+
 - Ansible, AppVeyor, Azure Pipelines, Buildkite, CircleCI, Docker, Drone CI, GitHub Actions, GitLab CI, Jenkins, Kubernetes, Travis CI, Vercel
 
 #### Cloud
+
 - AWS, Azure, Firebase, GCP, Heroku, Netlify, Vercel
 
 #### Ferramentas
+
 - Babel, ESLint, Git, Gulp, Jest, npm, Prettier, Vite, Webpack, Yarn
 
 #### Bancos de Dados
+
 - MongoDB, MySQL, PostgreSQL, Redis, SQLite, Sequelize
 
 #### E muitos mais...

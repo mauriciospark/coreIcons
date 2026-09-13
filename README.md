@@ -18,13 +18,16 @@ Uma biblioteca profissional de ícones para linguagens, frameworks e ferramentas
 ## Características
 
 - **1067 ícones** para linguagens, frameworks e ferramentas
+- **Suporte a duplo formato** - PNG e SVG para cada ícone
 - **Interface 3D** com efeitos de perspectiva e inclinação
 - **Pesquisa em tempo real** com filtros inteligentes
-- **Visualização em grade ou lista**
+- **Visualização em grade** com cards interativos
 - **URLs públicas** para uso em documentação
+- **Modal com opções de cópia** para PNG e SVG
 - **API JavaScript** para integração em projetos
 - **Suporte a atalhos de teclado** (Ctrl+K para pesquisa)
 - **Botão de estrelas do GitHub** com contagem em tempo real
+- **SEO otimizado** com meta tags e Open Graph
 
 ## Categorias Cobertas
 
@@ -45,13 +48,14 @@ coreIcons/
 ├── css/                # Estilos e animações 3D
 │   └── style.css
 ├── javascript/         # Scripts da aplicação
-│   ├── data.js         # Dados dos ícones
+│   ├── data.js         # Dados dos ícones (PNG)
+│   ├── datasvg.js      # Dados dos ícones (SVG)
 │   ├── core-icons.js   # API JavaScript
 │   └── script.js       # Lógica da interface
 ├── docs/               # Documentação
-├── fotos/              # Arquivos de ícones PNG (1002+ ícones)
+├── fotos/              # Arquivos de ícones PNG e SVG (1067+ ícones)
 ├── favicon/            # Favicons e manifest
-└── LICENSE             # Licença
+└── LICENSE             # Licença MIT
 ```
 
 ## Documentação
@@ -68,29 +72,45 @@ coreIcons/
 
 Acesse o catálogo em: `https://mauriciospark.github.io/coreIcons`
 
+### Usando Ícones
+
+No modal do ícone, você encontrará:
+
+- **URL PNG** - Link direto para a imagem PNG
+- **URL SVG** - Link direto para a imagem SVG
+- **Nome do ícone** - Nome formatado para referência
+
+Basta clicar em "Copiar URL" para copiar o link desejado.
+
 ### API JavaScript
 
 ```html
 <script src="javascript/data.js"></script>
+<script src="javascript/datasvg.js"></script>
 <script src="javascript/core-icons.js"></script>
 <script>
   // Buscar todos os ícones
   const icons = CoreIcons.getAll();
-  
+
   // Buscar por slug
-  const react = CoreIcons.getBySlug('react');
-  
+  const react = CoreIcons.getBySlug("react");
+
   // Pesquisar
-  const results = CoreIcons.search('java');
-  
+  const results = CoreIcons.search("java");
+
   // Gerar HTML de imagem
-  const html = CoreIcons.imgHtml('react', { width: 48, height: 48 });
+  const html = CoreIcons.imgHtml("react", { width: 48, height: 48 });
 </script>
 ```
 
+### Formatos Disponíveis
+
+- **PNG** - Formato raster, ideal para uso em interfaces web
+- **SVG** - Formato vetorial, ideal para escalabilidade e impressão
+
 ## Licença
 
-© 2026 Maurício Spark. Todos os direitos reservados.
+Este projeto é licenciado sob a Licença MIT - veja o arquivo [LICENSE](LICENSE) para detalhes.
 
 ---
 

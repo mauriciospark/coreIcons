@@ -12,7 +12,7 @@
 */
 
 var coreIconsData = (function () {
-    var FILES = `abap.png
+  var FILES = `abap.png
 abc.png
 acorn.png
 actionscript.png
@@ -159,7 +159,6 @@ bootstrap.png
 bower.png
 brainfuck.png
 brave.png
-brave.png
 brex.png
 broccoli.png
 browserslist.png
@@ -204,6 +203,7 @@ chai.png
 chainlink.png
 chakra.png
 chakraui.png
+chatgpt.png
 chalk.png
 chapel.png
 chartjs.png
@@ -292,6 +292,7 @@ crewai.png
 crossplane.png
 crowdstrike.png
 crystal.png
+csharp.png
 css.png
 cssmap.png
 cssmodules.png
@@ -407,6 +408,7 @@ exim.png
 exoscale.png
 explorer.png
 expo.png
+expressjs.png
 express.png
 externalsecrets.png
 fabric.png
@@ -1020,6 +1022,7 @@ vivaldi.png
 vlang.png
 vmware.png
 vps.png
+vscodium.png
 vue.png
 vuestore.png
 vultr.png
@@ -1078,28 +1081,33 @@ zookeeper.png
 zorin.png
 zscaler.png
 zsh.png
-zulip.png`.trim().split(/\r?\n/).filter(function (f) { return f.length > 0; });
-
-    function slugFromFile(file) {
-        var base = file.replace(/\.[^.]+$/i, "").trim();
-        if (/^c\+\+$/i.test(base)) return "c++";
-        if (/^h\+\+$/i.test(base)) return "h++";
-        var s = base.toLowerCase().replace(/\s+/g, "-");
-        s = s.replace(/[^a-z0-9+\-]/g, "-");
-        s = s.replace(/-+/g, "-").replace(/^-|-$/g, "");
-        return s || "icon";
-    }
-
-    var seen = Object.create(null);
-    return FILES.map(function (file, i) {
-        var name = slugFromFile(file);
-        var orig = name;
-        var n = 2;
-        while (seen[name]) {
-            name = orig + "-" + n;
-            n++;
-        }
-        seen[name] = true;
-        return { name: name, file: file };
+zulip.png`
+    .trim()
+    .split(/\r?\n/)
+    .filter(function (f) {
+      return f.length > 0;
     });
+
+  function slugFromFile(file) {
+    var base = file.replace(/\.[^.]+$/i, "").trim();
+    if (/^c\+\+$/i.test(base)) return "c++";
+    if (/^h\+\+$/i.test(base)) return "h++";
+    var s = base.toLowerCase().replace(/\s+/g, "-");
+    s = s.replace(/[^a-z0-9+\-]/g, "-");
+    s = s.replace(/-+/g, "-").replace(/^-|-$/g, "");
+    return s || "icon";
+  }
+
+  var seen = Object.create(null);
+  return FILES.map(function (file, i) {
+    var name = slugFromFile(file);
+    var orig = name;
+    var n = 2;
+    while (seen[name]) {
+      name = orig + "-" + n;
+      n++;
+    }
+    seen[name] = true;
+    return { name: name, file: file };
+  });
 })();
