@@ -8,25 +8,15 @@ O formato é baseado em [Keep a Changelog](https://keepachangelog.com/pt-BR/1.0.
 
 ### Adicionado
 
-- **Suporte a duplo formato:** Cada ícone agora está disponível em PNG e SVG
-- **Novo arquivo de dados:** `datasvg.js` com dados dos ícones em formato SVG
+- **Suporte a formato SVG** - Arquivos SVG agora disponíveis na pasta `fotossvg/`
 - **Modal aprimorado:** Campos separados para URL PNG e URL SVG com botões de cópia individuais
-- **SEO otimizado:** Meta tags para SEO e Open Graph para compartilhamento social
-- **Acessibilidade melhorada:** Skip link para navegação por teclado
-- **Labels ARIA:** Melhoria nos atributos ARIA para melhor acessibilidade
-- **Documentação atualizada:** README.md e USAGE.md com informações sobre duplo formato
 
 ### Alterado
 
-- **Contagem de ícones:** Atualizado para 1067 ícones
-- **Estrutura de dados:** `script.js` agora carrega e mescla dados de `data.js` (PNG) e `datasvg.js` (SVG)
+- **Caminho SVG:** URLs de SVG agora usam `fotossvg/` em vez de `fotos/`
+- **script.js:** Atualizado `publicImageUrlSVG()` para usar caminho correto
+- **Documentação atualizada:** README.md, USAGE.md e API.md refletem caminho correto para SVG
 - **Versão:** Atualizada para 1.2.0
-- **Licença:** README.md agora referencia corretamente a licença MIT
-
-### Removido
-
-- **Funcionalidade de download de imagem** (não solicitada pelo usuário)
-- **Toggle de modo escuro/claro** (não solicitado pelo usuário)
 
 ---
 

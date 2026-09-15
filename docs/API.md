@@ -224,7 +224,7 @@ Estrutura do objeto retornado pelos métodos da API:
 }
 ```
 
-**Nota:** A propriedade `fileSVG` está disponível quando `datasvg.js` é carregado.
+**Nota:** A propriedade `fileSVG` está disponível quando `datasvg.js` é carregado. Os arquivos SVG estão localizados na pasta `fotossvg/`.
 
 ## Exemplos
 

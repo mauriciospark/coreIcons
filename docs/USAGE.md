@@ -46,7 +46,7 @@ https://mauriciospark.github.io/coreIcons
 
 ```html
 <img
-  src="https://mauriciospark.github.io/coreIcons/fotos/react.svg"
+  src="https://mauriciospark.github.io/coreIcons/fotossvg/react.svg"
   alt="React"
   width="48"
   height="48"
@@ -62,7 +62,7 @@ https://mauriciospark.github.io/coreIcons
 ### URL Relativa (Mesmo Servidor) - SVG
 
 ```html
-<img src="fotos/react.svg" alt="React" width="48" height="48" />
+<img src="fotossvg/react.svg" alt="React" width="48" height="48" />
 ```
 
 ### Usando a API
@@ -297,10 +297,12 @@ public_html/
 │   └── script.js
 ├── fotos/
 │   ├── react.png
-│   ├── react.svg
 │   ├── angular.png
+│   └── ... (1067+ ícones em PNG)
+├── fotossvg/
+│   ├── react.svg
 │   ├── angular.svg
-│   └── ... (1067+ ícones em PNG e SVG)
+│   └── ... (1067+ ícones em SVG)
 └── favicon/
     └── coreIcons.png
 ```
@@ -425,7 +427,7 @@ export default function Page() {
 4. **Tamanhos:** Use tamanhos múltiplos de 8 para melhor renderização
 5. **Formato PNG:** Ideal para uso em interfaces web e documentos
 6. **Formato SVG:** Ideal para escalabilidade, impressão e gráficos vetoriais
-7. **Escolha do Formato:** Use PNG para compatibilidade máxima, SVG para qualidade em qualquer tamanho
+7. **Caminho SVG:** Arquivos SVG estão na pasta `fotossvg/`
 
 ---
 

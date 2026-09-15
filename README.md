@@ -53,7 +53,8 @@ coreIcons/
 │   ├── core-icons.js   # API JavaScript
 │   └── script.js       # Lógica da interface
 ├── docs/               # Documentação
-├── fotos/              # Arquivos de ícones PNG e SVG (1067+ ícones)
+├── fotos/              # Arquivos de ícones PNG (1067+ ícones)
+├── fotossvg/           # Arquivos de ícones SVG (1067+ ícones)
 ├── favicon/            # Favicons e manifest
 └── LICENSE             # Licença MIT
 ```

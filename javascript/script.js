@@ -37,7 +37,7 @@
     if (!icon.fileSVG) return "";
     var base = getPublicSiteBase();
     var path =
-      "fotos/" + icon.fileSVG.split("/").map(encodeURIComponent).join("/");
+      "fotossvg/" + icon.fileSVG.split("/").map(encodeURIComponent).join("/");
     return base + "/" + path;
   }
 
